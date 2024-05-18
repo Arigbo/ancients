@@ -1,0 +1,86 @@
+.ancients {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ancients_apology_message {
+  background-color: white;
+  display: flex;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  position: fixed;
+  padding-inline: 2rem;
+  padding-block-start: 2rem;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+.ancients_apology_message.hide {
+  display: none;
+}
+.ancients_apology_message .fa-x {
+  font-size: 2rem;
+}
+.ancients_apology_message p {
+  height: 100vh;
+  font-size: 2rem;
+}
+.ancients_apology_message p a {
+  text-decoration: none;
+  background-color: gray;
+  border-radius: 30px;
+  padding-inline: 10px;
+  font-size: 2.3rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+.ancients_inner {
+  padding-inline: 2rem;
+}
+.ancients_inner_top_header {
+  text-align: center;
+}
+.ancients_inner_middle_header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.ancients_inner_middle_header .fa-chevron-down {
+  display: none;
+}
+.ancients_inner_middle_header .fa-chevron-down.show {
+  display: block;
+}
+.ancients_inner_middle_header .fa-chevron-up {
+  display: block;
+}
+.ancients_inner_middle_header .fa-chevron-up.hide {
+  display: none;
+}
+.ancients_inner ul {
+  display: none;
+}
+.ancients_inner ul.show {
+  display: block;
+  line-height: 4rem;
+}
+.ancients_inner_more {
+  text-align: center;
+}
+@media screen and (min-width: 777px) {
+  .ancients {
+    width: 100%;
+  }
+  .ancients_apology_message {
+    justify-content: space-between;
+  }
+  .ancients_apology_message p {
+    line-height: 5rem;
+    font-size: 5rem;
+  }
+  .ancients_apology_message p a {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=index.css.map */

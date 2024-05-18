@@ -1,0 +1,104 @@
+.ancients {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif; 
+    &_apology_message {
+     
+        &.hide {
+            display: none;
+        }
+
+        background-color: white;
+        display: flex;
+        -webkit-backdrop-filter: blur(24px);
+        backdrop-filter: blur(24px);
+        position: fixed;
+        padding-inline: 2rem;
+        padding-block-start: 2rem;
+        z-index: 2;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+
+
+        .fa-x {
+            font-size: 2rem;
+        }
+
+        p {
+         
+            height: 100vh;
+            font-size: 2rem;
+
+            a {
+                text-decoration: none;
+                background-color: gray;
+                border-radius: 30px;
+                padding-inline: 10px;
+                font-size: 2.3rem;
+                color: white;
+                cursor: pointer;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+    }
+
+    &_inner {
+        padding-inline: 2rem;
+        &_top {
+            &_header {
+                text-align: center;
+            }
+        }
+
+        &_middle {
+            &_header {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .fa-chevron-down{
+                    display: none;
+                    &.show{
+                        display: block;
+                    }
+             
+                }
+                .fa-chevron-up{
+            display: block;
+                    &.hide{
+                        display: none;
+                    }
+                }
+            }
+        }
+        ul{
+            display: none;
+            &.show{
+                display: block;
+                line-height: 4rem;
+            }
+        }
+
+        &_more {
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width: 777px) {
+        width: 100%;
+
+        &_apology_message {
+            justify-content: space-between;
+
+            p {
+                line-height: 5rem;
+                font-size: 5rem;
+
+                a {
+                    font-size: 3rem;
+                }
+
+            }
+        }
+    }
+}
