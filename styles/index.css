@@ -2,6 +2,9 @@
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
+.ancients i {
+  cursor: pointer;
+}
 .ancients_apology_message {
   background-color: white;
   display: flex;
@@ -39,13 +42,42 @@
 .ancients_inner {
   padding-inline: 2rem;
 }
+.ancients_inner_top {
+  display: grid;
+  gap: 2rem;
+}
 .ancients_inner_top_header {
   text-align: center;
+  font-size: 1.6rem;
+}
+.ancients_inner_top span {
+  font-weight: 600;
+}
+.ancients_inner_top h4 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0;
+}
+.ancients_inner_top p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 777px) {
+  .ancients_inner_middle {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: first baseline;
+    gap: 1rem;
+  }
 }
 .ancients_inner_middle_header {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.ancients_inner_middle_header h1 {
+  font-size: 2rem;
 }
 .ancients_inner_middle_header .fa-chevron-down {
   display: none;
@@ -61,6 +93,9 @@
 }
 .ancients_inner ul {
   display: none;
+}
+.ancients_inner ul li {
+  font-size: 1.3rem;
 }
 .ancients_inner ul.show {
   display: block;
@@ -79,6 +114,10 @@
   .ancients_apology_message p {
     line-height: 5rem;
     font-size: 5rem;
+  }
+  .ancients_apology_message p li {
+    font-weight: 900;
+    font-size: 1.5rem;
   }
   .ancients_apology_message p a {
     font-size: 3rem;

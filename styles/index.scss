@@ -1,8 +1,11 @@
 .ancients {
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
+i{
+    cursor: pointer;
+}
     &_apology_message {
-     
+
         &.hide {
             display: none;
         }
@@ -26,7 +29,7 @@
         }
 
         p {
-         
+
             height: 100vh;
             font-size: 2rem;
 
@@ -45,35 +48,78 @@
 
     &_inner {
         padding-inline: 2rem;
+
         &_top {
+            display: grid;
+            gap: 2rem;
+
             &_header {
                 text-align: center;
+                font-size: 1.6rem;
+                
+            }
+
+            span {
+                font-weight: 600;
+            }
+
+            h4 {
+                text-align: center;
+                font-size: 1.6rem;
+                margin: 0;
+            }
+
+            p {
+                line-height: 2rem;
+                font-size: 1.2rem;
             }
         }
 
         &_middle {
+        @media screen and (min-width:777px){
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            justify-content: center;
+            align-items: first baseline;
+            gap: 1rem;
+        }
+
             &_header {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
-                .fa-chevron-down{
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                .fa-chevron-down {
                     display: none;
-                    &.show{
+
+                    &.show {
                         display: block;
                     }
-             
+
                 }
-                .fa-chevron-up{
-            display: block;
-                    &.hide{
+
+                .fa-chevron-up {
+                    display: block;
+
+                    &.hide {
                         display: none;
                     }
                 }
             }
         }
-        ul{
+
+        ul {
             display: none;
-            &.show{
+
+            li {
+                font-size: 1.3rem;
+            }
+
+            &.show {
                 display: block;
                 line-height: 4rem;
             }
@@ -92,6 +138,12 @@
 
             p {
                 line-height: 5rem;
+
+                li {
+                    font-weight: 900;
+                    font-size: 1.5rem;
+                }
+
                 font-size: 5rem;
 
                 a {
