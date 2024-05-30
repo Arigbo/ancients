@@ -1,155 +1,141 @@
 .ancients {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-i{
-    cursor: pointer;
-}
-    &_apology_message {
 
-        &.hide {
-            display: none;
+    .signup,
+    .signin {
+
+
+        &.active {
+            color: white;
+            padding-inline: 0.5rem;
+            padding-block: 0.5rem;
+            border-radius: 1rem;
+            background-color: black;
         }
+    }
 
-        background-color: white;
-        display: flex;
-        -webkit-backdrop-filter: blur(24px);
-        backdrop-filter: blur(24px);
-        position: fixed;
-        padding-inline: 2rem;
-        padding-block-start: 2rem;
-        z-index: 2;
+    .home,
+    .about,
+    .tech,
+    .contact {
+
+
+        &.active {
+            color: white;
+            padding-inline: 0.5rem;
+            padding-block: 0.5rem;
+            border-radius: 1rem;
+            background-color: black;
+        }
+    }
+
+    height: 200vh;
+
+    &_nav {
+        top: 0;
+        position: sticky;
         right: 0;
         left: 0;
-        bottom: 0;
         top: 0;
+        background-color: white;
 
-
-        .fa-x {
-            font-size: 2rem;
+        li {
+            list-style: none;
         }
 
-        p {
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
-            height: 100vh;
-            font-size: 2rem;
-
-            a {
-                text-decoration: none;
-                background-color: gray;
-                border-radius: 30px;
-                padding-inline: 10px;
-                font-size: 2.3rem;
-                color: white;
+        &_left {
+            i {
+                font-size: 2rem;
                 cursor: pointer;
-                font-family: 'Courier New', Courier, monospace;
             }
         }
-    }
 
-    &_inner {
-        padding-inline: 2rem;
-
-        &_top {
+        @media screen and (min-width:777px) {
+            padding-inline: 1rem;
             display: grid;
-            gap: 2rem;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
 
-            &_header {
-                text-align: center;
-                font-size: 1.6rem;
-                
-            }
-
-            span {
-                font-weight: 600;
-            }
-
-            h4 {
-                text-align: center;
-                font-size: 1.6rem;
-                margin: 0;
-            }
-
-            p {
-                line-height: 2rem;
-                font-size: 1.2rem;
-            }
-        }
-
-        &_middle {
-        @media screen and (min-width:777px){
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            justify-content: center;
-            align-items: first baseline;
-            gap: 1rem;
-        }
-
-            &_header {
-                display: flex;
+            ul {
                 align-items: center;
-                gap: 1rem;
-
-                h1 {
-                    font-size: 2rem;
-                }
-
-                .fa-chevron-down {
-                    display: none;
-
-                    &.show {
-                        display: block;
-                    }
-
-                }
-
-                .fa-chevron-up {
-                    display: block;
-
-                    &.hide {
-                        display: none;
-                    }
-                }
-            }
-        }
-
-        ul {
-            display: none;
-
-            li {
-                font-size: 1.3rem;
-            }
-
-            &.show {
-                display: block;
-                line-height: 4rem;
-            }
-        }
-
-        &_more {
-            text-align: center;
-        }
-    }
-
-    @media screen and (min-width: 777px) {
-        width: 100%;
-
-        &_apology_message {
-            justify-content: space-between;
-
-            p {
-                line-height: 5rem;
+                display: flex;
 
                 li {
-                    font-weight: 900;
-                    font-size: 1.5rem;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            &_right {
+                ul {
+                    gap: 3rem;
+                    justify-content: center;
+
+                    li {}
+                }
+            }
+
+            &_last {
+                ul {
+                    gap: 0.5rem;
+                    justify-content: right;
+                }
+            }
+        }
+    }
+
+    &_home {
+        padding-block-start: 3rem;
+
+        @media screen and (min-width:777px) {
+            padding-inline: 3rem;
+
+            &_hero {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_left {
+                    h1 {
+                        font-size: 2rem;
+                    }
+
+                    span {
+                        font-size: 4rem;
+                    }
                 }
 
-                font-size: 5rem;
+                &_right {
 
-                a {
-                    font-size: 3rem;
+                    i {
+                        font-size: 30vw;
+                    }
                 }
+            }
+        }
 
+        &_hero {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &_left {
+                span {
+                    font-size: 4rem;
+                }
+            }
+
+            &_right {
+
+                i {
+                    font-size: 30vw;
+                }
             }
         }
     }

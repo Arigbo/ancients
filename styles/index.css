@@ -1,125 +1,97 @@
 .ancients {
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  height: 200vh;
 }
-.ancients i {
-  cursor: pointer;
+.ancients .signup.active,
+.ancients .signin.active {
+  color: white;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  background-color: black;
 }
-.ancients_apology_message {
-  background-color: white;
-  display: flex;
-  -webkit-backdrop-filter: blur(24px);
-  backdrop-filter: blur(24px);
-  position: fixed;
-  padding-inline: 2rem;
-  padding-block-start: 2rem;
-  z-index: 2;
+.ancients .home.active,
+.ancients .about.active,
+.ancients .tech.active,
+.ancients .contact.active {
+  color: white;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  background-color: black;
+}
+.ancients_nav {
+  top: 0;
+  position: sticky;
   right: 0;
   left: 0;
-  bottom: 0;
   top: 0;
+  background-color: white;
 }
-.ancients_apology_message.hide {
-  display: none;
+.ancients_nav li {
+  list-style: none;
 }
-.ancients_apology_message .fa-x {
-  font-size: 2rem;
-}
-.ancients_apology_message p {
-  height: 100vh;
-  font-size: 2rem;
-}
-.ancients_apology_message p a {
+.ancients_nav a {
   text-decoration: none;
-  background-color: gray;
-  border-radius: 30px;
-  padding-inline: 10px;
-  font-size: 2.3rem;
-  color: white;
-  cursor: pointer;
-  font-family: "Courier New", Courier, monospace;
+  color: black;
 }
-.ancients_inner {
-  padding-inline: 2rem;
-}
-.ancients_inner_top {
-  display: grid;
-  gap: 2rem;
-}
-.ancients_inner_top_header {
-  text-align: center;
-  font-size: 1.6rem;
-}
-.ancients_inner_top span {
-  font-weight: 600;
-}
-.ancients_inner_top h4 {
-  text-align: center;
-  font-size: 1.6rem;
-  margin: 0;
-}
-.ancients_inner_top p {
-  line-height: 2rem;
-  font-size: 1.2rem;
-}
-@media screen and (min-width: 777px) {
-  .ancients_inner_middle {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
-    align-items: first baseline;
-    gap: 1rem;
-  }
-}
-.ancients_inner_middle_header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.ancients_inner_middle_header h1 {
+.ancients_nav_left i {
   font-size: 2rem;
-}
-.ancients_inner_middle_header .fa-chevron-down {
-  display: none;
-}
-.ancients_inner_middle_header .fa-chevron-down.show {
-  display: block;
-}
-.ancients_inner_middle_header .fa-chevron-up {
-  display: block;
-}
-.ancients_inner_middle_header .fa-chevron-up.hide {
-  display: none;
-}
-.ancients_inner ul {
-  display: none;
-}
-.ancients_inner ul li {
-  font-size: 1.3rem;
-}
-.ancients_inner ul.show {
-  display: block;
-  line-height: 4rem;
-}
-.ancients_inner_more {
-  text-align: center;
+  cursor: pointer;
 }
 @media screen and (min-width: 777px) {
-  .ancients {
-    width: 100%;
+  .ancients_nav {
+    padding-inline: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
   }
-  .ancients_apology_message {
+  .ancients_nav ul {
+    align-items: center;
+    display: flex;
+  }
+  .ancients_nav ul li {
+    padding: 0;
+    margin: 0;
+  }
+  .ancients_nav_right ul {
+    gap: 3rem;
+    justify-content: center;
+  }
+  .ancients_nav_last ul {
+    gap: 0.5rem;
+    justify-content: right;
+  }
+}
+.ancients_home {
+  padding-block-start: 3rem;
+}
+@media screen and (min-width: 777px) {
+  .ancients_home {
+    padding-inline: 3rem;
+  }
+  .ancients_home_hero {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
-  .ancients_apology_message p {
-    line-height: 5rem;
-    font-size: 5rem;
+  .ancients_home_hero_left h1 {
+    font-size: 2rem;
   }
-  .ancients_apology_message p li {
-    font-weight: 900;
-    font-size: 1.5rem;
+  .ancients_home_hero_left span {
+    font-size: 4rem;
   }
-  .ancients_apology_message p a {
-    font-size: 3rem;
+  .ancients_home_hero_right i {
+    font-size: 30vw;
   }
+}
+.ancients_home_hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ancients_home_hero_left span {
+  font-size: 4rem;
+}
+.ancients_home_hero_right i {
+  font-size: 30vw;
 }/*# sourceMappingURL=index.css.map */

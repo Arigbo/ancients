@@ -1,1 +1,6 @@
-@import "/styles/index.css";/*# sourceMappingURL=custom.css.map */
+@import "/styles/index.css";
+@import "/styles/frontend.css";
+html {
+  padding-inline: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=custom.css.map */
