@@ -38,9 +38,11 @@
             display: none;
 
             &.show {
+                
                 display: block;
                 height: auto;
                 position: absolute;
+                z-index: 4;
                 background-color: white;
                 border-right: 1px solid;
                 border-left: 1px solid;
@@ -49,7 +51,7 @@
                 left: 0;
                 top: 3.6rem;
                 text-align: center;
-
+           overflow-x: scroll;
                 ul {
                     display: flex;
                     flex-direction: column;
@@ -57,8 +59,12 @@
 
                 a {
                     font-size: 2rem;
-                    line-height: 9rem;
+                    padding-block: 4rem;
+                    @media screen and (min-height: 533px){
+                        padding-block: 2rem;
+                    }
                 }
+               
             }
         }
 
