@@ -1,33 +1,21 @@
-.ancients {
-  height: 200vh;
-}
-.ancients .signup.active,
-.ancients .signin.active {
-  color: white;
-  padding-inline: 0.5rem;
-  padding-block: 0.5rem;
-  border-radius: 1rem;
-  background-color: black;
-}
-.ancients .home.active,
-.ancients .about.active,
-.ancients .tech.active,
-.ancients .contact.active {
-  color: white;
-  padding-inline: 0.5rem;
-  padding-block: 0.5rem;
-  border-radius: 1rem;
-  background-color: black;
-}
 .ancients_nav {
-  top: 0;
-  position: sticky;
+  position: fixed;
   right: 0;
   left: 0;
   top: 0;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  width: auto;
+  border: 1px solid;
 }
-.ancients_nav li {
+.ancients_nav ul {
+  padding: 0;
+  margin: 0;
+}
+.ancients_nav ul li {
   list-style: none;
 }
 .ancients_nav a {
@@ -38,24 +26,149 @@
   font-size: 2rem;
   cursor: pointer;
 }
+.ancients_nav_right {
+  display: none;
+}
+.ancients_nav_right.show {
+  display: block;
+  height: auto;
+  position: absolute;
+  background-color: white;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  right: 0;
+  left: 0;
+  top: 3.6rem;
+  text-align: center;
+}
+.ancients_nav_right.show ul {
+  display: flex;
+  flex-direction: column;
+}
+.ancients_nav_right.show a {
+  font-size: 2rem;
+  line-height: 9rem;
+}
+.ancients_nav .fa-bars {
+  display: flex;
+  justify-content: right;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.ancients_nav .fa-bars.hide {
+  display: none;
+}
+.ancients_nav .fa-nav-x {
+  display: none;
+  font-size: 2rem;
+}
+.ancients_nav .fa-nav-x.show {
+  display: block;
+}
+.ancients_nav_last {
+  display: none;
+}
+.ancients_nav .home.active,
+.ancients_nav .about.active,
+.ancients_nav .tech.active,
+.ancients_nav .contact.active {
+  background-color: black;
+  color: white;
+}
 @media screen and (min-width: 777px) {
   .ancients_nav {
-    padding-inline: 1rem;
+    position: sticky;
+    left: 0;
+    right: 0;
+    border: 0;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
+    justify-content: safe;
+    padding-inline: 0;
+    padding-block: 1rem;
   }
   .ancients_nav ul {
     align-items: center;
     display: flex;
   }
-  .ancients_nav ul li {
-    padding: 0;
-    margin: 0;
+  .ancients_nav ul a {
+    line-height: normal;
+    font-size: 1rem;
   }
-  .ancients_nav_right ul {
+  .ancients_nav .signup.active,
+  .ancients_nav .signin.active {
+    color: white;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+    border-radius: 1rem;
+    background-color: black;
+  }
+  .ancients_nav .home.active,
+  .ancients_nav .about.active,
+  .ancients_nav .tech.active,
+  .ancients_nav .contact.active {
+    color: white;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+    border-radius: 1rem;
+    background-color: black;
+  }
+  .ancients_nav .fa-bars {
+    display: none;
+    justify-content: right;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .ancients_nav .fa-bars.hide {
+    display: none;
+  }
+  .ancients_nav .fa-nav-x {
+    display: none;
+    font-size: 2rem;
+  }
+  .ancients_nav .fa-nav-x.show {
+    display: none;
+  }
+  .ancients_nav_right {
+    position: static;
+    background-color: inherit;
+    border: 0;
+    padding-block: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    text-align: inherit;
+    display: block;
+  }
+  .ancients_nav_right.show {
+    display: block;
+    position: static;
+    background-color: inherit;
+    border: 0;
+    padding-block: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    text-align: inherit;
+  }
+  .ancients_nav_right.show ul {
+    flex-direction: row;
     gap: 3rem;
     justify-content: center;
+  }
+  .ancients_nav_right.show a {
+    font-size: 1rem;
+    line-height: normal;
+  }
+  .ancients_nav_right ul {
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .ancients_nav_last {
+    display: block;
   }
   .ancients_nav_last ul {
     gap: 0.5rem;
@@ -64,6 +177,8 @@
 }
 .ancients_home {
   padding-block-start: 3rem;
+  width: 100%;
+  display: none;
 }
 @media screen and (min-width: 777px) {
   .ancients_home {

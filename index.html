@@ -17,7 +17,9 @@
             <div class="ancients_nav_left">
                 <i class="fas fa-sun"></i>
             </div>
+    
             <div class="ancients_nav_right">
+          
                 <ul>
                     <a href="" class="home">
                         <li>Home</li>
@@ -34,6 +36,8 @@
                 </ul>
 
             </div>
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-x fa-nav-x"></i>
             <div class="ancients_nav_last">
                 <ul>
                     <a href="" class="signup">
@@ -62,6 +66,21 @@
 </body>
 <!-- NAV ACTIVE CODE -->
 <script>
+       document.querySelector(".fa-bars").addEventListener("click", () => {
+        document.querySelector(".fa-nav-x").classList.add("show")
+        document.querySelector(".fa-bars").classList.add("hide")
+        document.querySelector(".ancients_nav_right").classList.add("show")
+    })
+    document.querySelector(".fa-nav-x").addEventListener("click", () => {
+        document.querySelector(".fa-bars").classList.remove("hide")
+        document.querySelector(".fa-nav-x").classList.remove("show")
+        document.querySelector(".ancients_nav_right").classList.remove("show")
+    })
+    document.querySelector(".ancients_home").addEventListener("click", () => {
+        document.querySelector(".fa-bars").classList.remove("hide")
+        document.querySelector(".fa-nav-x").classList.remove("show")
+        document.querySelector(".ancients_nav_right").classList.remove("show")
+    })
     let page = localStorage.getItem("page")
     localStorage.setItem("page", "home")
     document.querySelector(".home").addEventListener("click", () => {

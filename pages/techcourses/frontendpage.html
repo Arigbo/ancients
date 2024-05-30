@@ -23,7 +23,9 @@
             <div class="ancients_nav_left">
                 <i class="fas fa-sun"></i>
             </div>
+    
             <div class="ancients_nav_right">
+          
                 <ul>
                     <a href="/index.html" class="home">
                         <li>Home</li>
@@ -40,6 +42,8 @@
                 </ul>
 
             </div>
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-x fa-nav-x"></i>
             <div class="ancients_nav_last">
                 <ul>
                     <a href="" class="signup">
@@ -222,84 +226,100 @@
 </body>
 <!-- NAV ACTIVE CODE -->
 <script>
-    let page = localStorage.getItem("page")
-    document.querySelector(".home").addEventListener("click", () => {
-        localStorage.setItem("page", "home")
-        document.querySelector(".home").classList.add("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
+    document.querySelector(".fa-bars").addEventListener("click", () => {
+     document.querySelector(".fa-nav-x").classList.add("show")
+     document.querySelector(".fa-bars").classList.add("hide")
+     document.querySelector(".ancients_nav_right").classList.add("show")
+ })
+ document.querySelector(".fa-nav-x").addEventListener("click", () => {
+     document.querySelector(".fa-bars").classList.remove("hide")
+     document.querySelector(".fa-nav-x").classList.remove("show")
+     document.querySelector(".ancients_nav_right").classList.remove("show")
+ })
+ document.querySelector(".ancients_inner").addEventListener("click", () => {
+     document.querySelector(".fa-bars").classList.remove("hide")
+     document.querySelector(".fa-nav-x").classList.remove("show")
+     document.querySelector(".ancients_nav_right").classList.remove("show")
+ })
+ let page = localStorage.getItem("page")
+ localStorage.setItem("page", "home")
+ document.querySelector(".home").addEventListener("click", () => {
+     localStorage.setItem("page", "home")
+     document.querySelector(".home").classList.add("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.remove("active")
+ })
 
-    document.querySelector(".about").addEventListener("click", () => {
-        localStorage.setItem("page", "about")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
+ document.querySelector(".about").addEventListener("click", () => {
+     localStorage.setItem("page", "about")
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.add("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.remove("active")
+ })
 
-    document.querySelector(".tech").addEventListener("click", () => {
-        localStorage.setItem("page", "tech")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.add("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
-    document.querySelector(".contact").addEventListener("click", () => {
-        localStorage.setItem("page", "contact")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.add("active")
-    })
-    if (page && page === "home") {
-        document.querySelector(".home").classList.add("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    }
-
-
-    if (page && page === "about") {
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    }
-    if (page && page === "tech") {
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.add("active")
-        document.querySelector(".contact").classList.remove("active")
-    }
-    if (page && page === "contact") {
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.add("active")
-    }
-    document.querySelector(".signin").addEventListener("click", () => {
-        localStorage.setItem("page", "signin")
-        document.querySelector(".signin").classList.add("active")
-        document.querySelector(".signup").classList.remove("active")
-    })
-
-    document.querySelector(".signup").addEventListener("click", () => {
-        localStorage.setItem("page", "signup")
-        document.querySelector(".signin").classList.remove("active")
-        document.querySelector(".signup").classList.add("active")
-    })
-    if (page && page === "signin") {
-        document.querySelector(".signin").classList.add("active")
-        document.querySelector(".signup").classList.remove("active")
-    }
+ document.querySelector(".tech").addEventListener("click", () => {
+     localStorage.setItem("page", "tech")
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.add("active")
+     document.querySelector(".contact").classList.remove("active")
+ })
+ document.querySelector(".contact").addEventListener("click", () => {
+     localStorage.setItem("page", "contact")
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.add("active")
+ })
+ if (page && page === "home") {
+     document.querySelector(".home").classList.add("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.remove("active")
+ }
 
 
-    if (page && page === "signup") {
-        document.querySelector(".signin").classList.remove("active")
-        document.querySelector(".signup").classList.add("active")
-    }
+ if (page && page === "about") {
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.add("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.remove("active")
+ }
+ if (page && page === "tech") {
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.add("active")
+     document.querySelector(".contact").classList.remove("active")
+ }
+ if (page && page === "contact") {
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.add("active")
+ }
+ document.querySelector(".signin").addEventListener("click", () => {
+     localStorage.setItem("page", "signin")
+     document.querySelector(".signin").classList.add("active")
+     document.querySelector(".signup").classList.remove("active")
+ })
+
+ document.querySelector(".signup").addEventListener("click", () => {
+     localStorage.setItem("page", "signup")
+     document.querySelector(".signin").classList.remove("active")
+     document.querySelector(".signup").classList.add("active")
+ })
+ if (page && page === "signin") {
+     document.querySelector(".signin").classList.add("active")
+     document.querySelector(".signup").classList.remove("active")
+ }
+
+
+ if (page && page === "signup") {
+     document.querySelector(".signin").classList.remove("active")
+     document.querySelector(".signup").classList.add("active")
+ }
 </script>
 <script>
     let amoc = localStorage.getItem("amoc")
