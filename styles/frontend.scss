@@ -1,5 +1,5 @@
 .ancients {
-    width: 100%;
+width: auto;
 
     &_apology_message {
         i{
@@ -46,6 +46,10 @@
     }
 
     &_inner {
+        padding-block-start: 4rem;
+        @media screen and (min-width: 777px){
+            padding-block-start: 2rem;
+        }
         i{
             cursor: pointer;
         }

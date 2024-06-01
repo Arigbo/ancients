@@ -1,4 +1,5 @@
 @import "/styles/index.css";
+@import "/styles/nav.css";
 @import "/styles/frontend.css";
 html {
   padding-inline: 2rem;

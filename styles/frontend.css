@@ -1,5 +1,5 @@
 .ancients {
-  width: 100%;
+  width: auto;
 }
 .ancients_apology_message {
   background-color: white;
@@ -39,7 +39,13 @@
   font-family: "Courier New", Courier, monospace;
 }
 .ancients_inner {
+  padding-block-start: 4rem;
   padding-inline: 2rem;
+}
+@media screen and (min-width: 777px) {
+  .ancients_inner {
+    padding-block-start: 2rem;
+  }
 }
 .ancients_inner i {
   cursor: pointer;
