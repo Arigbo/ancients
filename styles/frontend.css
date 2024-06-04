@@ -44,7 +44,7 @@
 }
 @media screen and (min-width: 777px) {
   .ancients_inner {
-    padding-block-start: 2rem;
+    padding-block-start: 1rem;
   }
 }
 .ancients_inner i {
