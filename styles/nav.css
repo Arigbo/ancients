@@ -70,21 +70,27 @@
 }
 .ancients_nav .fa-bars {
   z-index: 4;
-  display: flex;
   justify-content: right;
   font-size: 2rem;
+  position: absolute;
   cursor: pointer;
+  transition: all 0.5s;
+  right: 1.5rem;
 }
 .ancients_nav .fa-bars.hide {
-  display: none;
+  right: -2rem;
+  transition: all 0.5s;
 }
 .ancients_nav .fa-nav-x {
   z-index: 4;
-  display: none;
+  position: absolute;
+  right: -2rem;
   font-size: 2rem;
+  transition: all 0.5s;
 }
 .ancients_nav .fa-nav-x.show {
-  display: block;
+  right: 1.5rem;
+  transition: all 0.5s;
 }
 .ancients_nav_last {
   display: none;
