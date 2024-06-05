@@ -17,7 +17,7 @@
 
             <p>Please know that the poor design is due to the fact that the main website for <a
                     href="/pages/error.html"> <span>ancient.edu</span></a> is underconstruction</p>
-            <div class="x"> <i class="fas fa-x"></i></div>
+            <div class="x"> <i class="fas fa-am-x fa-x"></i></div>
         </div>
         <nav class="ancients_nav">
 
@@ -244,7 +244,7 @@
      document.querySelector(".ancients_nav_middle").classList.remove("show")
  })
  let page = localStorage.getItem("page")
- localStorage.setItem("page", "home")
+ localStorage.setItem("page", "tech")
  document.querySelector(".home").addEventListener("click", () => {
      localStorage.setItem("page", "home")
      document.querySelector(".home").classList.add("active")
@@ -325,7 +325,7 @@
 </script>
 <script>
     let amoc = localStorage.getItem("amoc")
-    document.querySelector(".fa-x").addEventListener("click", () => {
+    document.querySelector(".fa-am-x").addEventListener("click", () => {
         document.querySelector(".ancients_apology_message").classList.add("hide")
         localStorage.setItem("amoc", "close")
     })

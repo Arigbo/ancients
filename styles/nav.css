@@ -1,16 +1,10 @@
-.ancients_nav {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  height: auto;
-  bottom: 0;
-}
 .ancients_nav ul {
   padding: 0;
   margin: 0;
 }
 .ancients_nav ul li {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .ancients_nav a {
@@ -20,7 +14,7 @@
 .ancients_nav_left {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
   top: 0;
@@ -37,13 +31,16 @@
 }
 .ancients_nav_middle {
   z-index: -1;
-  top: -50%;
-  height: 0;
-  position: absolute;
+  top: -55%;
+  position: fixed;
   right: 0;
   left: 0;
   text-align: center;
-  transition: 0.2s ease-in;
+  transition: 0.5s ease-in;
+  background-color: white;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
 }
 .ancients_nav_middle ul {
   display: flex;
@@ -65,7 +62,7 @@
   right: 0;
   left: 0;
   top: 3.6rem;
-  transition: 0.2s ease-in;
+  transition: 0.5s ease-in;
   background-color: white;
   border-right: 1px solid;
   border-left: 1px solid;
@@ -92,10 +89,17 @@
 .ancients_nav_last {
   display: none;
 }
+.ancients_nav .home,
+.ancients_nav .about,
+.ancients_nav .tech,
+.ancients_nav .contact {
+  transition: all 0.5s;
+}
 .ancients_nav .home.active,
 .ancients_nav .about.active,
 .ancients_nav .tech.active,
 .ancients_nav .contact.active {
+  transition: all 0.5s;
   background-color: black;
   color: white;
 }
@@ -111,7 +115,7 @@
     align-items: center;
     justify-content: safe;
     padding-inline: 0;
-    padding-block: 0rem;
+    padding-block: 1.5rem;
     background-color: white;
   }
   .ancients_nav_left {
@@ -125,7 +129,13 @@
     padding-inline: 0;
     padding-block: 0;
     border: 0;
-    z-index: 7;
+    z-index: inherit;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .ancients_nav_left i {
+    font-size: 2rem;
+    cursor: pointer;
   }
   .ancients_nav ul {
     align-items: center;
@@ -136,13 +146,7 @@
     font-size: 1rem;
   }
   .ancients_nav .signup.active,
-  .ancients_nav .signin.active {
-    color: white;
-    padding-inline: 0.5rem;
-    padding-block: 0.5rem;
-    border-radius: 5rem;
-    background-color: black;
-  }
+  .ancients_nav .signin.active,
   .ancients_nav .home.active,
   .ancients_nav .about.active,
   .ancients_nav .tech.active,
@@ -180,7 +184,19 @@
     top: 0;
     text-align: inherit;
     display: block;
-    z-index: 4;
+    z-index: initial;
+    height: auto;
+    transition: 0.5s ease-in;
+  }
+  .ancients_nav_middle a {
+    font-size: 1rem;
+    line-height: normal;
+    padding-block: 0;
+  }
+  .ancients_nav_middle ul {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: auto;
   }
   .ancients_nav_middle.show {
@@ -193,20 +209,11 @@
     left: 0;
     top: 0;
     text-align: inherit;
-  }
-  .ancients_nav_middle.show ul {
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: center;
-  }
-  .ancients_nav_middle.show a {
-    font-size: 1rem;
-    line-height: normal;
-  }
-  .ancients_nav_middle ul {
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: center;
+    height: auto;
+    z-index: inherit;
+    right: 0;
+    left: 0;
+    transition: 0.5s ease-in;
   }
   .ancients_nav_last {
     display: block;

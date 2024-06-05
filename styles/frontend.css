@@ -21,7 +21,7 @@
 .ancients_apology_message.hide {
   display: none;
 }
-.ancients_apology_message .fa-x {
+.ancients_apology_message .fa-amx {
   font-size: 2rem;
 }
 .ancients_apology_message p {
@@ -37,6 +37,25 @@
   color: white;
   cursor: pointer;
   font-family: "Courier New", Courier, monospace;
+}
+@media screen and (min-width: 777px) {
+  .ancients {
+    width: 100%;
+  }
+  .ancients_apology_message {
+    justify-content: space-between;
+  }
+  .ancients_apology_message p {
+    line-height: 5rem;
+    font-size: 5rem;
+  }
+  .ancients_apology_message p li {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .ancients_apology_message p a {
+    font-size: 3rem;
+  }
 }
 .ancients_inner {
   padding-block-start: 4rem;
@@ -111,23 +130,4 @@
 }
 .ancients_inner_more {
   text-align: center;
-}
-@media screen and (min-width: 777px) {
-  .ancients {
-    width: 100%;
-  }
-  .ancients_apology_message {
-    justify-content: space-between;
-  }
-  .ancients_apology_message p {
-    line-height: 5rem;
-    font-size: 5rem;
-  }
-  .ancients_apology_message p li {
-    font-weight: 900;
-    font-size: 1.5rem;
-  }
-  .ancients_apology_message p a {
-    font-size: 3rem;
-  }
 }/*# sourceMappingURL=frontend.css.map */
