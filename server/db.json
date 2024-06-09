@@ -1,0 +1,30 @@
+{
+  "post": [
+    {
+      "coursename": "FrontEnd",
+      "coursesimage": "chevron-",
+      "teachername": "Jaime",
+      "teacherimage": "/images/Slide.png",
+      "male": true,
+      "price": 77,
+      "contact": 2348156996319,
+      "aboutcourse": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequatur dignissimos delectus nihil, animi magnam voluptatum saepe. Quos, corporis ex optio repellendus tenetur explicabo mollitia debitis beatae laboriosam eaque doloribus quidem voluptate. Sapiente soluta officia sint quisquam consectetur, provident earum alias temporibus voluptates eos ipsam, nobis cupiditate corporis rem tempora!",
+      "link":"/pages/techcourses/frontendpage.html",
+      "requirements": ["Laptop","Notebook"],
+      "id": 1
+    },
+    {
+      "coursename": "BackEnd",
+      "coursesimage": "chevron-",
+      "teachername": "Jaime",
+      "teacherimage": "/images/Slide.png",
+      "male": false,
+      "price": 45,
+      "contact": 2348156996319,
+      "aboutcourse": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequatur dignissimos delectus nihil, animi magnam voluptatum saepe. Quos, corporis ex optio repellendus tenetur explicabo mollitia debitis beatae laboriosam eaque doloribus quidem voluptate. Sapiente soluta officia sint quisquam consectetur, provident earum alias temporibus voluptates eos ipsam, nobis cupiditate corporis rem tempora!",
+      "link":"",
+      "requirements": ["Laptop","Notebook"],
+      "id": 2
+    }
+  ]
+}

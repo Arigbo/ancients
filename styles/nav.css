@@ -47,6 +47,20 @@
   flex-direction: column;
   height: auto;
 }
+.ancients_nav_middle .home,
+.ancients_nav_middle .about,
+.ancients_nav_middle .tech,
+.ancients_nav_middle .contact {
+  transition: all 0.5s;
+}
+.ancients_nav_middle .home.active,
+.ancients_nav_middle .about.active,
+.ancients_nav_middle .tech.active,
+.ancients_nav_middle .contact.active {
+  transition: all 0.5s;
+  background-color: black;
+  color: white;
+}
 .ancients_nav_middle a {
   font-size: 2rem;
   padding-block: 2rem;
@@ -95,20 +109,6 @@
 .ancients_nav_last {
   display: none;
 }
-.ancients_nav .home,
-.ancients_nav .about,
-.ancients_nav .tech,
-.ancients_nav .contact {
-  transition: all 0.5s;
-}
-.ancients_nav .home.active,
-.ancients_nav .about.active,
-.ancients_nav .tech.active,
-.ancients_nav .contact.active {
-  transition: all 0.5s;
-  background-color: black;
-  color: white;
-}
 @media screen and (min-width: 777px) {
   .ancients_nav {
     position: sticky;
@@ -120,8 +120,8 @@
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     justify-content: safe;
-    padding-inline: 0;
-    padding-block: 1.5rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
     background-color: white;
   }
   .ancients_nav_left {
@@ -151,12 +151,12 @@
     line-height: normal;
     font-size: 1rem;
   }
+  .ancients_nav .signup li,
+  .ancients_nav .signin li {
+    font-size: 1rem;
+  }
   .ancients_nav .signup.active,
-  .ancients_nav .signin.active,
-  .ancients_nav .home.active,
-  .ancients_nav .about.active,
-  .ancients_nav .tech.active,
-  .ancients_nav .contact.active {
+  .ancients_nav .signin.active {
     color: white;
     padding-inline: 0.5rem;
     padding-block: 0.5rem;
@@ -195,9 +195,23 @@
     transition: 0.5s ease-in;
   }
   .ancients_nav_middle a {
-    font-size: 1rem;
     line-height: normal;
     padding-block: 0;
+  }
+  .ancients_nav_middle .home li,
+  .ancients_nav_middle .about li,
+  .ancients_nav_middle .tech li,
+  .ancients_nav_middle .contact li {
+    font-size: 1rem;
+  }
+  .ancients_nav_middle .home.active,
+  .ancients_nav_middle .about.active,
+  .ancients_nav_middle .tech.active,
+  .ancients_nav_middle .contact.active {
+    background-color: inherit;
+    color: black;
+    border-bottom: 2px solid;
+    padding-block-end: 0.1rem;
   }
   .ancients_nav_middle ul {
     flex-direction: row;

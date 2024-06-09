@@ -9,7 +9,7 @@
   position: fixed;
   padding-inline: 2rem;
   padding-block-start: 2rem;
-  z-index: 2;
+  z-index: 4;
   right: 0;
   left: 0;
   bottom: 0;
@@ -21,7 +21,7 @@
 .ancients_apology_message.hide {
   display: none;
 }
-.ancients_apology_message .fa-amx {
+.ancients_apology_message .fa-am-x {
   font-size: 2rem;
 }
 .ancients_apology_message p {

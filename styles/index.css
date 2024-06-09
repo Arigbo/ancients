@@ -1,9 +1,17 @@
 .ancients_home {
-  padding-block-start: 3rem;
   width: auto;
+}
+.ancients_home_hero {
+  border: 1px solid;
+  padding-block-start: 3rem;
+  padding-block-end: 3rem;
+  padding-inline: 2rem;
+  background-color: black;
+  color: white;
 }
 .ancients_home_hero_left {
   margin-block-start: 4rem;
+  text-align: center;
 }
 .ancients_home_hero_left h1 {
   font-size: 2rem;
@@ -14,25 +22,196 @@
 .ancients_home_hero_right {
   display: none;
 }
+.ancients_home_inner {
+  padding-block-start: 2rem;
+  padding-inline: 2rem;
+}
+.ancients_home_inner p {
+  line-height: 1.8rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.ancients_home_inner_welmessage {
+  margin-block-end: 4rem;
+}
+.ancients_home_inner_welmessage_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 4rem;
+}
+.ancients_home_inner_welmessage_inner_left, .ancients_home_inner_welmessage_inner_right {
+  text-align: center;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+.ancients_home_inner_welmessage_inner_left p, .ancients_home_inner_welmessage_inner_right p {
+  line-height: normal;
+}
+.ancients_home_inner_welmessage_inner_left h1, .ancients_home_inner_welmessage_inner_right h1 {
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.ancients_home_inner_techcourses {
+  margin-block-start: 4rem;
+  margin-block-end: 4rem;
+}
+.ancients_home_inner_techcourses_inner_inner {
+  padding-block: 1rem;
+  display: flex;
+  align-items: start;
+}
+.ancients_home_inner_techcourses_inner_inner_left_course-info_about-course p span {
+  font-weight: 900;
+  font-size: 1rem;
+}
+.ancients_home_inner_techcourses_inner_inner_left_bottom .techcourse_more_button {
+  background-color: black;
+  color: white;
+  padding-block: 0.5rem;
+  padding-inline-end: 0.5rem;
+  padding-inline-start: 0.5rem;
+  transition: all 0.2s;
+}
+.ancients_home_inner_techcourses_inner_inner_left_bottom .techcourse_more_button.effect {
+  background-color: white;
+  color: black;
+}
+.ancients_home_inner_techcourses_inner_inner_left_bottom a:hover {
+  padding-block: 0.7rem;
+  font-size: 0.5rem;
+  padding-inline-end: 0.7rem;
+  padding-inline-start: 0.7rem;
+  transition: all 0.2s;
+}
+.ancients_home_inner_techcourses_inner_inner_right {
+  display: none;
+}
+.ancients_home_inner_techcourses_bottom {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.1rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.ancients_home_inner_techcourses_bottom:hover {
+  gap: 0.8rem;
+  transition: all 0.5s;
+}
 @media screen and (min-width: 777px) {
-  .ancients_home {
-    padding-inline: 3rem;
-  }
   .ancients_home_hero {
-    display: flex;
+    padding-block-start: 3rem;
+    padding-block-end: 3rem;
+    padding-inline: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
     align-items: center;
     justify-content: space-between;
   }
+  .ancients_home_hero_left {
+    text-align: left;
+  }
   .ancients_home_hero_left h1 {
     font-size: 2rem;
+    margin-top: 1rem;
   }
   .ancients_home_hero_left span {
     font-size: 4rem;
   }
   .ancients_home_hero_right {
-    display: block;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
   .ancients_home_hero_right i {
-    font-size: 30rem;
+    font-size: 20rem;
+    font-weight: 600;
+  }
+  .ancients_home_inner {
+    padding-inline: 4rem;
+  }
+  .ancients_home_inner p {
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
+  .ancients_home_inner_welmessage {
+    margin-block-end: 4rem;
+  }
+  .ancients_home_inner_welmessage_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 4rem;
+  }
+  .ancients_home_inner_welmessage_inner_left, .ancients_home_inner_welmessage_inner_right {
+    text-align: center;
+    padding-inline: 4rem;
+    padding-block: 0.5rem;
+  }
+  .ancients_home_inner_welmessage_inner_left p, .ancients_home_inner_welmessage_inner_right p {
+    line-height: normal;
+  }
+  .ancients_home_inner_welmessage_inner_left h1, .ancients_home_inner_welmessage_inner_right h1 {
+    font-size: 3rem;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .ancients_home_inner_techcourses {
+    margin-block-start: 4rem;
+    margin-block-end: 4rem;
+  }
+  .ancients_home_inner_techcourses_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-inline: 4rem;
+  }
+  .ancients_home_inner_techcourses_inner_inner {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .ancients_home_inner_techcourses_inner_inner_left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .ancients_home_inner_techcourses_inner_inner_left_course-info_about-course p span {
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  .ancients_home_inner_techcourses_inner_inner_left_bottom .techcourse_more_button {
+    background-color: black;
+    color: white;
+    padding-block: 0.5rem;
+    padding-inline-end: 0.5rem;
+    padding-inline-start: 0.5rem;
+    transition: all 0.2s;
+  }
+  .ancients_home_inner_techcourses_inner_inner_left_bottom .techcourse_more_button.effect {
+    background-color: white;
+    color: black;
+  }
+  .ancients_home_inner_techcourses_inner_inner_left_bottom a:hover {
+    padding-block: 0.7rem;
+    font-size: 0.5rem;
+    padding-inline-end: 0.7rem;
+    padding-inline-start: 0.7rem;
+    transition: all 0.2s;
+  }
+  .ancients_home_inner_techcourses_inner_inner_right {
+    display: inline;
+    background-color: black;
+    color: white;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+  }
+  .ancients_home_inner_techcourses_inner_inner_right i {
+    font-size: 16rem;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=index.css.map */

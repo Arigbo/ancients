@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An/TechCourses</title>
+    <link class="url_logo" rel="icon" type="image/x-icon" href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg"/>
+    <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+
+<body>
+    <div class="ancients">
+        <nav class="ancients_nav">
+
+            <div class="ancients_nav_left">
+                <i class="fas fa-sun"></i>
+                <div class="ancients_nav_left_middle-controller">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-x fa-nav-x"></i>
+                </div>
+
+            </div>
+            <div class="ancients_nav_middle">
+                <ul>
+                    <a href="/index.html" class="home">
+                        <li>Home</li>
+                    </a>
+                    <a href="/pages/techcourses/index.html" class="tech">
+                        <li>TechCourses</li>
+                    </a>
+                    <a href="" class="contact">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="" class="about">
+                        <li>About Us</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="ancients_nav_last">
+                <ul>
+                    <a href="" class="signup">
+                        <li>SignUp</li>
+                    </a>
+                    <a href="" class="signin">
+                        <li>SignIn</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div class="ancients_techcourses">
+            <section class="ancients_techcourses_hero">
+            </section>
+            <section class="ancients_techcourses_inner_welmssge">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus maiores quis omnis dolores corporis eaque odio eveniet, sequi alias expedita modi nostrum nemo magni vel suscipit. Saepe magnam dolor placeat ipsum, impedit quam id quidem ratione, ab possimus dolorem laboriosam maiores in beatae, fugit laborum pariatur quibusdam animi commodi. Exercitationem repellat nulla tenetur nihil. Similique inventore delectus sapiente dolorum.</p>
+            </section>
+        </div>
+    </div>
+</body>
+<!-- NAV ACTIVE CODE -->
+<script>
+    document.querySelector(".fa-bars").addEventListener("click", () => {
+     document.querySelector(".fa-nav-x").classList.add("show")
+     document.querySelector(".fa-bars").classList.add("hide")
+     document.querySelector(".ancients_nav_middle").classList.add("show")
+ })
+ document.querySelector(".fa-nav-x").addEventListener("click", () => {
+     document.querySelector(".fa-bars").classList.remove("hide")
+     document.querySelector(".fa-nav-x").classList.remove("show")
+     document.querySelector(".ancients_nav_middle").classList.remove("show")
+ })
+ document.querySelector(".ancients_techcourses").addEventListener("click", () => {
+     document.querySelector(".fa-bars").classList.remove("hide")
+     document.querySelector(".fa-nav-x").classList.remove("show")
+     document.querySelector(".ancients_nav_middle").classList.remove("show")
+ })
+ let page = localStorage.getItem("page")
+ localStorage.setItem("page", "tech")
+ document.querySelector(".home").addEventListener("click", () => {
+     localStorage.setItem("page", "home")
+     document.querySelector(".home").classList.add("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.remove("active")
+ })
+
+ document.querySelector(".about").addEventListener("click", () => {
+     localStorage.setItem("page", "about")
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.add("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.remove("active")
+ })
+
+ document.querySelector(".tech").addEventListener("click", () => {
+     localStorage.setItem("page", "tech")
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.add("active")
+     document.querySelector(".contact").classList.remove("active")
+ })
+ document.querySelector(".contact").addEventListener("click", () => {
+     localStorage.setItem("page", "contact")
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.add("active")
+ })
+ if (page && page === "home") {
+     document.querySelector(".home").classList.add("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.remove("active")
+ }
+
+
+ if (page && page === "about") {
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.add("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.remove("active")
+ }
+ if (page && page === "tech") {
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.add("active")
+     document.querySelector(".contact").classList.remove("active")
+ }
+ if (page && page === "contact") {
+     document.querySelector(".home").classList.remove("active")
+     document.querySelector(".about").classList.remove("active")
+     document.querySelector(".tech").classList.remove("active")
+     document.querySelector(".contact").classList.add("active")
+ }
+ document.querySelector(".signin").addEventListener("click", () => {
+     localStorage.setItem("page", "signin")
+     document.querySelector(".signin").classList.add("active")
+     document.querySelector(".signup").classList.remove("active")
+ })
+
+ document.querySelector(".signup").addEventListener("click", () => {
+     localStorage.setItem("page", "signup")
+     document.querySelector(".signin").classList.remove("active")
+     document.querySelector(".signup").classList.add("active")
+ })
+ if (page && page === "signin") {
+     document.querySelector(".signin").classList.add("active")
+     document.querySelector(".signup").classList.remove("active")
+ }
+
+
+ if (page && page === "signup") {
+     document.querySelector(".signin").classList.remove("active")
+     document.querySelector(".signup").classList.add("active")
+ }
+</script>
+</html>
