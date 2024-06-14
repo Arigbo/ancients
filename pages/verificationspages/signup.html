@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ancient</title>
+    <title>Document</title>
     <link class="url_logo" rel="icon" type="image/x-icon"
-        href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
-    <link rel="stylesheet" href="/styles/custom.css">
-    <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+    href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
+<link rel="stylesheet" href="/styles/custom.css">
+<link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
 </head>
-
 <body>
     <div class="ancients">
         <nav class="ancients_nav">
@@ -51,61 +49,11 @@
                 </ul>
             </div>
         </nav>
-        <div class="ancients_home">
-            <section class="ancients_home_hero">
-                <div class="ancients_home_hero_left">
-                    <p>
-                    <h1>Lets help you start your</h1>
-                    <h1><span><i class="fas fa-chevron-left"></i>Tech Career<i
-                                class="fas fa-chevron-right"></i></span> </h1>
-                    </p>
-                </div>
-                <div class="ancients_home_hero_right">
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-            </section>
-            <div class="ancients_home_inner">
-                <section class="ancients_home_inner_welmessage">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus debitis quidem reprehenderit
-                        ad quam dignissimos animi iusto nisi adipisci velit commodi, aliquid totam ducimus voluptates,
-                        laborum saepe cumque optio nihil quo rem autem, numquam voluptate nulla. Consequatur maiores
-                        repellat velit ea architecto, incidunt pariatur reprehenderit ratione! Velit, aperiam cumque!
-                        Natus.</p>
-                    <div class="ancients_home_inner_welmessage_inner">
-                        <div class="ancients_home_inner_welmessage_inner_left">
-                            <p>We Plan to Reach</p>
-                            <h1>100</h1>
-                        </div>
-                        <div class="ancients_home_inner_welmessage_inner_right">
-                            <p>We've Reached</p>
-                            <h1>1</h1>
-                        </div>
-                    </div>
-                </section>
-                <section class="ancients_home_inner_techcourses">
-                    <div class="ancients_home_inner_techcourses_message">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, aspernatur alias eos
-                            corporis quidem accusantium iste et laudantium temporibus. Explicabo.</p>
-                    </div>
-                    <div class="ancients_home_inner_techcourses_inner">
-                    </div>
-                    <div class="ancients_home_inner_techcourses_bottom">
-                    <a href="/pages/techcourses/index.html">More</a> <i class="fas fa-arrow-right"></i>
-                    </div>
-                </section>
-                <footer class="ancients_footer">
-
-                </footer>
-            </div>
-        </div>
+        <div class="ancients_signup"></div>
     </div>
 </body>
 <!-- NAV ACTIVE CODE -->
 <script>
-    // document.querySelector(".techcourse_more_button").addEventListener("click", () => {
-    //     document.querySelector(".techcourse_more_button").classList.add("effect")
-    // })
     document.querySelector(".fa-bars").addEventListener("click", () => {
         document.querySelector(".fa-nav-x").classList.add("show")
         document.querySelector(".fa-bars").classList.add("hide")
@@ -116,13 +64,13 @@
         document.querySelector(".fa-nav-x").classList.remove("show")
         document.querySelector(".ancients_nav_middle").classList.remove("show")
     })
-    document.querySelector(".ancients_home").addEventListener("click", () => {
+    document.querySelector(".ancients_signup").addEventListener("click", () => {
         document.querySelector(".fa-bars").classList.remove("hide")
         document.querySelector(".fa-nav-x").classList.remove("show")
         document.querySelector(".ancients_nav_middle").classList.remove("show")
     })
     let page = localStorage.getItem("page")
-    localStorage.setItem("page", "home")
+    localStorage.setItem("page", "signup")
     document.querySelector(".home").addEventListener("click", () => {
         localStorage.setItem("page", "home")
         document.querySelector(".home").classList.add("active")
@@ -201,41 +149,4 @@
         document.querySelector(".signup").classList.add("active")
     }
 </script>
-<script>
-    function getProduct() {
-        fetch(`http://localhost:3000/post`)
-            .then(results => results.json())
-            .then(data => {
-
-                console.log(data);
-                data.map((product) => {
-                    document.querySelector(".ancients_home_inner_techcourses_inner").insertAdjacentHTML('beforeend', `
-                    <div class="ancients_home_inner_techcourses_inner_inner">
-                        <div class="ancients_home_inner_techcourses_inner_inner_left">
-                        <div class="ancients_home_inner_techcourses_inner_inner_left_course-info">
-                            <div class="ancients_home_inner_techcourses_inner_inner_left_course-info_courses-name">
-                                <h1>${product.coursename}</h1>
-                            </div>
-                            <div class="ancients_home_inner_techcourses_inner_inner_left_course-info_about-course">
-                                <h4>${product.male == true ? "Mr" : "Ms"} ${product.teachername}</h4>
-                                <p><span>About:</span> ${product.aboutcourse}</p>
-                            </div>
-                        </div>
-                        <div class="ancients_home_inner_techcourses_inner_inner_left_bottom">
-                            <a class="techcourse_more_button" href=${product.link ? product.link : "/pages/error.html"}>More</a>
-                        </div>
-                    </div>
-                    <div class="ancients_home_inner_techcourses_inner_inner_right">
-                        <i class="fas fa-${product.coursesimage}left"></i><i class="fas fa-${product.coursesimage}right"></i>
-                    </div>
-                    </div>
-                          
-                                
-                                `)
-                });
-            })
-    }
-    getProduct()
-</script>
-
 </html>

@@ -5,7 +5,7 @@
   border: 1px solid;
   padding-block-start: 3rem;
   padding-block-end: 3rem;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   background-color: black;
   color: white;
 }
@@ -14,10 +14,13 @@
   text-align: center;
 }
 .ancients_home_hero_left h1 {
-  font-size: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
 }
 .ancients_home_hero_left span {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 .ancients_home_hero_right {
   display: none;

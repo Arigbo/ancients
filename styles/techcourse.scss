@@ -1,0 +1,262 @@
+.ancients {
+    &_techcourses {
+
+        width: auto;
+
+        &_hero {
+            border: 1px solid;
+            padding-block-start: 3rem;
+            padding-block-end: 3rem;
+            padding-inline: 1rem;
+            background-color: black;
+            color: white;
+
+
+            &_left {
+                margin-block-start: 4rem;
+                text-align: center;
+
+                h1 {
+                    font-size: 1rem;
+                    line-height: 2rem;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                span {
+                    font-size: 2rem;
+                }
+            }
+
+            &_right {
+                display: none;
+            }
+        }
+
+        &_inner {
+            padding-block-start: 2rem;
+            padding-inline: 2rem;
+
+            p {
+                line-height: 1.8rem;
+                font-size: 1rem;
+                font-weight: 100;
+            }
+
+            &_welmessage {
+                margin-block-end: 4rem;
+
+                &_inner {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-block-start: 4rem;
+
+                    &_left,
+                    &_right {
+                        text-align: center;
+
+                        p {
+                            line-height: normal;
+
+                        }
+
+                        h1 {
+                            font-size: 3rem;
+                            font-family: 'Courier New', Courier, monospace;
+                        }
+
+                        padding-inline: 1rem;
+                        padding-block: 0.5rem;
+                    }
+
+                }
+            }
+
+            &_techcourses {
+                margin-block-start: 4rem;
+                margin-block-end: 4rem;
+
+                &_inner {
+                    &_inner {
+
+                        padding-block: 1rem;
+                        display: flex;
+                        align-items: start;
+
+                        &_left {
+                            &_course-info {
+                                &_about-course {
+                                    p {
+                                        span {
+                                            font-weight: 900;
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &_bottom {
+
+                                // padding-inline-start: 2rem;
+                                .techcourse_more_button {
+                                    background-color: black;
+                                    color: white;
+                                    padding-block: 0.5rem;
+                                    padding-inline-end: 0.5rem;
+                                    padding-inline-start: 0.5rem;
+                                    transition: all 0.2s;
+
+                                    &.effect {
+                                        background-color: white;
+                                        color: black;
+                                    }
+                                }
+
+                                a:hover {
+                                    padding-block: 0.7rem;
+                                    font-size: 0.5rem;
+                                    padding-inline-end: 0.7rem;
+                                    padding-inline-start: 0.7rem;
+                                    transition: all 0.2s;
+                                }
+                            }
+                        }
+
+                        &_right {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width:777px) {
+
+
+            &_hero {
+                padding-block-start: 3rem;
+                padding-block-end: 3rem;
+                padding-inline: 3rem;
+                display: grid;
+                grid-template-columns: 2fr 0.5fr;
+                align-items: center;
+                justify-content: space-between;
+
+                &_left {
+                    text-align: left;
+
+                    h1 {
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                    }
+
+                    span {
+
+                        font-size: 4rem;
+                    }
+                }
+
+                &_right {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    i {
+                        font-size: 20rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            &_inner {
+                padding-inline: 4rem;
+
+                p {
+                    line-height: 1.8rem;
+                    font-size: 1.1rem;
+                    font-weight: 100;
+                }
+
+                &_techcourses {
+                    margin-block-start: 4rem;
+                    margin-block-end: 4rem;
+
+                    &_inner {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4rem;
+                        padding-inline: 4rem;
+
+                        &_inner {
+
+                            padding-block: 1rem;
+                            padding-inline: 2rem;
+                            display: grid;
+                            grid-template-columns: 1.5fr 1fr;
+                            gap: 3rem;
+                            align-items: start;
+
+                            &_left {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2rem;
+
+                                &_course-info {
+                                    &_about-course {
+                                        p {
+                                            span {
+                                                font-weight: 900;
+                                                font-size: 1.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &_bottom {
+
+                                    // padding-inline-start: 2rem;
+                                    .techcourse_more_button {
+                                        background-color: black;
+                                        color: white;
+                                        padding-block: 0.5rem;
+                                        padding-inline-end: 0.5rem;
+                                        padding-inline-start: 0.5rem;
+                                        transition: all 0.2s;
+
+                                        &.effect {
+                                            background-color: white;
+                                            color: black;
+                                        }
+                                    }
+                                    a:hover {
+                                        padding-block: 0.7rem;
+                                        font-size: 0.5rem;
+                                        padding-inline-end: 0.7rem;
+                                        padding-inline-start: 0.7rem;
+                                        transition: all 0.2s;
+                                    }
+
+                                }
+                            }
+
+                            &_right {
+                                display:inline;
+                                background-color: black;
+                                color: white;
+                                padding-inline: 1rem;
+                                padding-block: 0.5rem;
+
+                                i {
+                                    font-size: 16rem;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

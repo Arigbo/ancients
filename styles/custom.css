@@ -2,20 +2,28 @@
 @import "/styles/nav.css";
 @import "/styles/frontend.css";
 @import "/styles/techcourse.css";
-html h1 {
-  padding: 0;
-  margin: 0;
+@import "/styles/contact.css";
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 html h1,
 html h2,
 html h3,
 html h4,
 html h5,
-html h6,
-html p,
-html span,
-html a,
-html li {
+html h6 {
+  padding: 0;
+  margin: 0;
+}
+html input::-moz-placeholder, html textarea::-moz-placeholder {
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: inherit;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html input::placeholder, html textarea::placeholder {
+  transition: all 0.2s;
+  font-size: inherit;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 html a {

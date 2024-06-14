@@ -1,0 +1,172 @@
+.ancients {
+    &_contact {
+
+        width: auto;
+
+        &_hero {
+            border: 1px solid;
+            padding-block-start: 3rem;
+            padding-block-end: 3rem;
+            padding-inline: 1rem;
+            background-color: black;
+            color: white;
+
+
+            &_left {
+                margin-block-start: 4rem;
+                text-align: center;
+
+                h1 {
+                    font-size: 1rem;
+                    line-height: 2rem;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                span {
+                    font-size: 2rem;
+                }
+            }
+
+            &_right {
+                display: none;
+            }
+        }
+
+        &_inner {
+            padding-block-start: 2rem;
+            padding-inline: 2rem;
+
+            p {
+                line-height: 1.8rem;
+                font-size: 1rem;
+                font-weight: 100;
+            }
+
+            &_inner {
+
+
+                &_form {
+
+                    // padding-block-start: 2rem;
+                    // background-color: black;
+                    // color: white;
+                    input {
+                        padding-block: 1rem;
+                        width: 100%;
+                    }
+                    .tapped::placeholder{
+                        color: black;
+                        font-size: 1.2rem;
+                        transition: all 0.2s;
+                    }
+                    label {
+                        font-weight: 700;
+
+                        span {
+                            font-weight: normal;
+                        }
+                    }
+
+                    input,
+                    textarea {
+                        border-radius: 0.5rem;
+                        padding-inline: 0.5rem;
+                        border: 1px solid black;
+                        margin-block-end: 2rem;
+                    }
+
+                    textarea {
+                        padding-block: 0.5rem;
+                        width: 100%;
+                    }
+                }
+
+                &_right {
+                    display: none;
+                    text-align: center;
+                    padding-block: 4rem;
+
+
+                    i {
+                        font-size: 16rem;
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width:777px) {
+
+
+            &_hero {
+                padding-block-start: 3rem;
+                padding-block-end: 3rem;
+                padding-inline: 3rem;
+                display: grid;
+                grid-template-columns: 2fr 0.5fr;
+                align-items: center;
+                justify-content: space-between;
+
+                &_left {
+                    text-align: left;
+
+                    h1 {
+                        font-size: 2rem;
+                        margin-top: 1rem;
+                    }
+
+                    span {
+
+                        font-size: 4rem;
+                    }
+                }
+
+                &_right {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    i {
+                        font-size: 20rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            &_inner {
+                padding-inline: 4rem;
+
+                p {
+                    line-height: 1.8rem;
+                    font-size: 1.1rem;
+                    font-weight: 100;
+                }
+
+                &_inner {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+
+
+                    &_form {
+                        padding-inline-start: 2rem;
+
+                        // padding-block-start: 2rem;
+                        // background-color: black;
+                        // color: white;
+                        input {
+                            width: 400px;
+                        }
+
+
+
+                    }
+
+                    &_right {
+                 display: block;
+                    }
+                }
+            }
+        }
+    }
+}
