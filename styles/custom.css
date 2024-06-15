@@ -3,9 +3,11 @@
 @import "/styles/frontend.css";
 @import "/styles/techcourse.css";
 @import "/styles/contact.css";
+@import "/styles/about.css";
 html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+html i,
 html h1,
 html h2,
 html h3,

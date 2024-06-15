@@ -207,7 +207,7 @@
     transition: all 0.2s;
   }
   .ancients_home_inner_techcourses_inner_inner_right {
-    display: inline;
+    display: flex;
     background-color: black;
     color: white;
     padding-inline: 1rem;

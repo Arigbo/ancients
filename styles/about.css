@@ -1,0 +1,237 @@
+.ancients_about {
+  width: auto;
+}
+.ancients_about_hero {
+  border: 1px solid;
+  padding-block-start: 3rem;
+  padding-block-end: 3rem;
+  padding-inline: 1rem;
+  background-color: black;
+  color: white;
+}
+.ancients_about_hero_left {
+  margin-block-start: 4rem;
+  text-align: center;
+}
+.ancients_about_hero_left h1 {
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.ancients_about_hero_left span {
+  font-size: 2rem;
+}
+.ancients_about_hero_right {
+  display: none;
+}
+.ancients_about_inner {
+  padding-block-start: 2rem;
+  padding-inline: 2rem;
+}
+.ancients_about_inner p {
+  line-height: 1.8rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.ancients_about_inner_menu ul {
+  line-height: 4rem;
+}
+.ancients_about_inner_menu ul li {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+.ancients_about_inner_history h1 span {
+  padding-block-end: 0.2rem;
+  border-bottom: 2px solid;
+}
+.ancients_about_inner_history .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr -0.5fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 4rem;
+  padding-inline: 4rem;
+}
+.ancients_about_inner_history .images img {
+  position: relative;
+  width: 100%;
+}
+.ancients_about_inner_history .images img:nth-child(1),
+.ancients_about_inner_history .images img:nth-child(3),
+.ancients_about_inner_history .images img:nth-child(5) {
+  top: 4rem;
+}
+.ancients_about_inner_history .images img:nth-child(2),
+.ancients_about_inner_history .images img:nth-child(4),
+.ancients_about_inner_history .images img:nth-child(6) {
+  top: -4rem;
+}
+.ancients_about_inner_testi {
+  padding-block-start: 4rem;
+}
+.ancients_about_inner_testi_inner {
+  padding-inline: 1rem;
+}
+.ancients_about_inner_testi_inner_intro h1 {
+  padding-inline: 0;
+  padding-block-end: 0.2rem;
+  border-bottom: 2px solid;
+}
+.ancients_about_inner_testi_inner_inner {
+  margin-block-end: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+.ancients_about_inner_testi_inner_inner_right {
+  display: none;
+}
+.ancients_about_inner_testi_inner_inner_right img {
+  border-radius: 4rem;
+  width: 100%;
+  height: auto;
+}
+.ancients_about_inner_testi_inner_inner_left p span {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.ancients_about_inner_testi_inner_inner_left_commentors_info {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+.ancients_about_inner_testi_inner_inner_left_commentors_info img {
+  border-radius: 100%;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.ancients_about_inner_testi_inner_inner_left_commentors_info_commentors_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ancients_about_inner_testi_inner_inner_left_commentors_info_commentors_details h4 {
+  font-size: 1px;
+}
+@media screen and (min-width: 777px) {
+  .ancients_about_hero {
+    padding-block-start: 3rem;
+    padding-block-end: 3rem;
+    padding-inline: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ancients_about_hero_left {
+    text-align: left;
+  }
+  .ancients_about_hero_left h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .ancients_about_hero_left span {
+    font-size: 4rem;
+  }
+  .ancients_about_hero_right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .ancients_about_hero_right i {
+    font-size: 20rem;
+    font-weight: 600;
+  }
+  .ancients_about_inner {
+    padding-inline: 4rem;
+  }
+  .ancients_about_inner p {
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
+  .ancients_about_inner_menu ul {
+    line-height: 4rem;
+  }
+  .ancients_about_inner_menu ul li {
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
+  .ancients_about_inner_history h1 span {
+    padding-block-end: 0.2rem;
+    border-bottom: 2px solid;
+  }
+  .ancients_about_inner_history .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+    margin-inline: 4rem;
+    padding-inline: 4rem;
+  }
+  .ancients_about_inner_history .images img {
+    width: 100%;
+  }
+  .ancients_about_inner_history .images {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 1rem;
+    margin-inline: 4rem;
+    padding-block: 4rem;
+    padding-inline: 4rem;
+  }
+  .ancients_about_inner_history .images img {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+  .ancients_about_inner_history .images img:nth-child(1),
+  .ancients_about_inner_history .images img:nth-child(3),
+  .ancients_about_inner_history .images img:nth-child(5) {
+    top: -5rem;
+  }
+  .ancients_about_inner_history .images img:nth-child(4),
+  .ancients_about_inner_history .images img:nth-child(6) {
+    top: 5rem;
+  }
+  .ancients_about_inner_testi {
+    padding-block-start: 4rem;
+    padding-inline: 4rem;
+  }
+  .ancients_about_inner_testi_inner_inner {
+    margin-block-end: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+    gap: 3rem;
+  }
+  .ancients_about_inner_testi_inner_inner_right {
+    display: block;
+  }
+  .ancients_about_inner_testi_inner_inner_right img {
+    border-radius: 4rem;
+    width: 100%;
+    height: auto;
+  }
+  .ancients_about_inner_testi_inner_inner_left p span {
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  .ancients_about_inner_testi_inner_inner_left_commentors_info_commentors-name-age {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .ancients_about_inner_testi_inner_inner_left_commentors_info_commentors-name-age h4 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=about.css.map */

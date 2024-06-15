@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link class="url_logo" rel="icon" type="image/x-icon"
-    href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
-<link rel="stylesheet" href="/styles/custom.css">
-<link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+        href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
+    <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
 </head>
+
 <body>
     <div class="ancients">
         <nav class="ancients_nav">
@@ -50,9 +52,78 @@
             </div>
         </nav>
         <div class="ancients_about">
-
+            <section class="ancients_about_hero">
+                <div class="ancients_about_hero_left">
+                    <p>
+                    <h1>Lets introduce to our</h1>
+                    <h1><span><i class="fas fa-chevron-left"></i>Tech Company<i class="fas fa-chevron-right"></i></span>
+                    </h1>
+                    </p>
+                </div>
+                <div class="ancients_about_hero_right">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </section>
+            <div class="ancients_about_inner">
+                <section class="ancients_about_inner_intromssg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sit? Delectus dolorum officiis
+                        quas quod perspiciatis ullam suscipit odio, non unde molestiae distinctio, quam eveniet
+                        voluptatem dolore animi rem corrupti exercitationem laborum! Natus inventore dolorem sequi in,
+                        praesentium qui autem incidunt id, sint atque ipsa at sapiente, ad amet sunt.</p>
+                </section>
+                <section class="ancients_about_inner_menu">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit quae? Inventore
+                        reprehenderit, iure laboriosam doloremque commodi nobis maxime natus incidunt debitis
+                        perspiciatis! Exercitationem, rem. Assumenda ad corrupti voluptates amet?</p>
+                    <ul>
+                        <li>History</li>
+                        <li>Testimonies from Friends & Family</li>
+                        <li>Team</li>
+                    </ul>
+                </section>
+                <section class="ancients_about_inner_history">
+                    <h1>
+                        Our <span>Story</span>
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, maxime nulla. Excepturi,
+                        quaerat praesentium provident, voluptas, nulla dolores numquam labore repellat quas beatae
+                        obcaecati in dignissimos reiciendis ducimus reprehenderit consequatur eveniet unde quam vel sint
+                        quidem sunt? Itaque dolores officia animi cumque laborum harum aperiam, aspernatur minima
+                        aliquid! Quae repellat quis quod labore totam nihil impedit nemo provident ut molestiae! Illo
+                        commodi odio facilis expedita minima earum hic harum fugit voluptate eveniet cupiditate maxime,
+                        aut atque nam culpa impedit voluptates amet facere molestias omnis voluptatem voluptatibus
+                        quaerat eaque dolore? Quam autem molestias cumque sequi! Recusandae quis mollitia iure maxime
+                        provident?
+                    </p>
+                    <div class="images">
+                        <img src="/images/tanjiro.jpg" alt="">
+                        <img src="/images/tanjiro.jpg" alt="">
+                        <img src="/images/tanjiro.jpg" alt="">
+                        <img src="/images/tanjiro.jpg" alt="">
+                        <img src="/images/tanjiro.jpg" alt="">
+                        <img src="/images/tanjiro.jpg" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus maiores, laborum impedit
+                        labore perferendis dolores earum! Excepturi asperiores modi quae, quos eligendi laborum
+                        repellendus in obcaecati eius adipisci? Blanditiis inventore mollitia dicta tempore cupiditate,
+                        accusamus, nulla consequuntur exercitationem, nemo ex dolore minima laudantium dolores! Hic ipsa
+                        cumque modi delectus? Eos cumque velit repellat corporis perspiciatis deserunt sunt architecto
+                        quam, impedit et corrupti dicta vitae molestiae, quas doloribus commodi aut quia.</p>
+                </section>
+                <section class="ancients_about_inner_testi">
+                    <div class="ancients_about_inner_testi_inner">
+                        <div class="ancients_about_inner_testi_inner_intro">
+                            <h1>Testimonies</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum atque sapiente dicta perspiciatis expedita! Totam quo ipsam quam magni eveniet.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="ancients_about_inner_crew">
+                </section>
+            </div>
         </div>
-    </div>
 </body>
 <!-- NAV ACTIVE CODE -->
 <script>
@@ -150,5 +221,73 @@
         document.querySelector(".signin").classList.remove("active")
         document.querySelector(".signup").classList.add("active")
     }
+</script>
+<!-- TESTIMONIES -->
+<script>
+    function getProduct() {
+        fetch(`http://localhost:3000/comment`)
+            .then(results => results.json())
+            .then(data => {
+
+                console.log(data);
+                data.map((testi) => {
+                    document.querySelector(".ancients_about_inner_testi_inner").insertAdjacentHTML('beforeend', `
+                    <div class="ancients_about_inner_testi_inner_inner">
+                        <div class="ancients_about_inner_testi_inner_inner_left">
+                            <div class="ancients_about_inner_testi_inner_inner_left_commentors">
+                                <div class="ancients_about_inner_testi_inner_inner_left_commentors_info">
+                                    <img src="${testi.commentorsimage}"/>
+                                    <div class="ancients_about_inner_testi_inner_inner_left_commentors_info_commentors_details">
+                                        <h4>${testi.male == true ? "Mr" : "Ms"} ${testi.commentorssurname} ${testi.commentorsname}</h4><h4>${testi.age}</h4>
+                                        
+                                        <h4><i class="fas fa-location-pin"></i> NO. ${testi.streetNo} ${testi.streetName} ${testi.city} ${testi.country}</h4>
+                                  
+                                    </div>
+                                </div>
+                                <div class="ancients_about_inner_testi_inner_inner_left_commentors_comment">
+                                    <p><span>Comment:</span> ${testi.comment}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `)
+                });
+            })
+    }
+    getProduct()
+</script>
+<!-- CREW -->
+<script>
+    function getProduct() {
+        fetch(`http://localhost:3000/crew`)
+            .then(results => results.json())
+            .then(data => {
+
+                console.log(data);
+                data.map((testi) => {
+                    document.querySelector(".ancients_about_inner_crew").insertAdjacentHTML('beforeend', `
+                    <div class="ancients_about_inner_testi_inner_inner">
+                        <div class="ancients_about_inner_testi_inner_inner_left">
+                            <div class="ancients_about_inner_testi_inner_inner_left_commentors">
+                                <div class="ancients_about_inner_testi_inner_inner_left_commentors_info">
+                                    <img src="${testi.commentorsimage}"/>
+                                    <div class="ancients_about_inner_testi_inner_inner_left_commentors_info_commentors_details">
+                                        <h4>${testi.male == true ? "Mr" : "Ms"} ${testi.commentorssurname} ${testi.commentorsname}</h4><h4>${testi.age}</h4>
+                                        
+                                        <h4><i class="fas fa-location-pin"></i> NO. ${testi.streetNo} ${testi.streetName} ${testi.city} ${testi.country}</h4>
+                                  
+                                    </div>
+                                </div>
+                                <div class="ancients_about_inner_testi_inner_inner_left_commentors_comment">
+                                    <p><span>Comment:</span> ${testi.comment}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `)
+                });
+            })
+    }
+    getProduct()
 </script>
 </html>
