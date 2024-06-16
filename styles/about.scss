@@ -101,7 +101,7 @@
 
 
                 &_inner {
-                    padding-inline: 1rem;
+
 
                     &_intro {
                         h1 {
@@ -146,7 +146,7 @@
 
                                     display: grid;
                                     grid-template-columns: 0.5fr 1fr;
-                                    grid-template-rows: 1fr ;
+                                    grid-template-rows: 1fr;
                                     align-items: center;
                                     gap: 1rem;
 
@@ -165,11 +165,39 @@
                     }
                 }
             }
+
+            &_crew {
+                img {
+                    width: 100%;
+                }
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 3rem;
+                &_inner {
+                  
+                    &_left {
+                        &_socials {
+                            position: relative;
+                            width: 100%;
+                            top: -3rem;
+                            display: flex;
+                            justify-content: space-between;
+                            i{
+                                font-size: 2rem;
+                            }
+                            .fa-whatsapp {
+                                color: green;
+                            }
+                            .fa-facebook {
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         @media screen and (min-width:777px) {
-
-
             &_hero {
                 padding-block-start: 3rem;
                 padding-block-end: 3rem;
@@ -288,34 +316,12 @@
                     &_inner {
 
                         &_inner {
-                            margin-block-end: 3rem;
-                            display: grid;
-                            grid-template-columns: 1fr 0.5fr;
-                            align-items: center;
-                            gap: 3rem;
-
-                            &_right {
-                                display: block;
-
-                                img {
-                                    border-radius: 4rem;
-                                    width: 100%;
-                                    height: auto;
-                                }
-                            }
 
                             &_left {
-                                p {
-                                    span {
-                                        font-weight: 900;
-                                        font-size: 1.2rem;
-                                    }
-                                }
-
                                 &_commentors_info {
+                                    grid-template-columns: 0.2fr 1fr;
+
                                     &_commentors-name-age {
-                                        display: flex;
-                                        gap: 0.5rem;
 
                                         h4 {
                                             font-size: 1.5rem;

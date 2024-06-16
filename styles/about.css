@@ -72,9 +72,6 @@
 .ancients_about_inner_testi {
   padding-block-start: 4rem;
 }
-.ancients_about_inner_testi_inner {
-  padding-inline: 1rem;
-}
 .ancients_about_inner_testi_inner_intro h1 {
   padding-inline: 0;
   padding-block-end: 0.2rem;
@@ -119,6 +116,30 @@
 }
 .ancients_about_inner_testi_inner_inner_left_commentors_info_commentors_details h4 {
   font-size: 1px;
+}
+.ancients_about_inner_crew {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.ancients_about_inner_crew img {
+  width: 100%;
+}
+.ancients_about_inner_crew_inner_left_socials {
+  position: relative;
+  width: 100%;
+  top: -3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.ancients_about_inner_crew_inner_left_socials i {
+  font-size: 2rem;
+}
+.ancients_about_inner_crew_inner_left_socials .fa-whatsapp {
+  color: green;
+}
+.ancients_about_inner_crew_inner_left_socials .fa-facebook {
+  color: blue;
 }
 @media screen and (min-width: 777px) {
   .ancients_about_hero {
@@ -208,28 +229,8 @@
     padding-block-start: 4rem;
     padding-inline: 4rem;
   }
-  .ancients_about_inner_testi_inner_inner {
-    margin-block-end: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    align-items: center;
-    gap: 3rem;
-  }
-  .ancients_about_inner_testi_inner_inner_right {
-    display: block;
-  }
-  .ancients_about_inner_testi_inner_inner_right img {
-    border-radius: 4rem;
-    width: 100%;
-    height: auto;
-  }
-  .ancients_about_inner_testi_inner_inner_left p span {
-    font-weight: 900;
-    font-size: 1.2rem;
-  }
-  .ancients_about_inner_testi_inner_inner_left_commentors_info_commentors-name-age {
-    display: flex;
-    gap: 0.5rem;
+  .ancients_about_inner_testi_inner_inner_left_commentors_info {
+    grid-template-columns: 0.2fr 1fr;
   }
   .ancients_about_inner_testi_inner_inner_left_commentors_info_commentors-name-age h4 {
     font-size: 1.5rem;

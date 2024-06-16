@@ -56,8 +56,8 @@
                 <div class="ancients_home_hero_left">
                     <p>
                     <h1>Lets help you start your</h1>
-                    <h1><span><i class="fas fa-chevron-left"></i>Tech Career<i
-                                class="fas fa-chevron-right"></i></span> </h1>
+                    <h1><span><i class="fas fa-chevron-left"></i>Tech Career<i class="fas fa-chevron-right"></i></span>
+                    </h1>
                     </p>
                 </div>
                 <div class="ancients_home_hero_right">
@@ -75,11 +75,11 @@
                     <div class="ancients_home_inner_welmessage_inner">
                         <div class="ancients_home_inner_welmessage_inner_left">
                             <p>We Plan to Reach</p>
-                            <h1>100</h1>
+                            <h1 class="proplan">100</h1>
                         </div>
                         <div class="ancients_home_inner_welmessage_inner_right">
                             <p>We've Reached</p>
-                            <h1>1</h1>
+                            <h1 class="plan">1</h1>
                         </div>
                     </div>
                 </section>
@@ -91,7 +91,7 @@
                     <div class="ancients_home_inner_techcourses_inner">
                     </div>
                     <div class="ancients_home_inner_techcourses_bottom">
-                    <a href="/pages/techcourses/index.html">More</a> <i class="fas fa-arrow-right"></i>
+                        <a href="/pages/techcourses/index.html">More</a> <i class="fas fa-arrow-right"></i>
                     </div>
                 </section>
                 <footer class="ancients_footer">
@@ -202,6 +202,18 @@
     }
 </script>
 <script>
+    function plan() {
+        fetch(`http://localhost:3000/comment`)
+            .then(results => results.json())
+            .then(data => {
+                var number= data.length
+                document.querySelector(".plan").innerHTML = number
+                document.querySelector(".proplan").innerHTML = 1000 - number
+            })
+    }
+    plan()
+</script>
+<script>
     function getProduct() {
         fetch(`http://localhost:3000/post`)
             .then(results => results.json())
@@ -231,7 +243,7 @@
                     </div>
                           
                                 
-                                `)
+                    `)
                 });
             })
     }
