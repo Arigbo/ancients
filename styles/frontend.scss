@@ -1,6 +1,6 @@
 .ancients {
     width: auto;
-    
+
     &_apology_message {
         i {
             cursor: pointer;
@@ -29,9 +29,9 @@
         }
 
         p {
-
+            line-height: 4rem;
             height: 100vh;
-            font-size: 2rem;
+            font-size: 3rem;
 
             a {
                 text-decoration: none;

@@ -4,8 +4,32 @@
 @import "/styles/techcourse.css";
 @import "/styles/contact.css";
 @import "/styles/about.css";
+@import "/styles/footer.css";
 
-html {i,
+html {
+    padding: 0;
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding-block: 0.5rem;
+        padding-inline: 1rem;
+        transition: all 0.5s;
+        font-size: 1.3rem;
+    }
+
+    .btn:hover {
+        transition: all 0.5s;
+    }
+
+    i,
     h1,
     h2,
     h3,
@@ -16,14 +40,18 @@ html {i,
         margin: 0;
     }
 
+    font-family:'Gill Sans',
+    'Gill Sans MT',
+    Calibri,
+    'Trebuchet MS',
+    sans-serif;
 
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        input::placeholder,textarea::placeholder{
-            transition: all 0.2s;
-            font-size: inherit;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
+    input::placeholder,
+    textarea::placeholder {
+        transition: all 0.2s;
+        font-size: inherit;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
     a {
         text-decoration: none;

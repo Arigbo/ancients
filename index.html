@@ -74,12 +74,12 @@
                         Natus.</p>
                     <div class="ancients_home_inner_welmessage_inner">
                         <div class="ancients_home_inner_welmessage_inner_left">
-                            <p>We Plan to Reach</p>
-                            <h1 class="proplan">100</h1>
+                            <p>How many remaining to reach</p>
+                            <h1 class="proplan">0</h1>
                         </div>
                         <div class="ancients_home_inner_welmessage_inner_right">
                             <p>We've Reached</p>
-                            <h1 class="plan">1</h1>
+                            <h1 class="plan">0</h1>
                         </div>
                     </div>
                 </section>
@@ -94,11 +94,65 @@
                         <a href="/pages/techcourses/index.html">More</a> <i class="fas fa-arrow-right"></i>
                     </div>
                 </section>
-                <footer class="ancients_footer">
-
-                </footer>
+                <section class="ancients_home_inner_testi">
+                    <div class="ancients_home_inner_testi_inner">
+                        <div class="ancients_home_inner_testi_inner_intro">
+                            <h1>Testimonies</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum atque sapiente dicta
+                                perspiciatis expedita! Totam quo ipsam quam magni eveniet.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
+        <footer class="ancients_footer">
+            <div class="ancients_footer_left">
+                <div class="ancients_footer_left_first">
+                    <div class="ancients_footer_left_first_logo">
+                        <i class="fas fa-sun"></i>
+                        <h1>Ancients</h1>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis nunc
+                        erat. Amet nullam
+                        elementum eget nec.
+                    </p>
+                </div>
+                <div class="ancients_footer_left_last"> <a class="btn" href="/pages/about.html">About Ancients</a></div>
+            </div>
+            <div class="ancients_footer_middle">
+                <div class="ancients_footer_middle_first">
+                    <ul>
+                        <a href="/index.html" class="home">
+                            <li>Home</li>
+                        </a>
+                        <a href="/pages/techcourses/index.html" class="tech">
+                            <li>TechCourses</li>
+                        </a>
+                        <a href="/pages/contact.html" class="contact">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="/pages/about.html" class="about">
+                            <li>About Us</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="ancients_footer_middle_last">
+                    <ul>
+                        <a href="/pages/verificationspages/signup.html" class="signup">
+                            <li>SignUp</li>
+                        </a>
+                        <a href="/pages/verificationspages/signin.html" class="signin">
+                            <li>SignIn</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="ancients_footer_right">
+                <a class="btn" href="/pages/contact.html">Still Have a Question? </a>
+            </div>
+        </footer>
     </div>
 </body>
 <!-- NAV ACTIVE CODE -->
@@ -201,18 +255,54 @@
         document.querySelector(".signup").classList.add("active")
     }
 </script>
+<!-- PLAN CALCULATOR -->
 <script>
     function plan() {
         fetch(`http://localhost:3000/comment`)
             .then(results => results.json())
             .then(data => {
-                var number= data.length
+                var number = data.length
                 document.querySelector(".plan").innerHTML = number
                 document.querySelector(".proplan").innerHTML = 1000 - number
             })
     }
     plan()
 </script>
+<!-- TESTIMONIES -->
+<script>
+    function getProduct() {
+        fetch(`http://localhost:3000/comment`)
+            .then(results => results.json())
+            .then(data => {
+
+                console.log(data);
+                data.map((testi) => {
+                    document.querySelector(".ancients_home_inner_testi_inner").insertAdjacentHTML('beforeend', `
+                    <div class=${testi.id > 2 ? "hide" : "ancients_home_inner_testi_inner_inner"}>
+                        <div class="ancients_home_inner_testi_inner_inner_left">
+                            <div class="ancients_home_inner_testi_inner_inner_left_commentors">
+                                <div class="ancients_home_inner_testi_inner_inner_left_commentors_info">
+                                    <img src="${testi.commentorsimage}"/>
+                                    <div class="ancients_home_inner_testi_inner_inner_left_commentors_info_commentors_details">
+                                        <h4>${testi.male == true ? "Mr" : "Ms"} ${testi.commentorssurname} ${testi.commentorsname}</h4><h4>${testi.age}</h4>
+                                        
+                                        <h4><i class="fas fa-location-pin"></i> NO. ${testi.streetNo} ${testi.streetName} ${testi.city} ${testi.country}</h4>
+                                  
+                                    </div>
+                                </div>
+                                <div class="ancients_home_inner_testi_inner_inner_left_commentors_comment">
+                                    <p><span>Comment:</span> ${testi.comment}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `)
+                });
+            })
+    }
+    getProduct()
+</script>
+<!-- COURSES -->
 <script>
     function getProduct() {
         fetch(`http://localhost:3000/post`)
@@ -222,27 +312,25 @@
                 console.log(data);
                 data.map((product) => {
                     document.querySelector(".ancients_home_inner_techcourses_inner").insertAdjacentHTML('beforeend', `
-                    <div class="ancients_home_inner_techcourses_inner_inner">
+                    <div class=${product.id > 2 ? "hide" : "ancients_home_inner_techcourses_inner_inner"}>
                         <div class="ancients_home_inner_techcourses_inner_inner_left">
-                        <div class="ancients_home_inner_techcourses_inner_inner_left_course-info">
-                            <div class="ancients_home_inner_techcourses_inner_inner_left_course-info_courses-name">
-                                <h1>${product.coursename}</h1>
+                            <div class="ancients_home_inner_techcourses_inner_inner_left_course-info">
+                                <div class="ancients_home_inner_techcourses_inner_inner_left_course-info_courses-name">
+                                    <h1>${product.coursename}</h1>
+                                </div>
+                                <div class="ancients_home_inner_techcourses_inner_inner_left_course-info_about-course">
+                                    <h4>${product.male == true ? "Mr" : "Ms"} ${product.teachername}</h4>
+                                 <p><span>About:</span> ${product.aboutcourse}</p>
+                                </div>
                             </div>
-                            <div class="ancients_home_inner_techcourses_inner_inner_left_course-info_about-course">
-                                <h4>${product.male == true ? "Mr" : "Ms"} ${product.teachername}</h4>
-                                <p><span>About:</span> ${product.aboutcourse}</p>
+                            <div class="ancients_home_inner_techcourses_inner_inner_left_bottom">
+                                <a class="btn" href=${product.link ? product.link : "/pages/error.html"}>More</a>
                             </div>
                         </div>
-                        <div class="ancients_home_inner_techcourses_inner_inner_left_bottom">
-                            <a class="techcourse_more_button" href=${product.link ? product.link : "/pages/error.html"}>More</a>
+                        <div class="ancients_home_inner_techcourses_inner_inner_right">
+                            <i class="fas fa-${product.coursesimage}left"></i><i class="fas fa-${product.coursesimage}right"></i>
                         </div>
-                    </div>
-                    <div class="ancients_home_inner_techcourses_inner_inner_right">
-                        <i class="fas fa-${product.coursesimage}left"></i><i class="fas fa-${product.coursesimage}right"></i>
-                    </div>
-                    </div>
-                          
-                                
+                    </div>              
                     `)
                 });
             })

@@ -55,11 +55,13 @@
                         padding-block: 1rem;
                         width: 100%;
                     }
-                    .tapped::placeholder{
+
+                    .tapped::placeholder {
                         color: black;
                         font-size: 1.2rem;
                         transition: all 0.2s;
                     }
+
                     label {
                         font-weight: 700;
 
@@ -163,7 +165,7 @@
                     }
 
                     &_right {
-                 display: block;
+                        display: block;
                     }
                 }
             }

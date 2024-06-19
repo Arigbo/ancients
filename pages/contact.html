@@ -99,19 +99,34 @@
                     </section>
                 </div>
             </div>
-   
+
         </div>
     </div>
 </body>
+<!-- INPUT PLACEHOLDER SWITCH -->
 <script>
-    document.querySelector("#name").addEventListener("click", ()=>
-        document.querySelector("#name").classList.toggle("tapped")
+    //    document.querySelector(".ancients_contact").addEventListener("click", () => {
+    //     document.querySelector("#name").classList.remove("tapped")
+    //     document.querySelector("#number").classList.remove("tapped")
+    //     document.querySelector("#message").classList.remove("tapped")
+    // })
+    document.querySelector("#name").addEventListener("click", () => {
+        document.querySelector("#name").classList.add("tapped")
+        document.querySelector("#number").classList.remove("tapped")
+        document.querySelector("#message").classList.remove("tapped")
+    }
     )
-    document.querySelector("#number").addEventListener("click", ()=>
-        document.querySelector("#number").classList.toggle("tapped")
+    document.querySelector("#number").addEventListener("click", () => {
+        document.querySelector("#name").classList.remove("tapped")
+        document.querySelector("#number").classList.add("tapped")
+        document.querySelector("#message").classList.remove("tapped")
+    }
     )
-    document.querySelector("#message").addEventListener("click", ()=>
-        document.querySelector("#message").classList.toggle("tapped")
+    document.querySelector("#message").addEventListener("click", () => {
+        document.querySelector("#name").classList.remove("tapped")
+        document.querySelector("#number").classList.remove("tapped")
+        document.querySelector("#message").classList.add("tapped")
+    }
     )
 </script>
 <!-- NAV ACTIVE CODE -->

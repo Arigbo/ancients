@@ -68,24 +68,19 @@
   font-weight: 900;
   font-size: 1rem;
 }
-.ancients_techcourses_inner_techcourses_inner_inner_left_bottom .techcourse_more_button {
+.ancients_techcourses_inner_techcourses_inner_inner_left_bottom .btn {
   background-color: black;
   color: white;
-  padding-block: 0.5rem;
-  padding-inline-end: 0.5rem;
-  padding-inline-start: 0.5rem;
-  transition: all 0.2s;
+  border: 1px solid white;
 }
-.ancients_techcourses_inner_techcourses_inner_inner_left_bottom .techcourse_more_button.effect {
+.ancients_techcourses_inner_techcourses_inner_inner_left_bottom .btn.effect {
   background-color: white;
   color: black;
 }
-.ancients_techcourses_inner_techcourses_inner_inner_left_bottom a:hover {
-  padding-block: 0.7rem;
-  font-size: 0.5rem;
-  padding-inline-end: 0.7rem;
-  padding-inline-start: 0.7rem;
-  transition: all 0.2s;
+.ancients_techcourses_inner_techcourses_inner_inner_left_bottom .btn:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }
 .ancients_techcourses_inner_techcourses_inner_inner_right {
   display: none;
@@ -153,25 +148,6 @@
   .ancients_techcourses_inner_techcourses_inner_inner_left_course-info_about-course p span {
     font-weight: 900;
     font-size: 1.2rem;
-  }
-  .ancients_techcourses_inner_techcourses_inner_inner_left_bottom .techcourse_more_button {
-    background-color: black;
-    color: white;
-    padding-block: 0.5rem;
-    padding-inline-end: 0.5rem;
-    padding-inline-start: 0.5rem;
-    transition: all 0.2s;
-  }
-  .ancients_techcourses_inner_techcourses_inner_inner_left_bottom .techcourse_more_button.effect {
-    background-color: white;
-    color: black;
-  }
-  .ancients_techcourses_inner_techcourses_inner_inner_left_bottom a:hover {
-    padding-block: 0.7rem;
-    font-size: 0.5rem;
-    padding-inline-end: 0.7rem;
-    padding-inline-start: 0.7rem;
-    transition: all 0.2s;
   }
   .ancients_techcourses_inner_techcourses_inner_inner_right {
     display: flex;

@@ -25,8 +25,9 @@
   font-size: 2rem;
 }
 .ancients_apology_message p {
+  line-height: 4rem;
   height: 100vh;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .ancients_apology_message p a {
   text-decoration: none;

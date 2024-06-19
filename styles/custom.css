@@ -4,8 +4,26 @@
 @import "/styles/techcourse.css";
 @import "/styles/contact.css";
 @import "/styles/about.css";
+@import "/styles/footer.css";
 html {
+  padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html body {
+  padding: 0;
+  margin: 0;
+}
+html p {
+  font-size: 1.2rem;
+}
+html .btn {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+}
+html .btn:hover {
+  transition: all 0.5s;
 }
 html i,
 html h1,
@@ -23,7 +41,8 @@ html input::-moz-placeholder, html textarea::-moz-placeholder {
   font-size: inherit;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-html input::placeholder, html textarea::placeholder {
+html input::placeholder,
+html textarea::placeholder {
   transition: all 0.2s;
   font-size: inherit;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

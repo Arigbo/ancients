@@ -97,15 +97,10 @@
                             }
 
                             &_bottom {
-
-                                // padding-inline-start: 2rem;
-                                .techcourse_more_button {
+                                .btn {
                                     background-color: black;
                                     color: white;
-                                    padding-block: 0.5rem;
-                                    padding-inline-end: 0.5rem;
-                                    padding-inline-start: 0.5rem;
-                                    transition: all 0.2s;
+                                    border: 1px solid white;
 
                                     &.effect {
                                         background-color: white;
@@ -113,12 +108,10 @@
                                     }
                                 }
 
-                                a:hover {
-                                    padding-block: 0.7rem;
-                                    font-size: 0.5rem;
-                                    padding-inline-end: 0.7rem;
-                                    padding-inline-start: 0.7rem;
-                                    transition: all 0.2s;
+                                .btn:hover {
+                                    color: black;
+                                    background-color: white;
+                                    border: 1px solid black;
                                 }
                             }
                         }
@@ -212,36 +205,10 @@
                                         }
                                     }
                                 }
-
-                                &_bottom {
-
-                                    // padding-inline-start: 2rem;
-                                    .techcourse_more_button {
-                                        background-color: black;
-                                        color: white;
-                                        padding-block: 0.5rem;
-                                        padding-inline-end: 0.5rem;
-                                        padding-inline-start: 0.5rem;
-                                        transition: all 0.2s;
-
-                                        &.effect {
-                                            background-color: white;
-                                            color: black;
-                                        }
-                                    }
-                                    a:hover {
-                                        padding-block: 0.7rem;
-                                        font-size: 0.5rem;
-                                        padding-inline-end: 0.7rem;
-                                        padding-inline-start: 0.7rem;
-                                        transition: all 0.2s;
-                                    }
-
-                                }
                             }
 
                             &_right {
-                         display: flex;
+                                display: flex;
                                 background-color: black;
                                 color: white;
                                 padding-inline: 1rem;
