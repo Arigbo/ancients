@@ -96,27 +96,6 @@
                                     }
                                 }
                             }
-
-                            &_bottom {
-
-                                // padding-inline-start: 2rem;
-                                .btn {
-                                    background-color: black;
-                                    color: white;
-                                    border: 1px solid white;
-
-                                    &.effect {
-                                        background-color: white;
-                                        color: black;
-                                    }
-                                }
-
-                                .btn:hover {
-                                    color: black;
-                                    background-color: white;
-                                    border: 1px solid black;
-                                }
-                            }
                         }
 
                         &_right {

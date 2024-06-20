@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link class="url_logo" rel="icon" type="image/x-icon"
-    href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
-<link rel="stylesheet" href="/styles/custom.css">
-<link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+        href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
+    <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
 </head>
+
 <body>
     <div class="ancients">
-        <nav class="ancients_nav">
+        <!-- <nav class="ancients_nav">
 
             <div class="ancients_nav_left">
                 <i class="fas fa-sun"></i>
@@ -48,14 +50,87 @@
                     </a>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <div class="ancients_signin">
-
+            <h3>Login</h3>
+            <form class="ancients_signin_inner" action="" method="get">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <br>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <br>
+                <br>
+                <button type="submit" class="btnpage">Login</button>
+                <br>
+                <br>
+            </form>
+            <p>Don't have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Click here</a></p>
         </div>
+        <!-- <footer class="ancients_footer">
+            <div class="ancients_footer_left">
+                <div class="ancients_footer_left_first">
+                    <div class="ancients_footer_left_first_logo">
+                        <i class="fas fa-sun"></i>
+                        <h1>Ancients</h1>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis nunc
+                        erat. Amet nullam
+                        elementum eget nec.
+                    </p>
+                </div>
+                <div class="ancients_footer_left_last"> <a class="btn" href="/pages/about.html">About Ancients</a></div>
+            </div>
+            <div class="ancients_footer_middle">
+                <div class="ancients_footer_middle_first">
+                    <ul>
+                        <a href="/index.html" class="home">
+                            <li>Home</li>
+                        </a>
+                        <a href="/pages/techcourses/index.html" class="tech">
+                            <li>TechCourses</li>
+                        </a>
+                        <a href="/pages/contact.html" class="contact">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="/pages/about.html" class="about">
+                            <li>About Us</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="ancients_footer_middle_last">
+                    <ul>
+                        <a href="/pages/verificationspages/signup.html" class="signup">
+                            <li>SignUp</li>
+                        </a>
+                        <a href="/pages/verificationspages/signin.html" class="signin">
+                            <li>SignIn</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="ancients_footer_right">
+                <a class="btn" href="/pages/contact.html">Still Have a Question? </a>
+            </div>
+        </footer> -->
     </div>
 </body>
-<!-- NAV ACTIVE CODE -->
 <script>
+    document.querySelector("#email").addEventListener("click", () => {
+        document.querySelector("#email").classList.add("tapped")
+        document.querySelector("#password").classList.remove("tapped")
+    }
+    )
+    document.querySelector("#password").addEventListener("click", () => {
+        document.querySelector("#email").classList.remove("tapped")
+        document.querySelector("#password").classList.add("tapped")
+    }
+    )
+</script>
+
+<!-- NAV ACTIVE CODE -->
+<!-- <script>
     document.querySelector(".fa-bars").addEventListener("click", () => {
         document.querySelector(".fa-nav-x").classList.add("show")
         document.querySelector(".fa-bars").classList.add("hide")
@@ -150,5 +225,6 @@
         document.querySelector(".signin").classList.remove("active")
         document.querySelector(".signup").classList.add("active")
     }
-</script>
+</script> -->
+
 </html>

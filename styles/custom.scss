@@ -5,6 +5,8 @@
 @import "/styles/contact.css";
 @import "/styles/about.css";
 @import "/styles/footer.css";
+@import "/styles/signin.css";
+@import "/styles/signup.css";
 
 html {
     padding: 0;
@@ -29,6 +31,32 @@ html {
         transition: all 0.5s;
     }
 
+    .btnpage {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        padding-block: 0.5rem;
+        padding-inline: 1rem;
+        transition: all 0.5s;
+        font-size: 1.3rem;
+
+        &.effect {
+            background-color: white;
+            padding-block: 0.5rem;
+            padding-inline: 1rem;
+            transition: all 0.5s;
+            font-size: 1.3rem;
+            color: black;
+        }
+    }
+
+    .btnpage:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        transition: all 0.5s;
+    }
+
     i,
     h1,
     h2,
@@ -46,11 +74,32 @@ html {
     'Trebuchet MS',
     sans-serif;
 
+    input {
+        padding-block: 1rem;
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        border-radius: 0.5rem;
+    }
+
+    textarea {
+        padding-block: 0.5rem;
+        width: 100%;
+    }
+
     input::placeholder,
     textarea::placeholder {
         transition: all 0.2s;
         font-size: inherit;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .tapped::placeholder {
+        color: black;
+        font-size: 1.2rem;
+        transition: all 0.2s;
     }
 
     a {

@@ -87,6 +87,7 @@
     grid-template-rows: 1fr;
     align-items: center;
     text-align: left;
+    padding-block: 1rem;
   }
   .ancients_footer_left {
     padding-block: 0.5rem;

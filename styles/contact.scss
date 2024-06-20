@@ -51,17 +51,6 @@
                     // padding-block-start: 2rem;
                     // background-color: black;
                     // color: white;
-                    input {
-                        padding-block: 1rem;
-                        width: 100%;
-                    }
-
-                    .tapped::placeholder {
-                        color: black;
-                        font-size: 1.2rem;
-                        transition: all 0.2s;
-                    }
-
                     label {
                         font-weight: 700;
 
@@ -72,15 +61,7 @@
 
                     input,
                     textarea {
-                        border-radius: 0.5rem;
-                        padding-inline: 0.5rem;
-                        border: 1px solid black;
                         margin-block-end: 2rem;
-                    }
-
-                    textarea {
-                        padding-block: 0.5rem;
-                        width: 100%;
                     }
                 }
 

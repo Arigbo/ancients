@@ -68,20 +68,6 @@
   font-weight: 900;
   font-size: 1rem;
 }
-.ancients_techcourses_inner_techcourses_inner_inner_left_bottom .btn {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-}
-.ancients_techcourses_inner_techcourses_inner_inner_left_bottom .btn.effect {
-  background-color: white;
-  color: black;
-}
-.ancients_techcourses_inner_techcourses_inner_inner_left_bottom .btn:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid black;
-}
 .ancients_techcourses_inner_techcourses_inner_inner_right {
   display: none;
 }
