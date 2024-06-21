@@ -3,7 +3,12 @@
         text-align: center;
         padding-block-start: 8rem;
         padding-inline: 2rem;
-
+        // text-align: center;
+        // padding-inline: 2rem;
+        // height: 100vh;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         &_inner {
             padding-block-start: 2rem;
             display: flex;
@@ -16,7 +21,6 @@
                 padding-block: 0.7rem;
                 padding-inline: 0.5rem;
                 background-color: white;
-                border: 1px solid black;
 
             }
             #email{

@@ -67,6 +67,10 @@ html input {
 html input,
 html textarea {
   border-radius: 0.5rem;
+  border: 0px;
+  padding-inline: 0.7rem;
+  width: 100%;
+  padding-block: 0.7rem;
 }
 html textarea {
   padding-block: 0.5rem;
@@ -83,6 +87,9 @@ html textarea::placeholder {
   transition: all 0.2s;
   font-size: inherit;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html .tapped {
+  border: 1px solid;
 }
 html .tapped::-moz-placeholder {
   color: black;

@@ -15,7 +15,6 @@
   padding-block: 0.7rem;
   padding-inline: 0.5rem;
   background-color: white;
-  border: 1px solid black;
 }
 .ancients_signin_inner #email {
   text-transform: lowercase;

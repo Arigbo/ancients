@@ -91,7 +91,7 @@
                     <div class="ancients_home_inner_techcourses_inner">
                     </div>
                     <div class="ancients_home_inner_techcourses_bottom">
-                        <a href="/pages/techcourses/index.html">More</a> <i class="fas fa-arrow-right"></i>
+                        <a class="TC" href="/pages/techcourses/index.html">More</a> <i class="fas fa-arrow-right"></i>
                     </div>
                 </section>
                 <section class="ancients_home_inner_testi">
@@ -118,7 +118,7 @@
                         elementum eget nec.
                     </p>
                 </div>
-                <div class="ancients_footer_left_last"> <a class="btn" href="/pages/about.html">About Ancients</a></div>
+                <div class="ancients_footer_left_last"> <a class="btn KU" href="/pages/about.html">About Ancients</a></div>
             </div>
             <div class="ancients_footer_middle">
                 <div class="ancients_footer_middle_first">
@@ -150,7 +150,7 @@
                 </div>
             </div>
             <div class="ancients_footer_right">
-                <a class="btn" href="/pages/contact.html">Still Have a Question? </a>
+                <a class="btn QA" href="/pages/contact.html">Still Have a Question? </a>
             </div>
         </footer>
     </div>
@@ -193,6 +193,13 @@
         document.querySelector(".contact").classList.remove("active")
     })
 
+    document.querySelector(".KU").addEventListener("click", () => {
+        localStorage.setItem("page", "about")
+        document.querySelector(".home").classList.remove("active")
+        document.querySelector(".about").classList.add("active")
+        document.querySelector(".tech").classList.remove("active")
+        document.querySelector(".contact").classList.remove("active")
+    })
     document.querySelector(".tech").addEventListener("click", () => {
         localStorage.setItem("page", "tech")
         document.querySelector(".home").classList.remove("active")
@@ -200,7 +207,21 @@
         document.querySelector(".tech").classList.add("active")
         document.querySelector(".contact").classList.remove("active")
     })
+    document.querySelector(".TC").addEventListener("click", () => {
+        localStorage.setItem("page", "tech")
+        document.querySelector(".home").classList.remove("active")
+        document.querySelector(".about").classList.remove("active")
+        document.querySelector(".tech").classList.add("active")
+        document.querySelector(".contact").classList.remove("active")
+    })
     document.querySelector(".contact").addEventListener("click", () => {
+        localStorage.setItem("page", "contact")
+        document.querySelector(".home").classList.remove("active")
+        document.querySelector(".about").classList.remove("active")
+        document.querySelector(".tech").classList.remove("active")
+        document.querySelector(".contact").classList.add("active")
+    })
+    document.querySelector(".QA").addEventListener("click", () => {
         localStorage.setItem("page", "contact")
         document.querySelector(".home").classList.remove("active")
         document.querySelector(".about").classList.remove("active")
@@ -270,7 +291,7 @@
 </script>
 <!-- TESTIMONIES -->
 <script>
-    function getProduct() {
+    function getComments() {
         fetch(`http://localhost:3000/comment`)
             .then(results => results.json())
             .then(data => {
@@ -300,7 +321,7 @@
                 });
             })
     }
-    getProduct()
+    getComments()
 </script>
 <!-- COURSES -->
 <script>

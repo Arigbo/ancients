@@ -117,11 +117,6 @@
 .ancients_about_inner_testi_inner_inner_left_commentors_info_commentors_details h4 {
   font-size: 1px;
 }
-.ancients_about_inner_crew {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-}
 .ancients_about_inner_crew img {
   width: 100%;
 }

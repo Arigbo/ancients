@@ -137,7 +137,8 @@
                             elementum eget nec.
                         </p>
                     </div>
-                    <div class="ancients_footer_left_last"> <a class="btn" href="/pages/about.html">About Ancients</a></div>
+                    <div class="ancients_footer_left_last"> <a class="btn KU" href="/pages/about.html">About
+                            Ancients</a></div>
                 </div>
                 <div class="ancients_footer_middle">
                     <div class="ancients_footer_middle_first">
@@ -156,7 +157,7 @@
                             </a>
                         </ul>
                     </div>
-    
+
                     <div class="ancients_footer_middle_last">
                         <ul>
                             <a href="/pages/verificationspages/signup.html" class="signup">
@@ -169,13 +170,27 @@
                     </div>
                 </div>
                 <div class="ancients_footer_right">
-                    <a class="btn" href="/pages/contact.html">Still Have a Question? </a>
+                    <a class="btn QA" href="/pages/contact.html">Still Have a Question? </a>
                 </div>
             </footer>
         </div>
 </body>
 <!-- NAV ACTIVE CODE -->
 <script>
+    document.querySelector(".KU").addEventListener("click", () => {
+        localStorage.setItem("page", "about")
+        document.querySelector(".home").classList.remove("active")
+        document.querySelector(".about").classList.add("active")
+        document.querySelector(".tech").classList.remove("active")
+        document.querySelector(".contact").classList.remove("active")
+    })
+    document.querySelector(".QA").addEventListener("click", () => {
+        localStorage.setItem("page", "contact")
+        document.querySelector(".home").classList.remove("active")
+        document.querySelector(".about").classList.remove("active")
+        document.querySelector(".tech").classList.remove("active")
+        document.querySelector(".contact").classList.add("active")
+    })
     document.querySelector(".fa-bars").addEventListener("click", () => {
         document.querySelector(".fa-nav-x").classList.add("show")
         document.querySelector(".fa-bars").classList.add("hide")

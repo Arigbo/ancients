@@ -82,6 +82,10 @@ html {
     input,
     textarea {
         border-radius: 0.5rem;
+        border: 0px;
+        padding-inline: 0.7rem;
+        width: 100%;
+        padding-block: 0.7rem;
     }
 
     textarea {
@@ -95,7 +99,9 @@ html {
         font-size: inherit;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-
+.tapped{
+    border: 1px solid;
+}
     .tapped::placeholder {
         color: black;
         font-size: 1.2rem;
