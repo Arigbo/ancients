@@ -3,6 +3,7 @@
 
         width: auto;
 
+
         &_hero {
             border: 1px solid;
             padding-block-start: 3rem;
@@ -195,8 +196,9 @@
 
         @media screen and (min-width:777px) {
 
-
             &_hero {
+                padding-block-start: 3rem;
+                padding-block-end: 3rem;
                 padding-inline: 3rem;
                 display: grid;
                 grid-template-columns: 2fr 0.5fr;

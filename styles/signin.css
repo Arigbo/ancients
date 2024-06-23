@@ -1,28 +1,31 @@
-.ancients_signin {
-  text-align: center;
-  padding-block-start: 8rem;
-  padding-inline: 2rem;
+.ancients_signin_hb {
+  padding: 1rem;
 }
 .ancients_signin_inner {
+  text-align: center;
+  padding-block-start: 10rem;
+  padding-inline: 2rem;
+}
+.ancients_signin_inner_inner {
   padding-block-start: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.ancients_signin_inner input {
+.ancients_signin_inner_inner input {
   width: 100%;
   padding-block: 0.7rem;
   padding-inline: 0.5rem;
   background-color: white;
 }
-.ancients_signin_inner #email {
+.ancients_signin_inner_inner #email {
   text-transform: lowercase;
 }
-.ancients_signin_inner #email::-moz-placeholder {
+.ancients_signin_inner_inner #email::-moz-placeholder {
   text-transform: capitalize;
 }
-.ancients_signin_inner #email::placeholder {
+.ancients_signin_inner_inner #email::placeholder {
   text-transform: capitalize;
 }
 @media screen and (min-width: 777px) {

@@ -214,6 +214,13 @@
         document.querySelector(".tech").classList.add("active")
         document.querySelector(".contact").classList.remove("active")
     })
+    // document.querySelector("#TCI").addEventListener("click", () => {
+    //     localStorage.setItem("page", "tech")
+    //     document.querySelector(".home").classList.remove("active")
+    //     document.querySelector(".about").classList.remove("active")
+    //     document.querySelector(".tech").classList.add("active")
+    //     document.querySelector(".contact").classList.remove("active")
+    // })
     document.querySelector(".contact").addEventListener("click", () => {
         localStorage.setItem("page", "contact")
         document.querySelector(".home").classList.remove("active")
@@ -345,7 +352,7 @@
                                 </div>
                             </div>
                             <div class="ancients_home_inner_techcourses_inner_inner_left_bottom">
-                                <a class="btnpage" href=${product.link ? product.link : "/pages/error.html"}>More</a>
+                                <a class="btnpage" id="TCI" href=${product.link ? product.link : "/pages/error.html"}>More</a>
                             </div>
                         </div>
                         <div class="ancients_home_inner_techcourses_inner_inner_right">

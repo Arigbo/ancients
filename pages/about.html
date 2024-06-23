@@ -71,18 +71,42 @@
                         quas quod perspiciatis ullam suscipit odio, non unde molestiae distinctio, quam eveniet
                         voluptatem dolore animi rem corrupti exercitationem laborum! Natus inventore dolorem sequi in,
                         praesentium qui autem incidunt id, sint atque ipsa at sapiente, ad amet sunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sit? Delectus dolorum officiis
+                        quas quod perspiciatis ullam suscipit odio, non unde molestiae distinctio, quam eveniet
+                        voluptatem dolore animi rem corrupti exercitationem laborum! Natus inventore dolorem sequi in,
+                        praesentium qui autem incidunt id, sint atque ipsa at sapiente, ad amet sunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sit? Delectus dolorum officiis
+                        quas quod perspiciatis ullam suscipit odio, non unde molestiae distinctio, quam eveniet
+                        voluptatem dolore animi rem corrupti exercitationem laborum! Natus inventore dolorem sequi in,
+                        praesentium qui autem incidunt id, sint atque ipsa at sapiente, ad amet sunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sit? Delectus dolorum officiis
+                        quas quod perspiciatis ullam suscipit odio, non unde molestiae distinctio, quam eveniet
+                        voluptatem dolore animi rem corrupti exercitationem laborum! Natus inventore dolorem sequi in,
+                        praesentium qui autem incidunt id, sint atque ipsa at sapiente, ad amet sunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sit? Delectus dolorum officiis
+                        quas quod perspiciatis ullam suscipit odio, non unde molestiae distinctio, quam eveniet
+                        voluptatem dolore animi rem corrupti exercitationem laborum! Natus inventore dolorem sequi in,
+                        praesentium qui autem incidunt id, sint atque ipsa at sapiente, ad amet sunt.</p>
                 </section>
                 <section class="ancients_about_inner_menu">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit quae? Inventore
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit quae? Inventore
                         reprehenderit, iure laboriosam doloremque commodi nobis maxime natus incidunt debitis
-                        perspiciatis! Exercitationem, rem. Assumenda ad corrupti voluptates amet?</p>
-                    <ul>
-                        <li>History</li>
-                        <li>Testimonies from Friends & Family</li>
-                        <li>Team</li>
+                        perspiciatis! Exercitationem, rem. Assumenda ad corrupti voluptates amet?</p> -->
+                    <i class="fas fa-chevron-up menu-hide"></i>
+                    <i class="fas fa-chevron-down menu-show"></i>
+                    <ul class="ancients_about_inner_menu_inner">
+                        <a href="#history">
+                            <li class="h"><span>History</span></li>
+                        </a>
+                        <a href="#testi">
+                            <li class="t"><span>Testimonies from Friends & Family</span></li>
+                        </a>
+                        <a href="#crew">
+                            <li class="tm"><span>Team</span></li>
+                        </a>
                     </ul>
                 </section>
-                <section class="ancients_about_inner_history">
+                <section class="ancients_about_inner_history" id="history">
                     <h1>
                         Our <span>Story</span>
                     </h1>
@@ -112,16 +136,18 @@
                         cumque modi delectus? Eos cumque velit repellat corporis perspiciatis deserunt sunt architecto
                         quam, impedit et corrupti dicta vitae molestiae, quas doloribus commodi aut quia.</p>
                 </section>
-                <section class="ancients_about_inner_testi">
+                <section class="ancients_about_inner_testi" id="testi">
+                    <div class="ancients_about_inner_testi_intro">
+                        <h1>Testimonies</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum atque sapiente dicta
+                            perspiciatis expedita! Totam quo ipsam quam magni eveniet.</p>
+                    </div>
                     <div class="ancients_about_inner_testi_inner">
-                        <div class="ancients_about_inner_testi_inner_intro">
-                            <h1>Testimonies</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum atque sapiente dicta
-                                perspiciatis expedita! Totam quo ipsam quam magni eveniet.</p>
-                        </div>
+                   
+                        
                     </div>
                 </section>
-                <section class="ancients_about_inner_crew">
+                <section class="ancients_about_inner_crew" id="crew">
                 </section>
             </div>
             <footer class="ancients_footer">
@@ -175,6 +201,18 @@
             </footer>
         </div>
 </body>
+<script>
+    document.querySelector(".menu-hide").addEventListener("click", () => {
+        document.querySelector(".menu-show").classList.add("show")
+        document.querySelector(".menu-hide").classList.add("hide")
+        document.querySelector(".ancients_about_inner_menu_inner").classList.add("show")
+    })
+    document.querySelector(".menu-show").addEventListener("click", () => {
+        document.querySelector(".menu-hide").classList.remove("hide")
+        document.querySelector(".menu-show").classList.remove("show")
+        document.querySelector(".ancients_about_inner_menu_inner").classList.remove("show")
+    })
+</script>
 <!-- NAV ACTIVE CODE -->
 <script>
     document.querySelector(".KU").addEventListener("click", () => {
