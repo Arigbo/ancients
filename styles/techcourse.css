@@ -8,6 +8,10 @@
   padding-inline: 1rem;
   background-color: black;
   color: white;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ancients_techcourses_hero_left {
   margin-block-start: 4rem;
@@ -60,8 +64,10 @@
   margin-block-end: 4rem;
 }
 .ancients_techcourses_inner_techcourses_inner_inner {
+  height: 40%;
   padding-block: 1rem;
   display: flex;
+  justify-content: center F;
   align-items: start;
 }
 .ancients_techcourses_inner_techcourses_inner_inner_left_course-info_about-course p span {

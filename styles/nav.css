@@ -111,7 +111,9 @@
 }
 @media screen and (min-width: 777px) {
   .ancients_nav {
+    overflow: hidden;
     position: sticky;
+    z-index: 4;
     top: 0;
     left: 0;
     right: 0;
@@ -150,6 +152,25 @@
   .ancients_nav ul a {
     line-height: normal;
     font-size: 1rem;
+  }
+  .ancients_nav .signout {
+    transition: all 0.5s;
+    position: absolute;
+    right: -5rem;
+  }
+  .ancients_nav .signout.show {
+    right: 3rem;
+    cursor: pointer;
+  }
+  .ancients_nav .signup,
+  .ancients_nav .signin {
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .ancients_nav .signup.hide,
+  .ancients_nav .signin.hide {
+    position: absolute;
+    right: -20rem;
   }
   .ancients_nav .signup li,
   .ancients_nav .signin li {

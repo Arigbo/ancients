@@ -133,7 +133,9 @@
 
 
         @media screen and (min-width:777px) {
+            overflow: hidden;
             position: sticky;
+            z-index: 4;
             top: 0;
             left: 0;
             right: 0;
@@ -176,8 +178,23 @@
                     font-size: 1rem;
                 }
             }
+            .signout{
+                transition: all 0.5s;
+                position: absolute;
+                right: -5rem;
+                &.show{
+                    right: 3rem;
+                    cursor: pointer;
+                }
+            }
             .signup,
             .signin {
+                transition: all 0.5s;
+                cursor: pointer;
+                &.hide{
+                    position: absolute;
+                            right: -20rem;
+                }
                 li {
                     font-size: 1rem;
                 }

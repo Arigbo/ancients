@@ -10,7 +10,10 @@
             padding-inline: 1rem;
             background-color: black;
             color: white;
-
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             &_left {
                 margin-block-start: 4rem;
@@ -79,9 +82,10 @@
 
                 &_inner {
                     &_inner {
-
+height: 40%;
                         padding-block: 1rem;
                         display: flex;
+                        justify-content: center F;
                         align-items: start;
 
                         &_left {

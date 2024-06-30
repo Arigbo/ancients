@@ -19,8 +19,7 @@
                     href="/pages/error.html"> <span>ancient.edu</span></a> is underconstruction</p>
             <div class="x"> <i class="fas fa-am-x fa-x"></i></div>
         </div>
-        <nav class="ancients_nav">
-
+     <nav class="ancients_nav">
             <div class="ancients_nav_left">
                 <i class="fas fa-sun"></i>
                 <div class="ancients_nav_left_middle-controller">
@@ -37,10 +36,10 @@
                     <a href="/pages/techcourses/index.html" class="tech">
                         <li>TechCourses</li>
                     </a>
-                    <a href="" class="contact">
+                    <a href="/pages/contact.html" class="contact">
                         <li>Contact Us</li>
                     </a>
-                    <a href="" class="about">
+                    <a href="/pages/about.html" class="about">
                         <li>About Us</li>
                     </a>
                 </ul>
@@ -48,12 +47,13 @@
 
             <div class="ancients_nav_last">
                 <ul>
-                    <a href="" class="signup">
+                    <a href="/pages/verificationspages/signup.html" class="signup">
                         <li>SignUp</li>
                     </a>
-                    <a href="" class="signin">
+                    <a href="/pages/verificationspages/signin.html" class="signin">
                         <li>SignIn</li>
                     </a>
+                    <li class="signout">SignOut</li>
                 </ul>
             </div>
         </nav>
@@ -407,6 +407,7 @@
      document.querySelector(".signup").classList.add("active")
  }
 </script>
+<!-- APOLOGUY EXIT SCRIPT -->
 <script>
     let amoc = localStorage.getItem("amoc")
     document.querySelector(".fa-am-x").addEventListener("click", () => {
@@ -469,5 +470,31 @@
         document.querySelector(".react_topics").classList.add("show")
     })
 </script>
-
+<!-- SIGNED / OR NOT VERF SCRIPT -->
+<script>
+    let customer = localStorage.getItem("customer?")
+    if (customer && customer === "isCustomerNotSigned") {
+        document.querySelector(".signin").classList.add("active")
+        document.querySelector(".signup").classList.remove("active")
+        document.querySelector(".signout").classList.remove("show") 
+    }
+    if (customer && customer === "isNotCustomer") {
+        document.querySelector(".signin").classList.remove("active")
+        document.querySelector(".signup").classList.add("active")
+        document.querySelector(".signout").classList.remove("show") 
+    }
+    if (customer && customer === "signed") {
+        document.querySelector(".signin").classList.add("hide")
+        document.querySelector(".signup").classList.add("hide")
+        document.querySelector(".signout").classList.add("show") 
+    }
+    document.querySelector(".signout").addEventListener("click",()=>{
+        localStorage.setItem("customer?", "isCustomerNotSigned")
+        document.querySelector(".signin").classList.add("active")
+        document.querySelector(".signup").classList.remove("active")
+        document.querySelector(".signout").classList.remove("show") 
+        document.querySelector(".signin").classList.remove("hide")
+        document.querySelector(".signup").classList.remove("hide")
+    }) 
+</script>
 </html>

@@ -14,7 +14,6 @@
 <body>
     <div class="ancients">
         <nav class="ancients_nav">
-
             <div class="ancients_nav_left">
                 <i class="fas fa-sun"></i>
                 <div class="ancients_nav_left_middle-controller">
@@ -48,6 +47,7 @@
                     <a href="/pages/verificationspages/signin.html" class="signin">
                         <li>SignIn</li>
                     </a>
+                    <li class="signout">SignOut</li>
                 </ul>
             </div>
         </nav>
@@ -314,5 +314,31 @@
         document.querySelector(".signup").classList.add("active")
     }
 </script>
-
+<!-- SIGNED / OR NOT VERF SCRIPT -->
+<script>
+    let customer = localStorage.getItem("customer?")
+    if (customer && customer === "isCustomerNotSigned") {
+        document.querySelector(".signin").classList.add("active")
+        document.querySelector(".signup").classList.remove("active")
+        document.querySelector(".signout").classList.remove("show") 
+    }
+    if (customer && customer === "isNotCustomer") {
+        document.querySelector(".signin").classList.remove("active")
+        document.querySelector(".signup").classList.add("active")
+        document.querySelector(".signout").classList.remove("show") 
+    }
+    if (customer && customer === "signed") {
+        document.querySelector(".signin").classList.add("hide")
+        document.querySelector(".signup").classList.add("hide")
+        document.querySelector(".signout").classList.add("show") 
+    }
+    document.querySelector(".signout").addEventListener("click",()=>{
+        localStorage.setItem("customer?", "isCustomerNotSigned")
+        document.querySelector(".signin").classList.add("active")
+        document.querySelector(".signup").classList.remove("active")
+        document.querySelector(".signout").classList.remove("show") 
+        document.querySelector(".signin").classList.remove("hide")
+        document.querySelector(".signup").classList.remove("hide")
+    }) 
+</script>
 </html>

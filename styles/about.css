@@ -8,6 +8,10 @@
   padding-inline: 1rem;
   background-color: black;
   color: white;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ancients_about_hero_left {
   margin-block-start: 4rem;
@@ -125,61 +129,30 @@
   height: auto;
   width: 50%;
 }
-.ancients_about_inner_testi {
+.ancients_about_inner_crew_inner {
+  margin-block-start: 2.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+}
+.ancients_about_inner_crew_inner_left {
+  text-align: center;
+}
+.ancients_about_inner_crew_inner_left_image {
+  width: auto;
+}
+.ancients_about_inner_crew_inner_left_image img {
+  width: 100%;
   height: auto;
 }
-.ancients_about_inner_testi_intro h1 {
-  padding-inline: 0;
-  padding-block-end: 0.2rem;
-  border-bottom: 2px solid;
-}
-.ancients_about_inner_testi_inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.ancients_about_inner_crew_inner_left_socials {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  top: -3rem;
+  display: flex;
   justify-content: space-between;
-  overflow-x: scroll;
-}
-.ancients_about_inner_testi_inner_inner {
-  margin-block-end: 2rem;
-  width: 100vw;
-}
-.ancients_about_inner_testi_inner_inner_left {
-  display: flex;
-}
-.ancients_about_inner_testi_inner_inner_left p span {
-  font-weight: 900;
-  font-size: 1.2rem;
-}
-.ancients_about_inner_testi_inner_inner_left_commentors_info {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
-  gap: 1rem;
-}
-.ancients_about_inner_testi_inner_inner_left_commentors_info img {
-  border-radius: 100%;
-  width: 100%;
-  height: -moz-max-content;
-  height: max-content;
-}
-.ancients_about_inner_testi_inner_inner_left_commentors_info_commentors_details {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.ancients_about_inner_testi_inner_inner_left_commentors_info_commentors_details h4 {
-  font-size: 1px;
-}
-.ancients_about_inner_crew {
-  padding-block: 4rem;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-}
-.ancients_about_inner_crew img {
-  width: 100%;
 }
 .ancients_about_inner_crew_inner_left_socials i {
   font-size: 2rem;

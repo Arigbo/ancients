@@ -9,6 +9,10 @@
   padding-inline: 1rem;
   background-color: black;
   color: white;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ancients_contact_hero_left {
   margin-block-start: 4rem;

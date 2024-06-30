@@ -1,0 +1,123 @@
+.ancients {
+
+    &_home {
+        &_inner {
+            &_testi {
+
+                &_intro {
+                    h1 {
+                        padding-inline: 0;
+                        padding-block-end: 0.2rem;
+                        border-bottom: 2px solid;
+                    }
+                }
+
+                &_inner {
+
+                    .hide {
+                        display: none;
+                    }
+
+                    &_inner {
+
+                        &_left {
+
+                            p {
+                                span {
+                                    font-weight: 900;
+                                    font-size: 1.2rem;
+                                }
+                            }
+
+                            &_commentors {
+                                &_info {
+                                    img {
+                                        border-radius: 100%;
+                                        width: 8rem;
+                                        height: auto;
+                                    }
+
+                                    display: grid;
+                                    grid-template-columns: 0fr 1fr;
+                                    grid-template-rows: 1fr;
+                                    align-items: center;
+                                    gap: 1rem;
+
+                                    &_commentors_details {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 1rem;
+
+                                        h4 {
+                                            font-size: 1px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_about {
+        &_inner {
+            &_testi {
+
+                &_intro {
+                    h1 {
+                        padding-inline: 0;
+                        padding-block-end: 0.2rem;
+                        border-bottom: 2px solid;
+                    }
+                }
+
+                &_inner {
+
+                    .hide {
+                        display: none;
+                    }
+
+                    &_inner {
+
+                        &_left {
+
+                            p {
+                                span {
+                                    font-weight: 900;
+                                    font-size: 1.2rem;
+                                }
+                            }
+
+                            &_commentors {
+                                &_info {
+                                    img {
+                                        border-radius: 100%;
+                                        width: 8rem;
+                                        height: auto;
+                                    }
+
+                                    display: grid;
+                                    grid-template-columns: 0fr 1fr;
+                                    grid-template-rows: 1fr;
+                                    align-items: center;
+                                    gap: 1rem;
+
+                                    &_commentors_details {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 1rem;
+
+                                        h4 {
+                                            font-size: 1px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
