@@ -9,6 +9,7 @@
         href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
     <link rel="stylesheet" href="/styles/custom.css">
     <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -54,7 +55,7 @@
         <div class="ancients_signin">
 
             <div class="ancients_signin_inner">
-                <div class="ancients_signin_inner_left">
+                <div class="ancients_signin_inner_left" data-aos="fade-right">
                     <div class="ancients_signin_inner_left_inner">
                         <div class="ancients_signin_left_inner_hb">
                             <a href="/index.html"> <i class="fas fa-chevron-left"></i></a>
@@ -75,7 +76,7 @@
                                 target="_blank" rel="noopener noreferrer">Click here</a></p>
                     </div>
                 </div>
-                <div class="ancients_signin_inner_right">
+                <div class="ancients_signin_inner_right" data-aos="fade-left">
                     <i class="far fa-user">
 
                     </i>
@@ -147,6 +148,11 @@
         </footer> -->
     </div>
 </body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script>
     document.querySelector("#email").addEventListener("click", () => {
         document.querySelector("#email").classList.add("tapped")
