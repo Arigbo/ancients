@@ -1,24 +1,6 @@
 .ancients_signin_hb {
   padding: 1rem;
 }
-.ancients_signin_inner {
-  text-align: center;
-  padding-block-start: 10rem;
-  padding-inline: 2rem;
-}
-.ancients_signin_inner_inner {
-  padding-block-start: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.ancients_signin_inner_inner input {
-  width: 100%;
-  padding-block: 0.7rem;
-  padding-inline: 0.5rem;
-  background-color: white;
-}
 .ancients_signin_inner_inner #email {
   text-transform: lowercase;
 }
@@ -29,7 +11,25 @@
   text-transform: capitalize;
 }
 @media screen and (min-width: 777px) {
-  .ancients_signin {
-    padding-inline: 25rem;
+  .ancients_signin_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .ancients_signin_inner_left {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ancients_signin_inner_right {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ancients_signin_inner_right i {
+    font-size: 25rem;
   }
 }/*# sourceMappingURL=signin.css.map */

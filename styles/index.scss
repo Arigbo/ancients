@@ -131,7 +131,7 @@
             &_hero {
                 padding-block-start: 3rem;
                 padding-block-end: 3rem;
-                padding-inline: 3rem;
+                padding-inline: 4rem;
                 display: grid;
                 grid-template-columns: 2fr 0.5fr;
                 align-items: center;
@@ -164,7 +164,13 @@
             }
 
             &_inner {
+                padding-inline: 4rem;
 
+                p {
+                    line-height: 1.8rem;
+                    font-size: 1.1rem;
+                    font-weight: 100;
+                }
                 &_welmessage {
                     margin-block-end: 4rem;
 
@@ -173,6 +179,7 @@
                         justify-content: center;
                         align-items: center;
                         margin-block-start: 4rem;
+                     
 
                         &_left,
                         &_right {
@@ -185,12 +192,13 @@
                 }
 
                 &_techcourses {
-
+padding-block: 4rem;
+padding-inline: 4rem;
                     &_inner {
                         display: flex;
                         flex-direction: column;
-                        gap: 4rem;
-                        padding-inline: 4rem;
+                        gap: 10rem;
+                    padding-block: 3rem;
 
                         &_inner {
                             padding-inline: 2rem;
@@ -236,6 +244,7 @@
 
                 &_testi {
                     padding-inline: 4rem;
+                    padding-block: 4rem;
 
                     &_inner {
                         &_inner {

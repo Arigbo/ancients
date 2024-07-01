@@ -167,7 +167,7 @@
   .ancients_about_hero {
     padding-block-start: 3rem;
     padding-block-end: 3rem;
-    padding-inline: 3rem;
+    padding-inline: 4rem;
     display: grid;
     grid-template-columns: 2fr 0.5fr;
     align-items: center;
@@ -191,5 +191,17 @@
   .ancients_about_hero_right i {
     font-size: 20rem;
     font-weight: 600;
+  }
+  .ancients_about_inner {
+    padding-inline: 4rem;
+  }
+  .ancients_about_inner p {
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
+  .ancients_about_inner_testi {
+    padding-block-start: 4rem;
+    padding-inline: 4rem;
   }
 }/*# sourceMappingURL=about.css.map */

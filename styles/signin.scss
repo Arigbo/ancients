@@ -7,40 +7,69 @@
         // display: flex;
         // justify-content: center;
         // align-items: center;
-        &_hb{
-padding: 1rem;
+        &_hb {
+            padding: 1rem;
         }
-&_inner{
-    text-align: center;
-    padding-block-start: 10rem;
-    padding-inline: 2rem;
-    &_inner {
-        padding-block-start: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
-        input {
-            width: 100%;
-            padding-block: 0.7rem;
-            padding-inline: 0.5rem;
-            background-color: white;
+        &_inner {
+            // text-align: center;
+            // padding-block-start: 10rem;
+            // padding-inline: 2rem;
 
+
+            &_inner {
+                // padding-block-start: 2rem;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
+
+                // input {
+                //     width: 100%;
+                //     padding-block: 0.7rem;
+                //     padding-inline: 0.5rem;
+                //     background-color: white;
+
+                // }
+                #email {
+                    text-transform: lowercase;
+                }
+
+                #email::placeholder {
+                    text-transform: capitalize;
+                }
+            }
         }
-        #email{
-            text-transform: lowercase;
-        }
-        #email::placeholder{
-            text-transform: capitalize;
-        }
-    }
-}
 
 
 
         @media screen and (min-width:777px) {
-            padding-inline: 25rem;
+
+            // padding-inline: 25rem;
+            &_inner {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                &_left {
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
+                &_right {
+                    height: 100vh;
+                    background-color: black;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                        font-size: 25rem;
+                    }
+                }
+            }
         }
     }
 }

@@ -61,7 +61,7 @@
   .ancients_contact_hero {
     padding-block-start: 3rem;
     padding-block-end: 3rem;
-    padding-inline: 3rem;
+    padding-inline: 4rem;
     display: grid;
     grid-template-columns: 2fr 0.5fr;
     align-items: center;

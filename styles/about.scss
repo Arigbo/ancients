@@ -233,7 +233,7 @@
             &_hero {
                 padding-block-start: 3rem;
                 padding-block-end: 3rem;
-                padding-inline: 3rem;
+                padding-inline: 4rem;
                 display: grid;
                 grid-template-columns: 2fr 0.5fr;
                 align-items: center;
@@ -265,105 +265,105 @@
                 }
             }
 
-            // &_inner {
-            //     padding-inline: 4rem;
+            &_inner {
+                padding-inline: 4rem;
 
-            //     p {
-            //         line-height: 1.8rem;
-            //         font-size: 1.1rem;
-            //         font-weight: 100;
-            //     }
+                p {
+                    line-height: 1.8rem;
+                    font-size: 1.1rem;
+                    font-weight: 100;
+                }
 
-            //     &_menu {
-            //         ul {
-            //             line-height: 4rem;
+                // &_menu {
+                //     ul {
+                //         line-height: 4rem;
 
-            //             li {
-            //                 font-size: 1.1rem;
-            //                 font-weight: 100;
-            //             }
-            //         }
-            //     }
+                //         li {
+                //             font-size: 1.1rem;
+                //             font-weight: 100;
+                //         }
+                //     }
+                // }
 
-            //     &_history {
+                // &_history {
 
-            //         h1 {
-            //             span {
-            //                 padding-block-end: 0.2rem;
-            //                 border-bottom: 2px solid;
-            //             }
-            //         }
+                //     h1 {
+                //         span {
+                //             padding-block-end: 0.2rem;
+                //             border-bottom: 2px solid;
+                //         }
+                //     }
 
-            //         // .images {
-            //         //     display: grid;
-            //         //     grid-template-columns: 1fr 1fr 1fr;
-            //         //     justify-content: center;
-            //         //     gap: 1rem;
-            //         //     margin-inline: 4rem;
-            //         //     padding-inline: 4rem;
+                //     // .images {
+                //     //     display: grid;
+                //     //     grid-template-columns: 1fr 1fr 1fr;
+                //     //     justify-content: center;
+                //     //     gap: 1rem;
+                //     //     margin-inline: 4rem;
+                //     //     padding-inline: 4rem;
 
-            //         //     img {
-            //         //         width: 100%;
-            //         //     }
-            //         // }
+                //     //     img {
+                //     //         width: 100%;
+                //     //     }
+                //     // }
 
-            //         .images {
+                //     .images {
 
-            //             // display: none;
-            //             // grid-template-columns: 1fr 1fr 1fr;
-            //             // grid-template-rows: 1fr;
-            //             // align-items: first baseline;
-            //             // justify-content: center;
-            //             // gap: 1rem;
-            //             // margin-inline: 4rem;
-            //             // padding-block: 4rem;
-            //             // padding-inline: 4rem;
+                //         // display: none;
+                //         // grid-template-columns: 1fr 1fr 1fr;
+                //         // grid-template-rows: 1fr;
+                //         // align-items: first baseline;
+                //         // justify-content: center;
+                //         // gap: 1rem;
+                //         // margin-inline: 4rem;
+                //         // padding-block: 4rem;
+                //         // padding-inline: 4rem;
 
-            //             img {
-            //                 // position: relative;
-            //                 width: 100%;
-            //                 top: 0;
-            //             }
+                //         img {
+                //             // position: relative;
+                //             width: 100%;
+                //             top: 0;
+                //         }
 
-            //             img:nth-child(1),
-            //             img:nth-child(3),
-            //             img:nth-child(5) {
-            //                 top: -5rem;
-            //             }
+                //         img:nth-child(1),
+                //         img:nth-child(3),
+                //         img:nth-child(5) {
+                //             top: -5rem;
+                //         }
 
-            //             img:nth-child(4),
-            //             img:nth-child(6) {
-            //                 top: 5rem;
-            //             }
+                //         img:nth-child(4),
+                //         img:nth-child(6) {
+                //             top: 5rem;
+                //         }
 
 
-            //         }
-            //     }
+                //     }
+                // }
 
-            //     &_testi {
-            //         padding-block-start: 4rem;
-            //         padding-inline: 4rem;
+                &_testi {
+                    padding-block-start: 4rem;
+                    padding-inline: 4rem;
 
-            //         &_inner {
+                    // &_inner {
 
-            //             &_inner {
+                    //     &_inner {
 
-            //                 &_left {
-            //                     &_commentors_info {
-            //                         grid-template-columns: 0.2fr 1fr;
+                    //         &_left {
+                    //             &_commentors_info {
+                    //                 grid-template-columns: 0.2fr 1fr;
 
-            //                         &_commentors-name-age {
+                    //                 &_commentors-name-age {
 
-            //                             h4 {
-            //                                 font-size: 1.5rem;
-            //                             }
-            //                         }
-            //                     }
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
+                    //                     h4 {
+                    //                         font-size: 1.5rem;
+                    //                     }
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                }
+            }
         }
     }
 }

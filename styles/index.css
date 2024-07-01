@@ -91,7 +91,7 @@
   .ancients_home_hero {
     padding-block-start: 3rem;
     padding-block-end: 3rem;
-    padding-inline: 3rem;
+    padding-inline: 4rem;
     display: grid;
     grid-template-columns: 2fr 0.5fr;
     align-items: center;
@@ -116,6 +116,14 @@
     font-size: 20rem;
     font-weight: 600;
   }
+  .ancients_home_inner {
+    padding-inline: 4rem;
+  }
+  .ancients_home_inner p {
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
   .ancients_home_inner_welmessage {
     margin-block-end: 4rem;
   }
@@ -129,11 +137,15 @@
     padding-inline: 4rem;
     padding-block: 0.5rem;
   }
+  .ancients_home_inner_techcourses {
+    padding-block: 4rem;
+    padding-inline: 4rem;
+  }
   .ancients_home_inner_techcourses_inner {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    padding-inline: 4rem;
+    gap: 10rem;
+    padding-block: 3rem;
   }
   .ancients_home_inner_techcourses_inner_inner {
     padding-inline: 2rem;
@@ -163,6 +175,7 @@
   }
   .ancients_home_inner_testi {
     padding-inline: 4rem;
+    padding-block: 4rem;
   }
   .ancients_home_inner_testi_inner_inner_left_commentors_info {
     grid-template-columns: 0.2fr 1fr;
