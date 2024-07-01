@@ -56,24 +56,29 @@
 
             <div class="ancients_signin_inner">
                 <div class="ancients_signin_inner_left" data-aos="fade-right">
+                    <div class="ancients_signin_inner_left_inner_hb">
+                        <a href="/index.html"> <i class="fas fa-arrow-left home"></i></a>
+                    </div>
                     <div class="ancients_signin_inner_left_inner">
-                        <div class="ancients_signin_left_inner_hb">
-                            <a href="/index.html"> <i class="fas fa-chevron-left"></i></a>
+                        <div class="ancients_signin_inner_left_inner_form">
+                            <h3>Login</h3>
+                            <div class="ancients_signin_inner_left_inner_form_inner">
+                                <form action="" method="get">
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                    <br>
+                                    <br>
+                                    <input type="password" name="password" id="password" placeholder="Password"
+                                        required>
+                                    <br>
+                                    <br>
+                                    <a href="/index.html"> <button type="submit" class="btnpage">Login</button></a>
+                                    <br>
+                                    <br>
+                                </form>
+                                <p>Don't have an account? <a class="link"
+                                        href="/pages/verificationspages/signup.html">Click here</a></p>
+                            </div>
                         </div>
-                        <h3>Login</h3>
-                        <form class="ancients_signin_inner_left_inner_form" action="" method="get">
-                            <input type="email" name="email" id="email" placeholder="Email" required>
-                            <br>
-                            <br>
-                            <input type="password" name="password" id="password" placeholder="Password" required>
-                            <br>
-                            <br>
-                            <button type="submit" class="btnpage">Login</button>
-                            <br>
-                            <br>
-                        </form>
-                        <p>Don't have an account? <a class="link" href="/pages/verificationspages/signup.html"
-                                target="_blank" rel="noopener noreferrer">Click here</a></p>
                     </div>
                 </div>
                 <div class="ancients_signin_inner_right" data-aos="fade-left">
@@ -169,6 +174,11 @@
     let page = localStorage.getItem("page")
     document.querySelector(".link").addEventListener("click", () => {
         localStorage.setItem("page", "signup")
+    })
+</script>
+<script>
+        document.querySelector(".home").addEventListener("click", () => {
+        localStorage.setItem("page", "home")
     })
 </script>
 

@@ -59,7 +59,7 @@
   }
 }
 .ancients_inner {
-  padding-block-start: 4rem;
+  padding-block: 4rem;
   padding-inline: 2rem;
 }
 @media screen and (min-width: 777px) {
@@ -89,6 +89,9 @@
 .ancients_inner_top p {
   line-height: 2rem;
   font-size: 1.2rem;
+}
+.ancients_inner_middle {
+  padding-block: 4rem;
 }
 @media screen and (min-width: 777px) {
   .ancients_inner_middle {

@@ -9,6 +9,7 @@
         href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
     <link rel="stylesheet" href="/styles/custom.css">
     <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -53,14 +54,14 @@
         </nav>
         <div class="ancients_contact">
             <section class="ancients_contact_hero">
-                <div class="ancients_contact_hero_left">
+                <div class="ancients_contact_hero_left" data-aos="fade-right">
                     <p>
                     <h1>You can contact some of our</h1>
                     <h1><span><i class="fas fa-chevron-left"></i>Tech Guys<i class="fas fa-chevron-right"></i></span>
                     </h1>
                     </p>
                 </div>
-                <div class="ancients_contact_hero_right">
+                <div class="ancients_contact_hero_right" data-aos="fade-left">
                     <i class="fas fa-chevron-left"></i>
                     <i class="fas fa-chevron-right"></i>
                 </div>
@@ -73,7 +74,7 @@
                         praesentium qui autem incidunt id, sint atque ipsa at sapiente, ad amet sunt.</p>
                 </section>
                 <div class="ancients_contact_inner_inner">
-                    <section class="ancients_contact_inner_inner_form">
+                    <section class="ancients_contact_inner_inner_form" data-aos="fade-left">
                         <form action="" method="post">
                             <label for="">Name</i>
                             </label>
@@ -97,7 +98,7 @@
                             <button type="submit" class="btnpage">Send</button>
                         </form>
                     </section>
-                    <section class="ancients_contact_inner_inner_right">
+                    <section class="ancients_contact_inner_inner_right" data-aos="fade-right">
                         <i class="fas fa-phone"></i></i>
                     </section>
 
@@ -105,65 +106,66 @@
             </div>
 
         </div>
-        <footer class="ancients_footer">
+        <footer class="ancients_footer" data-aos="fade-up">
             <div class="ancients_footer_inner">
                 <div class="ancients_footer_inner_left">
                     <div class="ancients_footer_inner_left_first">
-                        <div class="ancients_footer_inner_left_first_logo">
-                            <i class="fas fa-sun"></i>
+                        <div class="ancients_footer_inner_left_first_logo" data-aos="fade-up">
+                            <i class="far fa-sun"></i>
                             <h1>Ancients</h1>
                         </div>
-                        <p>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis
                             nunc
                             erat. Amet nullam
                             elementum eget nec.
                         </p>
                     </div>
-                    <div class="ancients_footer_inner_left_last"> <a class="btn KU" href="/pages/about.html">About
+                    <div class="ancients_footer_inner_left_last" data-aos="fade-up"> <a class="btn KU"
+                            href="/pages/about.html">About
                             Ancients</a></div>
                 </div>
                 <div class="ancients_footer_inner_middle">
                     <div class="ancients_footer_inner_middle_first">
-                        <h4>Menu</h4>
+                        <h4 data-aos="fade-up">Menu</h4>
                         <ul>
-                            <a href="/index.html" class="home">
+                            <a href="/index.html" class="home" data-aos="fade-up">
                                 <li>Home</li>
                             </a>
-                            <a href="/pages/techcourses/index.html" class="tech">
+                            <a href="/pages/techcourses/index.html" class="tech" data-aos="fade-up">
                                 <li>TechCourses</li>
                             </a>
-                            <a href="/pages/contact.html" class="contact">
+                            <a href="/pages/contact.html" class="contact" data-aos="fade-up">
                                 <li>Contact Us</li>
                             </a>
-                            <a href="/pages/about.html" class="about">
+                            <a href="/pages/about.html" class="about" data-aos="fade-up">
                                 <li>About Us</li>
                             </a>
                         </ul>
                     </div>
 
                     <div class="ancients_footer_inner_middle_middle">
-                        <h4>Create / Login</h4>
+                        <h4 data-aos="fade-up">Create / Login</h4>
                         <ul>
                             <a href="/pages/verificationspages/signup.html" class="signup">
-                                <li>SignUp</li>
+                                <li data-aos="fade-up">SignUp</li>
                             </a>
                             <a href="/pages/verificationspages/signin.html" class="signin">
-                                <li>SignIn</li>
+                                <li data-aos="fade-up">SignIn</li>
                             </a>
                         </ul>
                     </div>
                     <div class="ancients_footer_inner_middle_last">
-                        <h4>Socials</h4>
+                        <h4 data-aos="fade-up">Socials</h4>
                         <ul>
-                            <li><i class="fab fa-threads"></i></li>
-                            <li><i class="fab fa-whatsapp"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
                         </ul>
                     </div>
                 </div>
                 <div class="ancients_footer_inner_right">
-                    <a class="btn QA" href="/pages/contact.html">Still Have a Question? </a>
+                    <a class="btn QA" href="/pages/contact.html" data-aos="fade-up">Still Have a Question? </a>
                 </div>
             </div>
             <div class="ancients_footer_bottom">
@@ -174,6 +176,10 @@
         </footer>
     </div>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script>
     document.querySelector(".year").innerHTML = new Date().getFullYear()
 </script>
@@ -205,7 +211,7 @@
 </script>
 <!-- NAV ACTIVE CODE -->
 <script>
-            document.querySelector(".KU").addEventListener("click", () => {
+    document.querySelector(".KU").addEventListener("click", () => {
         localStorage.setItem("page", "about")
         document.querySelector(".home").classList.remove("active")
         document.querySelector(".about").classList.add("active")
@@ -320,25 +326,26 @@
     if (customer && customer === "isCustomerNotSigned") {
         document.querySelector(".signin").classList.add("active")
         document.querySelector(".signup").classList.remove("active")
-        document.querySelector(".signout").classList.remove("show") 
+        document.querySelector(".signout").classList.remove("show")
     }
     if (customer && customer === "isNotCustomer") {
         document.querySelector(".signin").classList.remove("active")
         document.querySelector(".signup").classList.add("active")
-        document.querySelector(".signout").classList.remove("show") 
+        document.querySelector(".signout").classList.remove("show")
     }
     if (customer && customer === "signed") {
         document.querySelector(".signin").classList.add("hide")
         document.querySelector(".signup").classList.add("hide")
-        document.querySelector(".signout").classList.add("show") 
+        document.querySelector(".signout").classList.add("show")
     }
-    document.querySelector(".signout").addEventListener("click",()=>{
+    document.querySelector(".signout").addEventListener("click", () => {
         localStorage.setItem("customer?", "isCustomerNotSigned")
         document.querySelector(".signin").classList.add("active")
         document.querySelector(".signup").classList.remove("active")
-        document.querySelector(".signout").classList.remove("show") 
+        document.querySelector(".signout").classList.remove("show")
         document.querySelector(".signin").classList.remove("hide")
         document.querySelector(".signup").classList.remove("hide")
     }) 
 </script>
+
 </html>

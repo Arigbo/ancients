@@ -39,6 +39,9 @@
   font-size: 1rem;
   font-weight: 100;
 }
+.ancients_contact_inner_inner {
+  padding-block-start: 4rem;
+}
 .ancients_contact_inner_inner_form label {
   font-weight: 700;
 }

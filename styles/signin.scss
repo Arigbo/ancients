@@ -44,17 +44,47 @@
 
 
         @media screen and (min-width:777px) {
+            overflow-y: hidden;
 
-            // padding-inline: 25rem;
             &_inner {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
 
                 &_left {
-                    height: 100vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    height: 90vh;
+              
+
+                    &_inner {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &_hb {
+                            padding: 2rem 0rem 0rem 2rem;
+                            i {
+                                padding: 0.5rem;
+                                height: 1rem;
+                                width: 1rem;
+                                border-radius: 2rem;
+                                font-size: 1rem;
+                                background-color: white;
+                                color: black;
+                            }
+
+                            i:hover {
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+
+                        &_form {
+                            text-align: center;
+                            &_inner {
+                                padding-block-start: 2rem;
+                            }
+                        }
+                    }
 
                 }
 
@@ -65,7 +95,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    i{
+
+                    i {
                         font-size: 25rem;
                     }
                 }

@@ -71,7 +71,7 @@
     }
 
     &_inner {
-        padding-block-start: 4rem;
+        padding-block: 4rem;
 
         @media screen and (min-width: 777px) {
             padding-block-start: 1rem;
@@ -110,6 +110,7 @@
         }
 
         &_middle {
+            padding-block: 4rem;
             @media screen and (min-width:777px) {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
@@ -161,6 +162,7 @@
 
         &_more {
             text-align: center;
+
         }
     }
 }

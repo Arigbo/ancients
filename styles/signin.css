@@ -11,15 +11,43 @@
   text-transform: capitalize;
 }
 @media screen and (min-width: 777px) {
+  .ancients_signin {
+    overflow-y: hidden;
+  }
   .ancients_signin_inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .ancients_signin_inner_left {
-    height: 100vh;
+    height: 90vh;
+  }
+  .ancients_signin_inner_left_inner {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .ancients_signin_inner_left_inner_hb {
+    padding: 2rem 0rem 0rem 2rem;
+  }
+  .ancients_signin_inner_left_inner_hb i {
+    padding: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+  }
+  .ancients_signin_inner_left_inner_hb i:hover {
+    background-color: black;
+    color: white;
+  }
+  .ancients_signin_inner_left_inner_form {
+    text-align: center;
+  }
+  .ancients_signin_inner_left_inner_form_inner {
+    padding-block-start: 2rem;
   }
   .ancients_signin_inner_right {
     height: 100vh;
