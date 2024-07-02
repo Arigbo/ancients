@@ -88,7 +88,7 @@
   }
   .ancients_signin_inner {
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-columns: 1fr 1.5fr;
   }
   .ancients_signin_inner_left {
     height: 90vh;
@@ -145,6 +145,6 @@
     justify-content: center;
   }
   .ancients_signin_inner_right i {
-    font-size: 25rem;
+    font-size: 30rem;
   }
 }/*# sourceMappingURL=signin.css.map */
