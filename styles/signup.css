@@ -1,1 +1,150 @@
-/*# sourceMappingURL=signup.css.map */
+.ancients {
+  height: auto;
+}
+.ancients_signup {
+  height: 100vh;
+}
+.ancients_signup #email {
+  text-transform: lowercase;
+}
+.ancients_signup #email::-moz-placeholder {
+  text-transform: capitalize;
+}
+.ancients_signup #email::placeholder {
+  text-transform: capitalize;
+}
+@media screen and (max-width: 776px) {
+  .ancients_signup {
+    overflow-y: hidden;
+    width: 100vw;
+  }
+  .ancients_signup_inner {
+    display: grid;
+    grid-template-columns: 1.5fr;
+  }
+  .ancients_signup_inner_left {
+    height: 90vh;
+  }
+  .ancients_signup_inner_left_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .ancients_signup_inner_left_inner_hb {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0rem 0rem 2rem;
+  }
+  .ancients_signup_inner_left_inner_hb .fa-sun {
+    font-size: 1.5rem;
+  }
+  .ancients_signup_inner_left_inner_hb .home {
+    padding: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+  }
+  .ancients_signup_inner_left_inner_hb .home:hover {
+    font-size: 0.1rem;
+    background-color: black;
+    color: white;
+  }
+  .ancients_signup_inner_left_inner_form {
+    text-align: center;
+  }
+  .ancients_signup_inner_left_inner_form h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+  .ancients_signup_inner_left_inner_form form {
+    padding-block-start: 2rem;
+  }
+  .ancients_signup_inner_left_inner_form_inner {
+    padding-block-start: 2rem;
+  }
+  .ancients_signup_inner_right {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .ancients_signup_inner_right i {
+    font-size: 25rem;
+  }
+}
+@media screen and (min-width: 777px) {
+  .ancients_signup {
+    overflow-y: hidden;
+    width: 100vw;
+  }
+  .ancients_signup_inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .ancients_signup_inner_left {
+    height: 90vh;
+  }
+  .ancients_signup_inner_left_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .ancients_signup_inner_left_inner_hb {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0rem 0rem 2rem;
+  }
+  .ancients_signup_inner_left_inner_hb .fa-sun {
+    font-size: 1.5rem;
+  }
+  .ancients_signup_inner_left_inner_hb .home {
+    padding: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+  }
+  .ancients_signup_inner_left_inner_hb .home:hover {
+    font-size: 0.1rem;
+    background-color: black;
+    color: white;
+  }
+  .ancients_signup_inner_left_inner_form {
+    text-align: center;
+  }
+  .ancients_signup_inner_left_inner_form h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+  .ancients_signup_inner_left_inner_form form {
+    padding-block-start: 2rem;
+  }
+  .ancients_signup_inner_left_inner_form_inner {
+    padding-block-start: 2rem;
+  }
+  .ancients_signup_inner_right {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ancients_signup_inner_right i {
+    font-size: 30rem;
+  }
+}/*# sourceMappingURL=signup.css.map */

@@ -39,14 +39,13 @@ html {
         padding-block: 0.5rem;
         padding-inline: 1rem;
         transition: all 0.5s;
-        font-size: 1.3rem;
+        font-size: 1rem;
 
         &.effect {
             background-color: white;
             padding-block: 0.5rem;
             padding-inline: 1rem;
             transition: all 0.5s;
-            font-size: 1.3rem;
             color: black;
         }
     }

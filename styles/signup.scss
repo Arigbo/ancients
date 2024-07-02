@@ -1,0 +1,180 @@
+.ancients {
+    height: auto;
+
+    &_signup {
+        height: 100vh;
+
+        #email {
+            text-transform: lowercase;
+        }
+
+        #email::placeholder {
+            text-transform: capitalize;
+        }
+
+        @media screen and (max-width:776px) {
+            overflow-y: hidden;
+            width: 100vw;
+
+            &_inner {
+                display: grid;
+                grid-template-columns: 1.5fr;
+
+                &_left {
+                    height: 90vh;
+
+
+                    &_inner {
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100vh;
+
+                        &_hb {
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            padding: 2rem 0rem 0rem 2rem;
+
+                            .fa-sun {
+                                font-size: 1.5rem;
+                            }
+
+                            .home {
+                                padding: 0.5rem;
+                                height: 1rem;
+                                width: 1rem;
+                                border-radius: 5rem;
+                                font-size: 1rem;
+                                background-color: white;
+                                color: black;
+                            }
+
+                            .home:hover {
+                                font-size: 0.1rem;
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+
+                        &_form {
+                            text-align: center;
+
+                            h3 {
+                                font-size: 1.3rem;
+                                font-weight: normal;
+                            }
+
+                            form {
+                                padding-block-start: 2rem;
+                            }
+
+                            &_inner {
+                                padding-block-start: 2rem;
+                            }
+                        }
+                    }
+
+                }
+
+                &_right {
+                    height: 100vh;
+                    background-color: black;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    display: none;
+
+                    i {
+                        font-size: 25rem;
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width:777px) {
+            overflow-y: hidden;
+            width: 100vw;
+
+            &_inner {
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+
+                &_left {
+                    height: 90vh;
+
+
+                    &_inner {
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100vh;
+
+                        &_hb {
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            padding: 2rem 0rem 0rem 2rem;
+
+                            .fa-sun {
+                                font-size: 1.5rem;
+                            }
+
+                            .home {
+                                padding: 0.5rem;
+                                height: 1rem;
+                                width: 1rem;
+                                border-radius: 5rem;
+                                font-size: 1rem;
+                                background-color: white;
+                                color: black;
+                            }
+
+                            .home:hover {
+                                font-size: 0.1rem;
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+
+                        &_form {
+                            text-align: center;
+
+                            h3 {
+                                font-size: 1.3rem;
+                                font-weight: normal;
+                            }
+
+                            form {
+                                padding-block-start: 2rem;
+                            }
+
+                            &_inner {
+                                padding-block-start: 2rem;
+                            }
+                        }
+                    }
+
+                }
+
+                &_right {
+                    height: 100vh;
+                    background-color: black;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 30rem;
+                    }
+                }
+            }
+        }
+    }
+}

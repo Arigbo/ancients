@@ -1,233 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign In</title>
     <link class="url_logo" rel="icon" type="image/x-icon"
-    href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
-<link rel="stylesheet" href="/styles/custom.css">
-<link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+        href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
+    <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
     <div class="ancients">
-        <nav class="ancients_nav">
-
-            <div class="ancients_nav_left">
-                <i class="fas fa-sun"></i>
-                <div class="ancients_nav_left_middle-controller">
-                    <i class="fas fa-bars"></i>
-                    <i class="fas fa-x fa-nav-x"></i>
+        <div class="ancients_signup">
+            <div class="ancients_signup_inner">
+                <div class="ancients_signup_inner_right" data-aos="fade-right">
+                    <i class="fas fa-graduation-cap"></i>
+                    <!-- <i class="fas fa-school" data-aos="fade-right"></i> -->
                 </div>
+                <div class="ancients_signup_inner_left" data-aos="fade-left">
+                    <div class="ancients_signup_inner_left_inner_hb">
+                        <a href="/index.html"> <i class="fas fa-arrow-left home"></i></a> <i class="far fa-sun"></i>
+                    </div>
+                    <div class="ancients_signup_inner_left_inner">
+                        <div class="ancients_signup_inner_left_inner_form">
 
-            </div>
-            <div class="ancients_nav_middle">
-                <ul>
-                    <a href="/index.html" class="home">
-                        <li>Home</li>
-                    </a>
-                    <a href="/pages/techcourses/index.html" class="tech">
-                        <li>TechCourses</li>
-                    </a>
-                    <a href="/pages/contact.html" class="contact">
-                        <li>Contact Us</li>
-                    </a>
-                    <a href="/pages/about.html" class="about">
-                        <li>About Us</li>
-                    </a>
-                </ul>
-            </div>
-
-            <div class="ancients_nav_last">
-                <ul>
-                    <a href="/pages/verificationspages/signup.html" class="signup">
-                        <li>SignUp</li>
-                    </a>
-                    <a href="/pages/verificationspages/signin.html" class="signin">
-                        <li>SignIn</li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
-        <div class="ancients_signup"></div>
-        <footer class="ancients_footer">
-            <div class="ancients_footer_inner">
-                <div class="ancients_footer_inner_left">
-                    <div class="ancients_footer_inner_left_first">
-                        <div class="ancients_footer_inner_left_first_logo">
-                            <i class="fas fa-sun"></i>
-                            <h1>Ancients</h1>
+                            <div class="ancients_signup_inner_left_inner_form_inner">
+                                <h3>Create an Account with Ancients</h3>
+                                <form action="" method="get">
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                    <br>
+                                    <br>
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                    <br>
+                                    <br>
+                                    <input type="password" name="password" id="password" placeholder="Password"
+                                        required>
+                                    <br>
+                                    <br>
+                                    <a href="/index.html"> <button type="submit" class="btnpage">SignUp</button></a>
+                                    <br>
+                                    <br>
+                                </form>
+                                <p>Already have an account? <a class="link"
+                                        href="/pages/verificationspages/signin.html">Click here</a></p>
+                            </div>
                         </div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis
-                            nunc
-                            erat. Amet nullam
-                            elementum eget nec.
-                        </p>
                     </div>
-                    <div class="ancients_footer_inner_left_last"> <a class="btn KU" href="/pages/about.html">About
-                            Ancients</a></div>
-                </div>
-                <div class="ancients_footer_inner_middle">
-                    <div class="ancients_footer_inner_middle_first">
-                        <h4>Menu</h4>
-                        <ul>
-                            <a href="/index.html" class="home">
-                                <li>Home</li>
-                            </a>
-                            <a href="/pages/techcourses/index.html" class="tech">
-                                <li>TechCourses</li>
-                            </a>
-                            <a href="/pages/contact.html" class="contact">
-                                <li>Contact Us</li>
-                            </a>
-                            <a href="/pages/about.html" class="about">
-                                <li>About Us</li>
-                            </a>
-                        </ul>
-                    </div>
-
-                    <div class="ancients_footer_inner_middle_middle">
-                        <h4>Create / Login</h4>
-                        <ul>
-                            <a href="/pages/verificationspages/signup.html" class="signup">
-                                <li>SignUp</li>
-                            </a>
-                            <a href="/pages/verificationspages/signin.html" class="signin">
-                                <li>SignIn</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class="ancients_footer_inner_middle_last">
-                        <h4>Socials</h4>
-                        <ul>
-                            <li><i class="fab fa-threads"></i></li>
-                            <li><i class="fab fa-whatsapp"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="ancients_footer_inner_right">
-                    <a class="btn QA" href="/pages/contact.html">Still Have a Question? </a>
                 </div>
             </div>
-            <div class="ancients_footer_bottom">
-                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>
-                        privacy policy</span><span> marketing
-                        prefernces</span><span> cookies preference</span></p>
-            </div>
-        </footer>
+        </div>
     </div>
 </body>
-<!-- NAV ACTIVE CODE -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-        document.querySelector(".KU").addEventListener("click", () => {
-        localStorage.setItem("page", "about")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
-    document.querySelector(".QA").addEventListener("click", () => {
-        localStorage.setItem("page", "contact")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.add("active")
-    })
-    document.querySelector(".fa-bars").addEventListener("click", () => {
-        document.querySelector(".fa-nav-x").classList.add("show")
-        document.querySelector(".fa-bars").classList.add("hide")
-        document.querySelector(".ancients_nav_middle").classList.add("show")
-    })
-    document.querySelector(".fa-nav-x").addEventListener("click", () => {
-        document.querySelector(".fa-bars").classList.remove("hide")
-        document.querySelector(".fa-nav-x").classList.remove("show")
-        document.querySelector(".ancients_nav_middle").classList.remove("show")
-    })
-    document.querySelector(".ancients_signup").addEventListener("click", () => {
-        document.querySelector(".fa-bars").classList.remove("hide")
-        document.querySelector(".fa-nav-x").classList.remove("show")
-        document.querySelector(".ancients_nav_middle").classList.remove("show")
-    })
+    AOS.init();
+</script>
+<script>
+       document.querySelector("#name").addEventListener("click", () => {
+        document.querySelector("#name").classList.add("tapped")
+        document.querySelector("#email").classList.remove("tapped")
+        document.querySelector("#password").classList.remove("tapped")
+    }
+    )
+    document.querySelector("#email").addEventListener("click", () => {
+        document.querySelector("#name").classList.remove("tapped")
+        document.querySelector("#email").classList.add("tapped")
+        document.querySelector("#password").classList.remove("tapped")
+    }
+    )
+    document.querySelector("#password").addEventListener("click", () => {
+        document.querySelector("#name").classList.remove("tapped")
+        document.querySelector("#email").classList.remove("tapped")
+        document.querySelector("#password").classList.add("tapped")
+    }
+    )
+</script>
+<script>
     let page = localStorage.getItem("page")
-    localStorage.setItem("page", "signup")
+    document.querySelector(".link").addEventListener("click", () => {
+        localStorage.setItem("page", "signin")
+    })
+</script>
+<script>
     document.querySelector(".home").addEventListener("click", () => {
         localStorage.setItem("page", "home")
-        document.querySelector(".home").classList.add("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
     })
-
-    document.querySelector(".about").addEventListener("click", () => {
-        localStorage.setItem("page", "about")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
-
-    document.querySelector(".tech").addEventListener("click", () => {
-        localStorage.setItem("page", "tech")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.add("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
-    document.querySelector(".contact").addEventListener("click", () => {
-        localStorage.setItem("page", "contact")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.add("active")
-    })
-    if (page && page === "home") {
-        document.querySelector(".home").classList.add("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    }
-
-
-    if (page && page === "about") {
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    }
-    if (page && page === "tech") {
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.add("active")
-        document.querySelector(".contact").classList.remove("active")
-    }
-    if (page && page === "contact") {
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.remove("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.add("active")
-    }
-    document.querySelector(".signin").addEventListener("click", () => {
-        localStorage.setItem("page", "signin")
-        document.querySelector(".signin").classList.add("active")
-        document.querySelector(".signup").classList.remove("active")
-    })
-
-    document.querySelector(".signup").addEventListener("click", () => {
-        localStorage.setItem("page", "signup")
-        document.querySelector(".signin").classList.remove("active")
-        document.querySelector(".signup").classList.add("active")
-    })
-    if (page && page === "signin") {
-        document.querySelector(".signin").classList.add("active")
-        document.querySelector(".signup").classList.remove("active")
-    }
-
-
-    if (page && page === "signup") {
-        document.querySelector(".signin").classList.remove("active")
-        document.querySelector(".signup").classList.add("active")
-    }
 </script>
+
 </html>
