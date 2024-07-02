@@ -2,7 +2,7 @@
   "post": [
     {
       "coursename": "FrontEnd",
-      "coursesimage": "chevron-",
+      "coursesimage": "window-maximize",
       "teachername": "Jaime",
       "teacherimage": "/images/Slide.png",
       "male": true,
@@ -18,7 +18,7 @@
     },
     {
       "coursename": "BackEnd",
-      "coursesimage": "chevron-",
+      "coursesimage": "file-code",
       "teachername": "Jaime",
       "teacherimage": "/images/Slide.png",
       "male": false,
@@ -34,7 +34,7 @@
     },
     {
       "coursename": "CyberSecurity",
-      "coursesimage": "chevron-",
+      "coursesimage": "code",
       "teachername": "Jaime",
       "teacherimage": "/images/Slide.png",
       "male": false,
@@ -49,8 +49,8 @@
       "id": 3
     },
     {
-      "coursename": "CyberSecurity",
-      "coursesimage": "chevron-",
+      "coursename": "AI & Robotic",
+      "coursesimage": "robot",
       "teachername": "Jaime",
       "teacherimage": "/images/Slide.png",
       "male": false,

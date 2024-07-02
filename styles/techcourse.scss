@@ -161,7 +161,10 @@
                     padding-inline: 4rem;
 
                     &_inner {
+                        height: auto;
                         display: flex;
+                        align-items: center;
+                        justify-content: center;
                         flex-direction: column;
                         gap: 10rem;
                         padding-block: 4rem;
@@ -192,9 +195,12 @@
                             }
 
                             &_right {
+                                height: auto;
                                 display: flex;
-                                background-color: black;
-                                color: white;
+                                align-items: center;
+                                justify-content: center;
+                                // background-color: black;
+                                // color: white;
                                 padding-inline: 1rem;
                                 padding-block: 0.5rem;
 

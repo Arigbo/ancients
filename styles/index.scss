@@ -171,6 +171,7 @@
                     font-size: 1.1rem;
                     font-weight: 100;
                 }
+
                 &_welmessage {
                     margin-block-end: 4rem;
 
@@ -179,7 +180,7 @@
                         justify-content: center;
                         align-items: center;
                         margin-block-start: 4rem;
-                     
+
 
                         &_left,
                         &_right {
@@ -192,13 +193,17 @@
                 }
 
                 &_techcourses {
-padding-block: 4rem;
-padding-inline: 4rem;
+                    padding-block: 4rem;
+                    padding-inline: 4rem;
+
                     &_inner {
+                        height: auto;
                         display: flex;
+                        align-items: center;
+                        justify-content: center;
                         flex-direction: column;
                         gap: 10rem;
-                    padding-block: 3rem;
+                        padding-block: 3rem;
 
                         &_inner {
                             padding-inline: 2rem;
@@ -226,9 +231,12 @@ padding-inline: 4rem;
                             }
 
                             &_right {
+                                height: auto;
                                 display: flex;
-                                background-color: black;
-                                color: white;
+                                align-items: center;
+                                justify-content: center;
+                                // background-color: black;
+                                // color: white;
                                 padding-inline: 1rem;
                                 padding-block: 0.5rem;
 

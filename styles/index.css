@@ -142,7 +142,10 @@
     padding-inline: 4rem;
   }
   .ancients_home_inner_techcourses_inner {
+    height: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 10rem;
     padding-block: 3rem;
@@ -163,9 +166,10 @@
     font-size: 1.2rem;
   }
   .ancients_home_inner_techcourses_inner_inner_right {
+    height: auto;
     display: flex;
-    background-color: black;
-    color: white;
+    align-items: center;
+    justify-content: center;
     padding-inline: 1rem;
     padding-block: 0.5rem;
   }
