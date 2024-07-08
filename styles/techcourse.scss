@@ -81,23 +81,45 @@
                 margin-block-end: 4rem;
 
                 &_inner {
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10rem;
+                    padding-block: 3rem;
+
                     &_inner {
-                        height: 40%;
                         padding-block: 1rem;
                         display: flex;
-                        justify-content: center F;
                         align-items: start;
 
                         &_left {
-                            &_course-info {
-                                &_about-course {
-                                    p {
-                                        span {
-                                            font-weight: 900;
-                                            font-size: 1rem;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 3rem;
+
+                            &_top {
+                                display: flex;
+                                align-items: stretch;
+                                gap: 1rem;
+
+                                img {
+                                    width: 10rem;
+                                }
+
+                                &_inner {
+                                    &_last {
+                                        p {
+                                            span {
+                                                font-weight: 900;
+                                                font-size: 1rem;
+                                            }
                                         }
                                     }
                                 }
+                            }
+
+                            &_bottom {
+                                text-align: center;
                             }
                         }
 
@@ -161,13 +183,8 @@
                     padding-inline: 4rem;
 
                     &_inner {
-                        height: auto;
-                        display: flex;
                         align-items: center;
                         justify-content: center;
-                        flex-direction: column;
-                        gap: 10rem;
-                        padding-block: 4rem;
 
                         &_inner {
                             padding-inline: 2rem;
@@ -178,12 +195,12 @@
 
 
                             &_left {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 2rem;
+                                // display: flex;
+                                // flex-direction: column;
+                                // gap: 2rem;
 
-                                &_course-info {
-                                    &_about-course {
+                                &_top {
+                                    &_last {
                                         p {
                                             span {
                                                 font-weight: 900;

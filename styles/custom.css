@@ -12,6 +12,10 @@ html {
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+html img {
+  width: 100%;
+  height: auto;
+}
 html body {
   padding: 0;
   margin: 0;

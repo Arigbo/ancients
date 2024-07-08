@@ -63,16 +63,37 @@
   margin-block-start: 4rem;
   margin-block-end: 4rem;
 }
+.ancients_techcourses_inner_techcourses_inner {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding-block: 3rem;
+}
 .ancients_techcourses_inner_techcourses_inner_inner {
-  height: 40%;
   padding-block: 1rem;
   display: flex;
-  justify-content: center F;
   align-items: start;
 }
-.ancients_techcourses_inner_techcourses_inner_inner_left_course-info_about-course p span {
+.ancients_techcourses_inner_techcourses_inner_inner_left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.ancients_techcourses_inner_techcourses_inner_inner_left_top {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+.ancients_techcourses_inner_techcourses_inner_inner_left_top img {
+  width: 10rem;
+}
+.ancients_techcourses_inner_techcourses_inner_inner_left_top_inner_last p span {
   font-weight: 900;
   font-size: 1rem;
+}
+.ancients_techcourses_inner_techcourses_inner_inner_left_bottom {
+  text-align: center;
 }
 .ancients_techcourses_inner_techcourses_inner_inner_right {
   display: none;
@@ -119,13 +140,8 @@
     padding-inline: 4rem;
   }
   .ancients_techcourses_inner_techcourses_inner {
-    height: auto;
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 10rem;
-    padding-block: 4rem;
   }
   .ancients_techcourses_inner_techcourses_inner_inner {
     padding-inline: 2rem;
@@ -134,12 +150,7 @@
     gap: 3rem;
     align-items: start;
   }
-  .ancients_techcourses_inner_techcourses_inner_inner_left {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .ancients_techcourses_inner_techcourses_inner_inner_left_course-info_about-course p span {
+  .ancients_techcourses_inner_techcourses_inner_inner_left_top_last p span {
     font-weight: 900;
     font-size: 1.2rem;
   }

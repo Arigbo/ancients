@@ -58,6 +58,9 @@
   .ancients_signup_inner_left_inner_form {
     text-align: center;
   }
+  .ancients_signup_inner_left_inner_form_header .fa-sun {
+    font-size: 3rem;
+  }
   .ancients_signup_inner_left_inner_form h3 {
     font-size: 1.3rem;
     font-weight: normal;
@@ -125,6 +128,9 @@
   }
   .ancients_signup_inner_left_inner_form {
     text-align: center;
+  }
+  .ancients_signup_inner_left_inner_form_header .fa-sun {
+    font-size: 3rem;
   }
   .ancients_signup_inner_left_inner_form h3 {
     font-size: 1.3rem;

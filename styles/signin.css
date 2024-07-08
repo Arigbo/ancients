@@ -58,6 +58,9 @@
   .ancients_signin_inner_left_inner_form {
     text-align: center;
   }
+  .ancients_signin_inner_left_inner_form_header .fa-sun {
+    font-size: 3rem;
+  }
   .ancients_signin_inner_left_inner_form h3 {
     font-size: 1.3rem;
     font-weight: normal;
@@ -106,9 +109,6 @@
     gap: 1rem;
     padding: 2rem 0rem 0rem 2rem;
   }
-  .ancients_signin_inner_left_inner_hb .fa-sun {
-    font-size: 1.5rem;
-  }
   .ancients_signin_inner_left_inner_hb .home {
     padding: 0.5rem;
     height: 1rem;
@@ -125,6 +125,9 @@
   }
   .ancients_signin_inner_left_inner_form {
     text-align: center;
+  }
+  .ancients_signin_inner_left_inner_form_header .fa-sun {
+    font-size: 3rem;
   }
   .ancients_signin_inner_left_inner_form h3 {
     font-size: 1.3rem;

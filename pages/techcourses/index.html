@@ -140,8 +140,8 @@
                         <h4 data-aos="fade-up">Socials</h4>
                             <ul>
                                 <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
-                                    <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
-                                        <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
+                                <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
+                                <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
                             </ul>
                     </div>
                 </div>
@@ -156,6 +156,7 @@
             </div>
         </footer>
     </div>
+
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -314,29 +315,27 @@
                     document.querySelector(".ancients_techcourses_inner_techcourses_inner").insertAdjacentHTML('beforeend', `
                     <div class="ancients_techcourses_inner_techcourses_inner_inner">
                         <div class="ancients_techcourses_inner_techcourses_inner_inner_left" data-aos="fade-left">
-                        <div class="ancients_home_inner_techcourses_inner_inner_left_course-info">
-                            <div class="ancients_techcourses_inner_techcourses_inner_inner_left_course-info_courses-name">
-                                <h1>${product.coursename}</h1>
+                            <div class="ancients_techcourses_inner_techcourses_inner_inner_left_top">
+                                <img src=${product.teacherimage} alt="">
+                                <div class="ancients_techcourses_inner_techcourses_inner_inner_left_top_inner">
+                                    <div class="ancients_techcourses_inner_techcourses_inner_inner_left_top_inner_top">
+                                        <h4>${product.male == true ? "Mr" : "Ms"} ${product.teachername}</h4>
+                                        <h1>${product.coursename}</h1>
+                                    </div>
+                                    <div class="ancients_techcourses_inner_techcourses_inner_inner_left_top_inner_last">
+                                        <p><span>About:</span> ${product.aboutcourse}</p>
+                                        <h4><span>Requirements: </span>${product.requirements}</h4>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="ancients_techcourses_inner_techcourses_inner_inner_left_course-info_about-course">
-                                <h4>${product.male == true ? "Mr" : "Ms"} ${product.teachername}</h4>
-                                <p><span>About:</span> ${product.aboutcourse}</p>
+                            <div class="ancients_techcourses_inner_techcourses_inner_inner_left_bottom">
+                                <a class="btnpage" href=${product.link ? product.link : "/pages/error.html"}>More</a>
                             </div>
                         </div>
-                        <div class="ancients_techcourses_inner_techcourses_inner_inner_left_bottom">
-                            <a class="btnpage" href=${product.link ? product.link : "/pages/error.html"}>More</a>
+                        <div class="ancients_techcourses_inner_techcourses_inner_inner_right" data-aos="fade-right">
+                            <i class="far fa-${product.coursesimage}"></i>
                         </div>
-                    </div>
-                    <div class="ancients_techcourses_inner_techcourses_inner_inner_right" data-aos="fade-right">
-                        <i class="fas fa-${product.coursesimage}"></i>
-                    </div>
-                    </div>
-                          
-                                
-                                `)
-                });
-            })
-    }
+                    </div>`)});})}
     getProduct()
 </script>
 

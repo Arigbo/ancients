@@ -60,6 +60,13 @@
   margin-block-start: 4rem;
   margin-block-end: 4rem;
 }
+.ancients_home_inner_techcourses_inner {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  padding-block: 3rem;
+}
 .ancients_home_inner_techcourses_inner .hide {
   display: none;
 }
@@ -142,13 +149,8 @@
     padding-inline: 4rem;
   }
   .ancients_home_inner_techcourses_inner {
-    height: auto;
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 10rem;
-    padding-block: 3rem;
   }
   .ancients_home_inner_techcourses_inner_inner {
     padding-inline: 2rem;

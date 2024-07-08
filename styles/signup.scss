@@ -61,7 +61,12 @@
 
                         &_form {
                             text-align: center;
-
+                            &_header{
+             
+                                .fa-sun {
+                                    font-size: 3rem;
+                                }
+                            }
                             h3 {
                                 font-size: 1.3rem;
                                 font-weight: normal;
@@ -143,6 +148,12 @@
                         }
 
                         &_form {
+                            &_header{
+             
+                                .fa-sun {
+                                    font-size: 3rem;
+                                }
+                            }
                             text-align: center;
 
                             h3 {

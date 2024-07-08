@@ -79,10 +79,14 @@
                 margin-block-end: 4rem;
 
                 &_inner {
-                    .hide {
-                        display: none;
-                    }
-
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10rem;
+                    padding-block: 3rem;
+.hide{
+    display: none;
+}
                     &_inner {
 
                         padding-block: 1rem;
@@ -197,13 +201,8 @@
                     padding-inline: 4rem;
 
                     &_inner {
-                        height: auto;
-                        display: flex;
                         align-items: center;
                         justify-content: center;
-                        flex-direction: column;
-                        gap: 10rem;
-                        padding-block: 3rem;
 
                         &_inner {
                             padding-inline: 2rem;

@@ -2,25 +2,22 @@
   "post": [
     {
       "coursename": "FrontEnd",
-      "coursesimage": "window-maximize",
+      "coursesimage": "code",
       "teachername": "Jaime",
-      "teacherimage": "/images/Slide.png",
+      "teacherimage": "/images/tanjiro.jpg",
       "male": true,
       "price": 77,
       "contact": 2348156996319,
-      "aboutcourse": "This is Acutually the physical part of the web you can see, the FRONTEND",
+      "aboutcourse": "The front end of a website is everything you see and interact with when you visit a web page. It's essentially the shop window of a website, designed to be attractive and user-friendly",
       "link": "/pages/techcourses/frontendpage.html",
-      "requirements": [
-        "Laptop",
-        "Notebook"
-      ],
+      "requirements": "Laptop, Notebook",
       "id": 1
     },
     {
       "coursename": "BackEnd",
       "coursesimage": "file-code",
       "teachername": "Jaime",
-      "teacherimage": "/images/Slide.png",
+      "teacherimage": "/images/tanjiro.jpg",
       "male": false,
       "price": 45,
       "contact": 2348156996319,
@@ -36,7 +33,7 @@
       "coursename": "CyberSecurity",
       "coursesimage": "code",
       "teachername": "Jaime",
-      "teacherimage": "/images/Slide.png",
+      "teacherimage": "/images/tanjiro.jpg",
       "male": false,
       "price": 45,
       "contact": 2348156996319,
@@ -52,7 +49,7 @@
       "coursename": "AI & Robotic",
       "coursesimage": "robot",
       "teachername": "Jaime",
-      "teacherimage": "/images/Slide.png",
+      "teacherimage": "/images/tanjiro.jpg",
       "male": false,
       "price": 45,
       "contact": 2348156996319,
