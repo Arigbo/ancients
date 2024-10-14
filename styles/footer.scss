@@ -1,17 +1,21 @@
 .ancients {
     &_footer {
-        text-align: center;
         background-color: black;
         color: white;
-        padding-inline: 3rem;
-        padding-block: 3rem;
         height: auto;
-
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        gap: 1.5rem;
         a {
             color: white;
         }
 
         &_bottom {
+            text-align: center;
             span {
                 padding-inline: 0.5rem;
                 border-right: 1px solid;
@@ -24,12 +28,13 @@
         }
 
         &_inner {
+            display: grid;
+            align-items: center;
+            gap: 2.5rem;
             &_left {
-                padding-block-end: 3rem;
+                align-items: center;
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
-
                 .btn {
                     border: 1px solid white;
                     padding-block: 1rem;
@@ -44,56 +49,50 @@
                     background-color: white;
                 }
 
-                &_first {
-                    p {
-                        line-height: 2rem;
-                        font-weight: 0;
-                        font-size: 1.1rem;
-                    }
-
-                    &_logo {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 0.5rem;
-
-                        h1 {
-                            font-size: 1.5rem;
-
-                        }
-
-                        i {
-                            font-size: 2rem;
-                        }
-                    }
+                text-align: center;
+                p {
+                    font-weight: 0;
+                    font-size: 1.1rem;
                 }
 
-                &_last {
-                    padding-block-start: 2rem;
+                &_logo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+
+                    i {
+                        font-size: 2rem;
+                    }
                 }
             }
 
             &_middle {
-                padding-block: 2rem;
-
-                ul {
-                    padding: 0;
-                    padding-block-start: 1rem;
-                    margin: 0;
-                    list-style: none;
-                    display: flex;
-                    flex-direction: column;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.4rem;
+                div {
+                    display: grid;
+                    align-items: center;
                     text-align: center;
-                    gap: 1rem;
+                    gap: 0.6rem;
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.5rem;
 
-                    li {
-                        font-size: 1.1rem;
-                        font-weight: 200;
+                        li {
+                            font-size: 1.1rem;
+                            font-weight: 200;
+                        }
                     }
-                }
-
-                ul:nth-child(1) {
-                    margin-block-end: 1rem;
                 }
             }
 
@@ -116,38 +115,25 @@
             }
         }
 
-        @media screen and (min-width:777px) {
-            padding-block-end: 0.5rem;
-
+        @media screen and (min-width: 777px) {
             &_inner {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                gap: 3rem;
-                align-items: center;
-                text-align: left;
-                padding-block: 1rem 0.5rem;
-
+                height: 40%;
+                justify-content: center;
                 &_left {
                     padding-block: 0.5rem;
                     gap: 1rem;
-
-                    &_first {
-                        &_logo {
-                            justify-content: start;
-                        }
-                    }
-
-                    &_last {
-                        padding-inline-start: 1rem;
-                        padding-block-start: 1rem;
-                    }
+                    align-items: start;
+                    text-align: left;
+                    align-items: start;
                 }
 
                 &_middle {
                     padding-block: 0.5rem;
-                    display: flex;
-                    justify-content: space-between;
-
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    align-items: start;
                     ul {
                         text-align: left;
                     }

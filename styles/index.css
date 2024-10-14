@@ -64,22 +64,20 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 5rem;
   padding-block: 3rem;
 }
 .ancients_home_inner_techcourses_inner .hide {
   display: none;
 }
-.ancients_home_inner_techcourses_inner_inner {
+.ancients_home_inner_techcourses_inner_techcourse {
   padding-block: 1rem;
-  display: flex;
-  align-items: start;
 }
-.ancients_home_inner_techcourses_inner_inner_left_course-info_about-course p span {
+.ancients_home_inner_techcourses_inner_techcourse_left_course-info_about-course p span {
   font-weight: 900;
   font-size: 1rem;
 }
-.ancients_home_inner_techcourses_inner_inner_right {
+.ancients_home_inner_techcourses_inner_techcourse_right {
   display: none;
 }
 .ancients_home_inner_techcourses_bottom {
@@ -94,7 +92,7 @@
   gap: 0.8rem;
   transition: all 0.5s;
 }
-@media screen and (min-width: 777px) {
+@media screen and (min-width: 779px) {
   .ancients_home_hero {
     padding-block-start: 3rem;
     padding-block-end: 3rem;
@@ -152,33 +150,35 @@
     align-items: center;
     justify-content: center;
   }
-  .ancients_home_inner_techcourses_inner_inner {
+}
+@media screen and (min-width: 779px) and (min-width: 958px) {
+  .ancients_home_inner_techcourses_inner_techcourse {
     padding-inline: 2rem;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 3rem;
-    align-items: start;
+    grid-template-columns: 2fr 0.5fr;
+    gap: 1rem;
+    align-items: center;
   }
-  .ancients_home_inner_techcourses_inner_inner_left {
+  .ancients_home_inner_techcourses_inner_techcourse_left {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-  .ancients_home_inner_techcourses_inner_inner_left_course-info_about-course p span {
+  .ancients_home_inner_techcourses_inner_techcourse_left_course-info_about-course p span {
     font-size: 1.2rem;
   }
-  .ancients_home_inner_techcourses_inner_inner_right {
+  .ancients_home_inner_techcourses_inner_techcourse_right {
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: 1rem;
-    padding-block: 0.5rem;
   }
-  .ancients_home_inner_techcourses_inner_inner_right i {
-    font-size: 16rem;
+  .ancients_home_inner_techcourses_inner_techcourse_right i {
+    font-size: 12rem;
     font-weight: 600;
   }
+}
+@media screen and (min-width: 779px) {
   .ancients_home_inner_testi {
     padding-inline: 4rem;
     padding-block: 4rem;

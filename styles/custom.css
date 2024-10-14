@@ -8,9 +8,109 @@
 @import "/styles/signin.css";
 @import "/styles/signup.css";
 @import "/styles/testi.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+* p {
+  font-size: 1.2rem;
+}
+* .btn {
+  height: 3rem;
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+}
+* .btn:hover {
+  transition: all 0.5s;
+}
+* .btnpage {
+  background-color: black;
+  color: white;
+  border: 0;
+  height: 2rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  font-size: 1rem;
+}
+* .btnpage.effect {
+  background-color: white;
+  transition: all 0.5s;
+  color: black;
+}
+* .btnpage:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  transition: all 0.5s;
+}
+* i,
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6 {
+  padding: 0;
+  margin: 0;
+}
+* input {
+  padding-block: 1rem;
+  width: 100%;
+}
+* input,
+* textarea {
+  border-radius: 0.5rem;
+  border: 0px;
+  padding-inline: 0.7rem;
+  width: 100%;
+  padding-block: 0.7rem;
+}
+* textarea {
+  padding-block: 0.5rem;
+  width: 100%;
+}
+* input::-moz-placeholder, * textarea::-moz-placeholder {
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: inherit;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+* input::placeholder,
+* textarea::placeholder {
+  transition: all 0.2s;
+  font-size: inherit;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+* .tapped {
+  border: 1px solid;
+}
+* .tapped::-moz-placeholder {
+  color: black;
+  font-size: 1.2rem;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+* .tapped::placeholder {
+  color: black;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+* a {
+  text-decoration: none;
+  color: black;
+}
+
 html {
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 html img {
   width: 100%;
@@ -19,94 +119,4 @@ html img {
 html body {
   padding: 0;
   margin: 0;
-}
-html p {
-  font-size: 1.2rem;
-}
-html .btn {
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
-  transition: all 0.5s;
-  font-size: 1.3rem;
-}
-html .btn:hover {
-  transition: all 0.5s;
-}
-html .btnpage {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
-  transition: all 0.5s;
-  font-size: 1rem;
-}
-html .btnpage.effect {
-  background-color: white;
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
-  transition: all 0.5s;
-  color: black;
-}
-html .btnpage:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid black;
-  transition: all 0.5s;
-}
-html i,
-html h1,
-html h2,
-html h3,
-html h4,
-html h5,
-html h6 {
-  padding: 0;
-  margin: 0;
-}
-html input {
-  padding-block: 1rem;
-  width: 100%;
-}
-html input,
-html textarea {
-  border-radius: 0.5rem;
-  border: 0px;
-  padding-inline: 0.7rem;
-  width: 100%;
-  padding-block: 0.7rem;
-}
-html textarea {
-  padding-block: 0.5rem;
-  width: 100%;
-}
-html input::-moz-placeholder, html textarea::-moz-placeholder {
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-  font-size: inherit;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-html input::placeholder,
-html textarea::placeholder {
-  transition: all 0.2s;
-  font-size: inherit;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-html .tapped {
-  border: 1px solid;
-}
-html .tapped::-moz-placeholder {
-  color: black;
-  font-size: 1.2rem;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-html .tapped::placeholder {
-  color: black;
-  font-size: 1.2rem;
-  transition: all 0.2s;
-}
-html a {
-  text-decoration: none;
-  color: black;
 }/*# sourceMappingURL=custom.css.map */

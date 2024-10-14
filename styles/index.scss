@@ -1,8 +1,6 @@
 .ancients {
     &_home {
-
         width: auto;
-
 
         &_hero {
             border: 1px solid;
@@ -60,17 +58,14 @@
                     &_right {
                         text-align: center;
 
-
-
                         h1 {
                             font-size: 3rem;
-                            font-family: 'Courier New', Courier, monospace;
+                            font-family: "Courier New", Courier, monospace;
                         }
 
                         padding-inline: 1rem;
                         padding-block: 0.5rem;
                     }
-
                 }
             }
 
@@ -82,16 +77,13 @@
                     height: auto;
                     display: flex;
                     flex-direction: column;
-                    gap: 10rem;
+                    gap: 5rem;
                     padding-block: 3rem;
-.hide{
-    display: none;
-}
-                    &_inner {
-
+                    .hide {
+                        display: none;
+                    }
+                    &_techcourse {
                         padding-block: 1rem;
-                        display: flex;
-                        align-items: start;
 
                         &_left {
                             &_course-info {
@@ -126,12 +118,9 @@
                     transition: all 0.5s;
                 }
             }
-
-
         }
 
-        @media screen and (min-width:777px) {
-
+        @media screen and (min-width: 779px) {
             &_hero {
                 padding-block-start: 3rem;
                 padding-block-end: 3rem;
@@ -150,7 +139,6 @@
                     }
 
                     span {
-
                         font-size: 4rem;
                     }
                 }
@@ -185,14 +173,11 @@
                         align-items: center;
                         margin-block-start: 4rem;
 
-
                         &_left,
                         &_right {
-
                             padding-inline: 4rem;
                             padding-block: 0.5rem;
                         }
-
                     }
                 }
 
@@ -204,49 +189,44 @@
                         align-items: center;
                         justify-content: center;
 
-                        &_inner {
-                            padding-inline: 2rem;
-                            display: grid;
-                            grid-template-columns: 1.5fr 1fr;
-                            gap: 3rem;
-                            align-items: start;
+                   @media screen and (min-width:958px){
+                    &_techcourse {
+                        padding-inline: 2rem;
+                        display: grid;
+                        grid-template-columns: 2fr 0.5fr;
+                        gap: 1rem;
+                        align-items: center;
 
-                            &_left {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 2rem;
+                        &_left {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
 
-                                &_course-info {
-                                    &_about-course {
-                                        p {
-                                            span {
-                                                font-size: 1.2rem;
-                                            }
+                            &_course-info {
+                                &_about-course {
+                                    p {
+                                        span {
+                                            font-size: 1.2rem;
                                         }
                                     }
                                 }
-
-
                             }
+                        }
 
-                            &_right {
-                                height: auto;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                // background-color: black;
-                                // color: white;
-                                padding-inline: 1rem;
-                                padding-block: 0.5rem;
-
-                                i {
-                                    font-size: 16rem;
-                                    font-weight: 600;
-                                }
+                        &_right {
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                    
+                            i {
+                                font-size: 12rem;
+                                font-weight: 600;
                             }
                         }
                     }
-
+                   }
+                    }
                 }
 
                 &_testi {
@@ -260,7 +240,6 @@
                                     grid-template-columns: 0.2fr 1fr;
 
                                     &_commentors-name-age {
-
                                         h4 {
                                             font-size: 1.5rem;
                                         }

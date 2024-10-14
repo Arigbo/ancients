@@ -72,7 +72,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus maiores quis omnis dolores
                         corporis eaque odio eveniet, sequi alias expedita modi nostrum nemo magni vel suscipit. Saepe
                         magnam
-                        dolor placeat ipsum, impedit quam id quidem ratione, ab possimus dolorem laboriosam maiores in
+                        dolor plactechcoursepsum, impedit quam id quidem ratione, ab possimus dolorem laboriosam maiores in
                         beatae, fugit laborum pariatur quibusdam animi commodi. Exercitationem repellat nulla tenetur
                         nihil.
                         Similique inventore delectus sapiente dolorum.</p>
@@ -90,8 +90,7 @@
         <footer class="ancients_footer" data-aos="fade-up">
             <div class="ancients_footer_inner">
                 <div class="ancients_footer_inner_left">
-                    <div class="ancients_footer_inner_left_first">
-                        <div class="ancients_footer_inner_left_first_logo" data-aos="fade-up">
+                        <div class="ancients_footer_inner_left_logo" data-aos="fade-up">
                             <i class="far fa-sun"></i>
                             <h1>Ancients</h1>
                         </div>
@@ -101,10 +100,6 @@
                             erat. Amet nullam
                             elementum eget nec.
                         </p>
-                    </div>
-                    <div class="ancients_footer_inner_left_last" data-aos="fade-up"> <a class="btn KU"
-                            href="/pages/about.html">About
-                            Ancients</a></div>
                 </div>
                 <div class="ancients_footer_inner_middle">
                     <div class="ancients_footer_inner_middle_first">
@@ -138,21 +133,19 @@
                     </div>
                     <div class="ancients_footer_inner_middle_last">
                         <h4 data-aos="fade-up">Socials</h4>
-                            <ul>
-                                <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
-                                <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
-                                <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
-                            </ul>
+                        <ul>
+                            <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="ancients_footer_inner_right">
                     <a class="btn QA" href="/pages/contact.html" data-aos="fade-up">Still Have a Question? </a>
                 </div>
             </div>
-            <div class="ancients_footer_bottom" >
-                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>
-                        privacy policy</span><span> marketing
-                        prefernces</span><span> cookies preference</span></p>
+            <div class="ancients_footer_bottom">
+                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>privacy policy</span><span> marketing prefernces</span><span> cookies preference</span></p>
             </div>
         </footer>
     </div>
@@ -167,13 +160,7 @@
 </script>
 <!-- NAV ACTIVE CODE -->
 <script>
-    document.querySelector(".KU").addEventListener("click", () => {
-        localStorage.setItem("page", "about")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
+    // QUESTION & ANSWER
     document.querySelector(".QA").addEventListener("click", () => {
         localStorage.setItem("page", "contact")
         document.querySelector(".home").classList.remove("active")
@@ -181,16 +168,19 @@
         document.querySelector(".tech").classList.remove("active")
         document.querySelector(".contact").classList.add("active")
     })
+    // SHOW SWITCH
     document.querySelector(".fa-bars").addEventListener("click", () => {
         document.querySelector(".fa-nav-x").classList.add("show")
         document.querySelector(".fa-bars").classList.add("hide")
         document.querySelector(".ancients_nav_middle").classList.add("show")
     })
+    // HIDE SWITCH
     document.querySelector(".fa-nav-x").addEventListener("click", () => {
         document.querySelector(".fa-bars").classList.remove("hide")
         document.querySelector(".fa-nav-x").classList.remove("show")
         document.querySelector(".ancients_nav_middle").classList.remove("show")
     })
+    // 
     document.querySelector(".ancients_techcourses").addEventListener("click", () => {
         document.querySelector(".fa-bars").classList.remove("hide")
         document.querySelector(".fa-nav-x").classList.remove("show")
@@ -313,26 +303,26 @@
                 console.log(data);
                 data.map((product) => {
                     document.querySelector(".ancients_techcourses_inner_techcourses_inner").insertAdjacentHTML('beforeend', `
-                    <div class="ancients_techcourses_inner_techcourses_inner_inner">
-                        <div class="ancients_techcourses_inner_techcourses_inner_inner_left" data-aos="fade-left">
-                            <div class="ancients_techcourses_inner_techcourses_inner_inner_left_top">
+                    <div class="ancients_techcourses_inner_techcourses_inner_techcourse">
+                        <div class="ancients_techcourses_inner_techcourses_inner_techcourse_left" data-aos="fade-left">
+                            <div class="ancients_techcourses_inner_techcourses_inner_techcourse_left_right">
                                 <img src=${product.teacherimage} alt="">
-                                <div class="ancients_techcourses_inner_techcourses_inner_inner_left_top_inner">
-                                    <div class="ancients_techcourses_inner_techcourses_inner_inner_left_top_inner_top">
-                                        <h4>${product.male == true ? "Mr" : "Ms"} ${product.teachername}</h4>
-                                        <h1>${product.coursename}</h1>
-                                    </div>
-                                    <div class="ancients_techcourses_inner_techcourses_inner_inner_left_top_inner_last">
-                                        <p><span>About:</span> ${product.aboutcourse}</p>
-                                        <h4><span>Requirements: </span>${product.requirements}</h4>
-                                    </div>
+                            </div>
+                            <div class="ancients_techcourses_inner_techcourses_inner_techcourse_left_left">
+                                <div class="ancients_techcourses_inner_techcourses_inner_techcourse_left_left_top">
+                                    <h4>${product.male == true ? "Mr" : "Ms"} ${product.teachername}</h4>
+                                    <h1>${product.coursename}</h1>
+                                </div>
+                                <div class="ancients_techcourses_inner_techcourses_inner_techcourse_left_left_middle">
+                                    <p><span>About:</span> ${product.aboutcourse}</p>
+                                    <h4><span>Requirements: </span>${product.requirements}</h4>
+                                </div>
+                                <div class="ancients_techcourses_inner_techcourses_inner_techcourse_left_left_bottom">
+                                    <a class="btnpage" href=${product.link ? product.link : "/pages/error.html"}>More</a>
                                 </div>
                             </div>
-                            <div class="ancients_techcourses_inner_techcourses_inner_inner_left_bottom">
-                                <a class="btnpage" href=${product.link ? product.link : "/pages/error.html"}>More</a>
-                            </div>
                         </div>
-                        <div class="ancients_techcourses_inner_techcourses_inner_inner_right" data-aos="fade-right">
+                        <div class="ancients_techcourses_inner_techcourses_inner_techcourse_right" data-aos="fade-right">
                             <i class="far fa-${product.coursesimage}"></i>
                         </div>
                     </div>`)});})}

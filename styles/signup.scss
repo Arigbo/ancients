@@ -3,7 +3,9 @@
 
     &_signup {
         height: 100vh;
-
+p{
+    font-size: 0.9rem;
+}
         #email {
             text-transform: lowercase;
         }
@@ -12,7 +14,7 @@
             text-transform: capitalize;
         }
 
-        @media screen and (max-width:776px) {
+        @media screen and (max-width: 776px) {
             overflow-y: hidden;
             width: 100vw;
 
@@ -23,9 +25,7 @@
                 &_left {
                     height: 90vh;
 
-
                     &_inner {
-
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -60,9 +60,10 @@
                         }
 
                         &_form {
-                            text-align: center;
-                            &_header{
-             
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            &_header {
                                 .fa-sun {
                                     font-size: 3rem;
                                 }
@@ -73,47 +74,42 @@
                             }
 
                             form {
-                                padding-block-start: 2rem;
+                                display: flex;
+                                gap: 2rem;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 100%;
                             }
 
                             &_inner {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 1rem;
                                 padding-block-start: 2rem;
                             }
                         }
                     }
-
                 }
 
                 &_right {
-                    height: 100vh;
-                    background-color: black;
-                    color: white;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                     display: none;
-
-                    i {
-                        font-size: 25rem;
-                    }
                 }
             }
         }
 
-        @media screen and (min-width:777px) {
+        @media screen and (min-width: 777px) {
             overflow-y: hidden;
             width: 100vw;
 
             &_inner {
                 display: grid;
-                grid-template-columns: 1.5fr 1fr;
+                grid-template-columns: 2fr 1.5fr;
 
                 &_left {
-                    height: 90vh;
-
-
+                    height: 100%;
+                    width: 100%;
                     &_inner {
-
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -148,13 +144,14 @@
                         }
 
                         &_form {
-                            &_header{
-             
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            &_header {
                                 .fa-sun {
                                     font-size: 3rem;
                                 }
                             }
-                            text-align: center;
 
                             h3 {
                                 font-size: 1.3rem;
@@ -162,19 +159,25 @@
                             }
 
                             form {
-                                padding-block-start: 2rem;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 2rem;
+                                width: 100%;
                             }
 
                             &_inner {
-                                padding-block-start: 2rem;
+                                padding-block: 2rem;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 1rem;
                             }
                         }
                     }
-
                 }
 
                 &_right {
-                    height: 100vh;
                     background-color: black;
                     color: white;
                     display: flex;
@@ -182,7 +185,7 @@
                     justify-content: center;
 
                     i {
-                        font-size: 30rem;
+                        font-size: 20rem;
                     }
                 }
             }

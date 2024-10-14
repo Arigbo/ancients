@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
-    <link class="url_logo" rel="icon" type="image/x-icon"
-        href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg" />
-    <link rel="stylesheet" href="/styles/custom.css">
-    <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/css/all.css">
+    <link
+      class="url_logo"
+      rel="icon"
+      type="image/x-icon"
+      href="/styles/fontawesome-free-6.4.2-web/svgs/regular/sun.svg"
+    />
+    <link rel="stylesheet" href="/styles/custom.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/fontawesome-free-6.4.2-web/css/all.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="ancients">
-        <div class="ancients_signin">
-            <div class="ancients_signin_inner">
-                <div class="ancients_signin_inner_left" data-aos="fade-right">
-                    <div class="ancients_signin_inner_left_inner_hb">
-                        <a href="/index.html"> <i class="fas fa-arrow-left home"></i></a>
-                    </div>
-                    <div class="ancients_signin_inner_left_inner">
-                        <div class="ancients_signin_inner_left_inner_form">
-                         <div class="ancients_signin_inner_left_inner_form_header">
-                            <i class="far fa-sun"></i>
-                         </div>
-                            <div class="ancients_signin_inner_left_inner_form_inner">
-                                <h3>Welcome to Ancients</h3>
-                                <form action="" method="get">
-                                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" required>
-                                    <br>
-                                    <br>
-                                    <input type="password" name="password" id="password" placeholder="Password"required>
-                                    <br>
-                                    <br>
-                                    <a href="/index.html"> <button type="submit" class="btnpage">Login</button></a>
-                                    <br>
-                                    <br>
-                                </form>
-                                <p>Don't have an account? <a class="link"
-                                        href="/pages/verificationspages/signup.html">Click here</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ancients_signin_inner_right" data-aos="fade-left">
-                    <i class="fas fa-graduation-cap"></i>
-                    <!-- <i class="fas fa-school" data-aos="fade-right"></i> -->
-                </div>
+      <div class="ancients_signin">
+        <div class="ancients_signin_inner">
+          <div class="ancients_signin_inner_left" data-aos="fade-right">
+            <div class="ancients_signin_inner_left_inner_hb">
+              <a href="/index.html"> <i class="fas fa-arrow-left home"></i></a>
             </div>
+            <div class="ancients_signin_inner_left_inner">
+              <div class="ancients_signin_inner_left_inner_form">
+                <div class="ancients_signin_inner_left_inner_form_header">
+                  <i class="far fa-sun"></i>
+                </div>
+                <div class="ancients_signin_inner_left_inner_form_inner">
+                  <h3>Welcome to Ancients</h3>
+                  <form action="" method="get">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                      autocomplete="email"
+                      required
+                    />
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Password"
+                      required
+                    />
+                    <a href="/index.html">
+                      <button type="submit" class="btnpage">Login</button></a
+                    >
+                  </form>
+                  <p>
+                    Don't have an account?
+                    <a class="link" href="/pages/verificationspages/signup.html"
+                      >Click here</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ancients_signin_inner_right" data-aos="fade-left">
+            <i class="fas fa-graduation-cap"></i>
+            <!-- <i class="fas fa-school" data-aos="fade-right"></i> -->
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
     AOS.init();
-</script>
-<script>
+  </script>
+  <script>
     document.querySelector("#email").addEventListener("click", () => {
-        document.querySelector("#email").classList.add("tapped")
-        document.querySelector("#password").classList.remove("tapped")
-    }
-    )
+      document.querySelector("#email").classList.add("tapped");
+      document.querySelector("#password").classList.remove("tapped");
+    });
     document.querySelector("#password").addEventListener("click", () => {
-        document.querySelector("#email").classList.remove("tapped")
-        document.querySelector("#password").classList.add("tapped")
-    }
-    )
-</script>
-<script>
-    let page = localStorage.getItem("page")
+      document.querySelector("#email").classList.remove("tapped");
+      document.querySelector("#password").classList.add("tapped");
+    });
+  </script>
+  <script>
+    let page = localStorage.getItem("page");
     document.querySelector(".link").addEventListener("click", () => {
-        localStorage.setItem("page", "signup")
-    })
-</script>
-<script>
+      localStorage.setItem("page", "signup");
+    });
+  </script>
+  <script>
     document.querySelector(".home").addEventListener("click", () => {
-        localStorage.setItem("page", "home")
-    })
-</script>
-
+      localStorage.setItem("page", "home");
+    });
+  </script>
 </html>

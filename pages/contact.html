@@ -109,8 +109,7 @@
         <footer class="ancients_footer" data-aos="fade-up">
             <div class="ancients_footer_inner">
                 <div class="ancients_footer_inner_left">
-                    <div class="ancients_footer_inner_left_first">
-                        <div class="ancients_footer_inner_left_first_logo" data-aos="fade-up">
+                        <div class="ancients_footer_inner_left_logo" data-aos="fade-up">
                             <i class="far fa-sun"></i>
                             <h1>Ancients</h1>
                         </div>
@@ -120,10 +119,6 @@
                             erat. Amet nullam
                             elementum eget nec.
                         </p>
-                    </div>
-                    <div class="ancients_footer_inner_left_last" data-aos="fade-up"> <a class="btn KU"
-                            href="/pages/about.html">About
-                            Ancients</a></div>
                 </div>
                 <div class="ancients_footer_inner_middle">
                     <div class="ancients_footer_inner_middle_first">
@@ -146,21 +141,21 @@
 
                     <div class="ancients_footer_inner_middle_middle">
                         <h4 data-aos="fade-up">Create / Login</h4>
-                        <ul>
-                            <a href="/pages/verificationspages/signup.html" class="signup">
-                                <li data-aos="fade-up">SignUp</li>
-                            </a>
-                            <a href="/pages/verificationspages/signin.html" class="signin">
-                                <li data-aos="fade-up">SignIn</li>
-                            </a>
-                        </ul>
+                            <ul>
+                                <a href="/pages/verificationspages/signup.html" class="signup">
+                                    <li data-aos="fade-up">SignUp</li>
+                                </a>
+                                <a href="/pages/verificationspages/signin.html" class="signin">
+                                    <li data-aos="fade-up">SignIn</li>
+                                </a>
+                            </ul>
                     </div>
                     <div class="ancients_footer_inner_middle_last">
                         <h4 data-aos="fade-up">Socials</h4>
                         <ul>
-                            <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
                             <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
                             <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -169,9 +164,7 @@
                 </div>
             </div>
             <div class="ancients_footer_bottom">
-                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>
-                        privacy policy</span><span> marketing
-                        prefernces</span><span> cookies preference</span></p>
+                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>privacy policy</span><span> marketing prefernces</span><span> cookies preference</span></p>
             </div>
         </footer>
     </div>
@@ -211,13 +204,6 @@
 </script>
 <!-- NAV ACTIVE CODE -->
 <script>
-    document.querySelector(".KU").addEventListener("click", () => {
-        localStorage.setItem("page", "about")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
     document.querySelector(".QA").addEventListener("click", () => {
         localStorage.setItem("page", "contact")
         document.querySelector(".home").classList.remove("active")

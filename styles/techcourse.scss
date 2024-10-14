@@ -1,6 +1,5 @@
 .ancients {
     &_techcourses {
-
         width: auto;
 
         &_hero {
@@ -61,65 +60,66 @@
 
                         p {
                             line-height: normal;
-
                         }
 
                         h1 {
                             font-size: 3rem;
-                            font-family: 'Courier New', Courier, monospace;
+                            font-family: "Courier New", Courier, monospace;
                         }
 
                         padding-inline: 1rem;
                         padding-block: 0.5rem;
                     }
-
                 }
             }
 
             &_techcourses {
-                margin-block-start: 4rem;
-                margin-block-end: 4rem;
+                margin-block: 4rem;
 
                 &_inner {
-                    height: auto;
                     display: flex;
                     flex-direction: column;
-                    gap: 10rem;
-                    padding-block: 3rem;
-
-                    &_inner {
-                        padding-block: 1rem;
+                    align-items: center;
+                    justify-content: center;
+                    height: auto;
+                    &_techcourse {
                         display: flex;
-                        align-items: start;
-
+                        justify-content: center;
+                        align-items: center;
+                        height: 90vh;
                         &_left {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 3rem;
-
-                            &_top {
+                            display: grid;
+                            grid-template-columns: 0.5fr 1.5fr;
+                            align-items: center;
+                            gap: 1rem;
+                            &_right {
                                 display: flex;
-                                align-items: stretch;
-                                gap: 1rem;
-
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                height: 100%;
                                 img {
-                                    width: 10rem;
+                                    height: 100%;
                                 }
-
-                                &_inner {
-                                    &_last {
-                                        p {
-                                            span {
-                                                font-weight: 900;
-                                                font-size: 1rem;
-                                            }
+                            }
+                            &_left {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
+                                &_middle {
+                                    p {
+                                        span {
+                                            font-weight: 900;
+                                            font-size: 1rem;
                                         }
                                     }
                                 }
-                            }
-
-                            &_bottom {
-                                text-align: center;
+                                &_bottom {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: start;
+                                    height: 2rem;
+                                }
                             }
                         }
 
@@ -131,9 +131,7 @@
             }
         }
 
-        @media screen and (min-width:777px) {
-
-
+        @media screen and (min-width: 958px) {
             &_hero {
                 padding-block-start: 3rem;
                 padding-block-end: 3rem;
@@ -152,7 +150,6 @@
                     }
 
                     span {
-
                         font-size: 4rem;
                     }
                 }
@@ -179,28 +176,22 @@
                 }
 
                 &_techcourses {
-                    padding-block: 4rem;
-                    padding-inline: 4rem;
-
                     &_inner {
                         align-items: center;
                         justify-content: center;
 
-                        &_inner {
-                            padding-inline: 2rem;
+                        &_techcourse {
                             display: grid;
-                            grid-template-columns: 1.5fr 1fr;
-                            gap: 3rem;
-                            align-items: start;
-
+                            grid-template-columns: 2fr 0.5fr;
+                            align-items: center;
 
                             &_left {
-                                // display: flex;
-                                // flex-direction: column;
-                                // gap: 2rem;
-
-                                &_top {
-                                    &_last {
+                                align-items: last baseline;
+                                &_right{
+                                    
+                                }
+                                &_left {
+                                    &_middle {
                                         p {
                                             span {
                                                 font-weight: 900;
@@ -214,21 +205,17 @@
                             &_right {
                                 height: auto;
                                 display: flex;
+
                                 align-items: center;
                                 justify-content: center;
-                                // background-color: black;
-                                // color: white;
-                                padding-inline: 1rem;
-                                padding-block: 0.5rem;
 
                                 i {
-                                    font-size: 16rem;
+                                    font-size: 11rem;
                                     font-weight: 600;
                                 }
                             }
                         }
                     }
-
                 }
             }
         }

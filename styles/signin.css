@@ -4,6 +4,9 @@
 .ancients_signin {
   height: 100vh;
 }
+.ancients_signin p {
+  font-size: 0.9rem;
+}
 .ancients_signin #email {
   text-transform: lowercase;
 }
@@ -56,7 +59,9 @@
     color: white;
   }
   .ancients_signin_inner_left_inner_form {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .ancients_signin_inner_left_inner_form_header .fa-sun {
     font-size: 3rem;
@@ -66,22 +71,21 @@
     font-weight: normal;
   }
   .ancients_signin_inner_left_inner_form form {
-    padding-block-start: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .ancients_signin_inner_left_inner_form_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     padding-block-start: 2rem;
   }
   .ancients_signin_inner_right {
-    height: 100vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     display: none;
-  }
-  .ancients_signin_inner_right i {
-    font-size: 25rem;
   }
 }
 @media screen and (min-width: 777px) {
@@ -91,10 +95,11 @@
   }
   .ancients_signin_inner {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.5fr 2fr;
   }
   .ancients_signin_inner_left {
-    height: 90vh;
+    height: 100%;
+    width: 100%;
   }
   .ancients_signin_inner_left_inner {
     display: flex;
@@ -108,6 +113,9 @@
     align-items: center;
     gap: 1rem;
     padding: 2rem 0rem 0rem 2rem;
+  }
+  .ancients_signin_inner_left_inner_hb .fa-sun {
+    font-size: 1.5rem;
   }
   .ancients_signin_inner_left_inner_hb .home {
     padding: 0.5rem;
@@ -124,7 +132,9 @@
     color: white;
   }
   .ancients_signin_inner_left_inner_form {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .ancients_signin_inner_left_inner_form_header .fa-sun {
     font-size: 3rem;
@@ -134,13 +144,20 @@
     font-weight: normal;
   }
   .ancients_signin_inner_left_inner_form form {
-    padding-block-start: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
   }
   .ancients_signin_inner_left_inner_form_inner {
-    padding-block-start: 2rem;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
   .ancients_signin_inner_right {
-    height: 100vh;
     background-color: black;
     color: white;
     display: flex;
@@ -148,6 +165,6 @@
     justify-content: center;
   }
   .ancients_signin_inner_right i {
-    font-size: 30rem;
+    font-size: 20rem;
   }
 }/*# sourceMappingURL=signin.css.map */

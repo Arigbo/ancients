@@ -224,71 +224,65 @@
                 <a href="/pages/error.html" class="btnpage">Backend</a>
             </section>
         </div>
-        <footer class="ancients_footer">
+        <footer class="ancients_footer" data-aos="fade-up">
             <div class="ancients_footer_inner">
                 <div class="ancients_footer_inner_left">
-                    <div class="ancients_footer_inner_left_first">
-                        <div class="ancients_footer_inner_left_first_logo">
-                            <i class="fas fa-sun"></i>
+                        <div class="ancients_footer_inner_left_logo" data-aos="fade-up">
+                            <i class="far fa-sun"></i>
                             <h1>Ancients</h1>
                         </div>
-                        <p>
+                        <p data-aos="fade-up">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis
                             nunc
                             erat. Amet nullam
                             elementum eget nec.
                         </p>
-                    </div>
-                    <div class="ancients_footer_inner_left_last"> <a class="btn KU" href="/pages/about.html">About
-                            Ancients</a></div>
                 </div>
                 <div class="ancients_footer_inner_middle">
                     <div class="ancients_footer_inner_middle_first">
-                        <h4>Menu</h4>
+                        <h4 data-aos="fade-up">Menu</h4>
                         <ul>
-                            <a href="/index.html" class="home">
+                            <a href="/index.html" class="home" data-aos="fade-up">
                                 <li>Home</li>
                             </a>
-                            <a href="/pages/techcourses/index.html" class="tech">
+                            <a href="/pages/techcourses/index.html" class="tech" data-aos="fade-up">
                                 <li>TechCourses</li>
                             </a>
-                            <a href="/pages/contact.html" class="contact">
+                            <a href="/pages/contact.html" class="contact" data-aos="fade-up">
                                 <li>Contact Us</li>
                             </a>
-                            <a href="/pages/about.html" class="about">
+                            <a href="/pages/about.html" class="about" data-aos="fade-up">
                                 <li>About Us</li>
                             </a>
                         </ul>
                     </div>
 
                     <div class="ancients_footer_inner_middle_middle">
-                        <h4>Create / Login</h4>
-                        <ul>
-                            <a href="/pages/verificationspages/signup.html" class="signup">
-                                <li>SignUp</li>
-                            </a>
-                            <a href="/pages/verificationspages/signin.html" class="signin">
-                                <li>SignIn</li>
-                            </a>
-                        </ul>
+                        <h4 data-aos="fade-up">Create / Login</h4>
+                            <ul>
+                                <a href="/pages/verificationspages/signup.html" class="signup">
+                                    <li data-aos="fade-up">SignUp</li>
+                                </a>
+                                <a href="/pages/verificationspages/signin.html" class="signin">
+                                    <li data-aos="fade-up">SignIn</li>
+                                </a>
+                            </ul>
                     </div>
                     <div class="ancients_footer_inner_middle_last">
-                        <h4>Socials</h4>
+                        <h4 data-aos="fade-up">Socials</h4>
                         <ul>
-                            <li><i class="fab fa-threads"></i></li>
-                            <li><i class="fab fa-whatsapp"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
                         </ul>
                     </div>
                 </div>
                 <div class="ancients_footer_inner_right">
-                    <a class="btn QA" href="/pages/contact.html">Still Have a Question? </a>
+                    <a class="btn QA" href="/pages/contact.html" data-aos="fade-up">Still Have a Question? </a>
                 </div>
             </div>
             <div class="ancients_footer_bottom">
-                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>
-                        privacy policy</span><span> marketing
-                        prefernces</span><span> cookies preference</span></p>
+                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>privacy policy</span><span> marketing prefernces</span><span> cookies preference</span></p>
             </div>
         </footer>
     </div>
@@ -298,13 +292,6 @@
 </script>
 <!-- NAV ACTIVE CODE -->
 <script>
-            document.querySelector(".KU").addEventListener("click", () => {
-        localStorage.setItem("page", "about")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
     document.querySelector(".QA").addEventListener("click", () => {
         localStorage.setItem("page", "contact")
         document.querySelector(".home").classList.remove("active")

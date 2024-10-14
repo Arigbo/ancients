@@ -112,8 +112,7 @@
         <footer class="ancients_footer" data-aos="fade-up">
             <div class="ancients_footer_inner">
                 <div class="ancients_footer_inner_left">
-                    <div class="ancients_footer_inner_left_first">
-                        <div class="ancients_footer_inner_left_first_logo" data-aos="fade-up">
+                        <div class="ancients_footer_inner_left_logo" data-aos="fade-up">
                             <i class="far fa-sun"></i>
                             <h1>Ancients</h1>
                         </div>
@@ -123,10 +122,6 @@
                             erat. Amet nullam
                             elementum eget nec.
                         </p>
-                    </div>
-                    <div class="ancients_footer_inner_left_last" data-aos="fade-up"> <a class="btn KU"
-                            href="/pages/about.html">About
-                            Ancients</a></div>
                 </div>
                 <div class="ancients_footer_inner_middle">
                     <div class="ancients_footer_inner_middle_first">
@@ -160,21 +155,19 @@
                     </div>
                     <div class="ancients_footer_inner_middle_last">
                         <h4 data-aos="fade-up">Socials</h4>
-                            <ul>
-                                <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
-                                    <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
-                                        <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
-                            </ul>
+                        <ul>
+                            <li data-aos="fade-up"><i class="fab fa-whatsapp"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-twitter"></i></li>
+                            <li data-aos="fade-up"><i class="fab fa-threads"></i></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="ancients_footer_inner_right">
                     <a class="btn QA" href="/pages/contact.html" data-aos="fade-up">Still Have a Question? </a>
                 </div>
             </div>
-            <div class="ancients_footer_bottom" >
-                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>
-                        privacy policy</span><span> marketing
-                        prefernces</span><span> cookies preference</span></p>
+            <div class="ancients_footer_bottom">
+                <p><i class="far fa-copyright"></i><span class="year"></span> <span>Legal Notices</span><span>privacy policy</span><span> marketing prefernces</span><span> cookies preference</span></p>
             </div>
         </footer>
     </div>
@@ -256,14 +249,6 @@
         document.querySelector(".tech").classList.remove("active")
         document.querySelector(".contact").classList.remove("active")
     })
-
-    document.querySelector(".KU").addEventListener("click", () => {
-        localStorage.setItem("page", "about")
-        document.querySelector(".home").classList.remove("active")
-        document.querySelector(".about").classList.add("active")
-        document.querySelector(".tech").classList.remove("active")
-        document.querySelector(".contact").classList.remove("active")
-    })
     document.querySelector(".tech").addEventListener("click", () => {
         localStorage.setItem("page", "tech")
         document.querySelector(".home").classList.remove("active")
@@ -305,8 +290,6 @@
         document.querySelector(".tech").classList.remove("active")
         document.querySelector(".contact").classList.remove("active")
     }
-
-
     if (page && page === "about") {
         document.querySelector(".home").classList.remove("active")
         document.querySelector(".about").classList.add("active")
@@ -374,19 +357,6 @@
         document.querySelector(".signup").classList.remove("hide")
     }) 
 </script>
-<!-- PLAN CALCULATOR -->
-<!-- <script>
-    function plan() {
-        fetch(`http://localhost:3000/comment`)
-            .then(results => results.json())
-            .then(data => {
-                var number = data.length
-                document.querySelector(".plan").innerHTML = number
-                document.querySelector(".proplan").innerHTML = 1000 - number
-            })
-    }
-    plan()
-</script> -->
 <!-- TESTIMONIES -->
 <script>
     function getProduct() {
@@ -396,19 +366,18 @@
                 console.log(data);
                 data.map((testi) => {
                     document.querySelector(".ancients_home_inner_testi_inner").insertAdjacentHTML('beforeend', `
-                        <div class=${testi.id > 1 ? "hide" : "ancients_home_inner_testi_inner_inner"}>
-                            <div class="ancients_home_inner_testi_inner_inner_left">
-                                <div class="ancients_home_inner_testi_inner_inner_left_commentors" data-aos="fade-up">
-                                    <div class="ancients_home_inner_testi_inner_inner_left_commentors_info">
-                                        <img src="${testi.commentorsimage}"/>
-                                        <div class="ancients_home_inner_testi_inner_inner_left_commentors_info_commentors_details">
-                                            <h4>${testi.male == true ? "Mr" : "Ms"} ${testi.commentorssurname} ${testi.commentorsname}</h4><h4>${testi.age}</h4>
-                                            <h4><i class="fas fa-location-pin"></i> NO. ${testi.streetNo} ${testi.streetName} ${testi.city} ${testi.country}</h4>
-                                        </div>
-                                    </div>
-                                    <div class="ancients_home_inner_testi_inner_inner_left_commentors_comment" data-aos="fade-up">
-                                        <p><span>Comment:</span> ${testi.comment}</p>
-                                    </div>
+                        <div class=${testi.id > 3 ? "hide" : "ancients_home_inner_testi_inner_comment"}>
+                            <div class="ancients_home_inner_testi_inner_comment_left" data-aos="fade-up">
+                                <img src="${testi.commentorsimage}"/>
+                            </div>
+                            <div class="ancients_home_inner_testi_inner_comment_right" data-aos="fade-up">
+                                <div class="ancients_home_inner_testi_inner_comment_right_top">
+                                    <h4>${testi.male == true ? "Mr" : "Ms"} ${testi.commentorssurname} ${testi.commentorsname}</h4>
+                                    <h4><i class="fas fa-location-pin"></i> NO. ${testi.streetNo} ${testi.streetName} ${testi.city} ${testi.country}</h4>
+                                    <h4>${testi.age}</h4>
+                                </div>
+                                <div class="ancients_home_inner_testi_inner_comment_right_bottom">
+                                    <p><span>Comment:</span> ${testi.comment}</p>
                                 </div>
                             </div>
                         </div>
@@ -428,22 +397,22 @@
                 console.log(data);
                 data.map((product) => {
                     document.querySelector(".ancients_home_inner_techcourses_inner").insertAdjacentHTML('beforeend', `
-                    <div class=${product.id > 2 ? "hide" : "ancients_home_inner_techcourses_inner_inner"}>
-                        <div class="ancients_home_inner_techcourses_inner_inner_left" data-aos="fade-left">
-                            <div class="ancients_home_inner_techcourses_inner_inner_left_course-info">
-                                <div class="ancients_home_inner_techcourses_inner_inner_left_course-info_courses-name">
+                    <div class=${product.id > 2 ? "hide" : "ancients_home_inner_techcourses_inner_techcourse"}>
+                        <div class="ancients_home_inner_techcourses_inner_techcourse_left" data-aos="fade-left">
+                            <div class="ancients_home_inner_techcourses_inner_techcourse_left_course-info">
+                                <div class="ancients_home_inner_techcourses_inner_techcourse_left_course-info_courses-name">
                                     <h1>${product.coursename}</h1>
                                 </div>
-                                <div class="ancients_home_inner_techcourses_inner_inner_left_course-info_about-course">
+                                <div class="ancients_home_inner_techcourses_inner_techcourse_left_course-info_about-course">
                                     <h4>${product.male == true ? "Mr" : "Ms"} ${product.teachername}</h4>
                                  <p><span>About:</span> ${product.aboutcourse}</p>
                                 </div>
                             </div>
-                            <div class="ancients_home_inner_techcourses_inner_inner_left_bottom">
+                            <div class="ancients_home_inner_techcourses_inner_techcourse_left_bottom">
                                 <a class="btnpage" id="TCI" href=${product.link ? product.link : "/pages/error.html"}>More</a>
                             </div>
                         </div>
-                        <div class="ancients_home_inner_techcourses_inner_inner_right" data-aos="fade-right">
+                        <div class="ancients_home_inner_techcourses_inner_techcourse_right" data-aos="fade-right">
                             <i class="fa-regular fa-${product.coursesimage}"></i>
                         </div>
                     </div>              
